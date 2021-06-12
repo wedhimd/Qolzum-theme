@@ -1,1 +1,1 @@
-# wordpress-custom-theme
+# Qolzum wordpress custom theme
