@@ -3,3 +3,7 @@ Theme Name: Qolzum
 Author: Mohammed Ali Himd
 Version: 0.1.0
 */
+
+body {
+    color: aqua;
+}
