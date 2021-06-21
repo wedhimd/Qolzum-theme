@@ -26,16 +26,16 @@ function load_js()
     wp_enqueue_script("bootstrap-bundle-min-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js");
 
     // load bootstrap.bundle.min.js scripts 5.0.1 LOCAL
-    wp_enqueue_script("bootstrap-bundle-min-js", get_template_directory_uri() . "assets/js/bootstrap/bootstrap.bundle.min.js", "", "5.0.1", true);
+    wp_enqueue_script("bootstrap-bundle-min-js", get_template_directory_uri() . "/assets/js/bootstrap/bootstrap.bundle.min.js", "", "5.0.1", true);
 
     // load bootstrap.esm.min.js scripts 5.0.1 LOCAL
-    wp_enqueue_script("bootstrap-esm-min-js", get_template_directory_uri() . "assets/js/bootstrap/bootstrap.esm.min.js", "", "5.0.1", true);
+    wp_enqueue_script("bootstrap-esm-min-js", get_template_directory_uri() . "/assets/js/bootstrap/bootstrap.esm.min.js", "", "5.0.1", true);
 
     // load bootstrap.min.js scripts 5.0.1 LOCAL
-    wp_enqueue_script("bootstrap-min-js", get_template_directory_uri() . "assets/js/bootstrap/bootstrap.min.js", "", "5.0.1", true);
+    wp_enqueue_script("bootstrap-min-js", get_template_directory_uri() . "/assets/js/bootstrap/bootstrap.min.js", "", "5.0.1", true);
 
     // load custom scripts
-    wp_enqueue_script("custom-js", get_template_directory_uri() . "assets/js/scripts.js", "", 1, true);
+    wp_enqueue_script("custom-js", get_template_directory_uri() . "/assets/js/scripts.js", "", 1, true);
 }
 add_action("wp_enqueue_scripts", "load_js");
 
