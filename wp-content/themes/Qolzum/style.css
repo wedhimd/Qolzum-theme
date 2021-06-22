@@ -8,8 +8,9 @@ body {
   background-color: #e7e7e7;
   padding: 0;
   margin: 0;
-  font-family: "Katibeh", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: right;
+  font-family: Katibeh, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 header {
@@ -342,9 +343,10 @@ footer .container h2 {
   color: #fff;
   font-weight: 500;
   margin-bottom: 15px;
+  text-align: right;
 }
 
-footer .container h2:before {
+footer .container h2::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -396,6 +398,7 @@ footer p {
 
 .quickLinks ul li {
   list-style: none;
+  text-align: right;
 }
 
 .quickLinks ul li a {
