@@ -118,4 +118,56 @@
         </aside>
     </section>
 </main>
+
+<div class="container">
+    <div class="title">
+        <h5>BLOG</h5>
+        <h1>Trendy News Feed</h1>
+    </div>
+    <div class="column-card">
+        <div class="card">
+            <img src="img/b1.png" />
+            <div class="panel">
+                <span class="date">26th</span>
+                <p>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                </p>
+                <span class="breaker"></span>
+                <h3>
+                    Lorem ipsum dolor sit amet
+                </h3>
+                <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/b2.png" />
+            <div class="panel">
+                <span class="date">26th</span>
+                <p>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                </p>
+                <span class="breaker"></span>
+                <h3>
+                    Lorem ipsum dolor sit amet
+                </h3>
+                <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/b3.png" />
+            <div class="panel">
+                <span class="date">26th</span>
+                <p>
+                    I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                </p>
+                <span class="breaker"></span>
+                <h3>
+                    Lorem ipsum dolor sit amet
+                </h3>
+                <a href="#!">Know <i class="fa fa-long-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#!" class="allbtn">View All</a>
+</div>
 <?php get_footer() ?>
