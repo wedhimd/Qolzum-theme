@@ -27,52 +27,49 @@
                 <i class="fas fa-rss"></i>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md ">
-            <!-- Brand -->
-
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الأخبار المحلية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الأخبار العالمية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">اﻹقتصاد</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">التكنلوجيا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">الرياضة</a>
-                    </li>
-                </ul>
-            </div>
+        <section class="header">
+        <div class="overlay has-fade"></div>
+        <nav class="my-container my-container--pall flex flex-jc-sb flex-ai-c">
+          <a href="/" class="header__logo"><img src="<?php
+            if (function_exists('the_custom_logo')) {
+                the_custom_logo();
+            } ?>" alt="logo"></a>
+          <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="#">الرئيسية</a>
+            <a href="#">الأخبار العالمية</a>
+            <a href="#">الأخبار المحلية</a>
+            <a href="#">أخبار الرياضة</a>
+            <a href="#">التكنلوجيا</a>
+          </div>
         </nav>
+    
+        <div class="header__menu has-fade">
+            <a href="#">الرئيسية</a>
+            <a href="#">الأخبار العالمية</a>
+            <a href="#">الأخبار المحلية</a>
+            <a href="#">أخبار الرياضة</a>
+            <a href="#">التكنلوجيا</a>
+        </div>
         <div class="breaking-news-section">
-            <span id="btext">اﻷخبار العاجلة</span>
+                <span id="btext">اﻷخبار العاجلة</span>
             <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
                 <a href="#" class="breaking-news">
-                    <p class="bntime"><?php get_post_time('F j, Y'); ?></p>
-                    الكونجرس يصادق على قانون جديد
+                    <p class="bntime">time</p>
+                محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب
                 </a>
                 <a href="#" class="breaking-news">
-                    <p class="bntime"><?php the_time('F j, Y'); ?></p>عاصفة جديدة تقترب من الشواطئ الأمريكية
+                    <p class="bntime">time</p>محمد علي يسلم على علي ويقول له ما في أي حاجة إضافة ، تعليق إقتراح
                 </a>
                 <a href="#" class="breaking-news">
-                    <p class="bntime"><?php the_time('F j, Y'); ?></p>اليابان تطلق قمر صناعي جديد إلى المريخ
+                    <p class="bntime">time</p>اليابان تطلق قمر صناعي جديد إلى المريخ
                 </a>
             </marquee>
         </div>
+        </section>
 
     </header>
