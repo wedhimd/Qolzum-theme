@@ -92,7 +92,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/1.jpg')?>');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -191,7 +191,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -201,7 +201,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -221,7 +221,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -231,7 +231,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -251,7 +251,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -261,7 +261,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -281,7 +281,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -291,7 +291,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة 
@@ -310,7 +310,7 @@
                     </h3>
                     <div class="cards">
                         <a href="#" class="card">
-                            <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                            <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                             <div class="card__content">
                                 <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                 <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -320,7 +320,7 @@
                         </a>
 
                         <a href="#" class="card">
-                            <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                            <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                             <div class="card__content">
                                 <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                 <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -348,7 +348,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -367,7 +367,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -433,7 +433,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -452,7 +452,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -471,7 +471,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -490,7 +490,7 @@
                                         <div class="latest-news-item clearfix">
                                             <div class="item-thumbnail">
                                                 <a href="#">
-                                                    <img src="/Sass/dist/images/1.jpg" class="latest-news-img" alt="">
+                                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="latest-news-img" alt="">
                                                 </a>
                                             </div>
                                             <div class="news-item-container">
@@ -560,7 +560,7 @@
                         <div class="widget">
                             <div class="widget-content">
                                 <div class="sidebar-ad">
-                                    <img src="/Sass/dist/images/ad-banner.png" class="img-fluid" alt="">
+                                    <img src="<?php echo get_theme_file_uri('/assets/images/ad-banner.png')?>" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div> <!-- sidebar ad widget end-->
