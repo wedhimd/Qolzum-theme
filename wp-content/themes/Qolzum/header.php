@@ -21,8 +21,8 @@
             <!-- <img src="assets/images/logo.png"> -->
             <h1>القلزم للأخبار</h1>
             <div class="social-icons">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter"></i>
+                <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
                 <i class="fab fa-instagram"></i>
                 <i class="fas fa-rss"></i>
             </div>
