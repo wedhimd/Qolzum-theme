@@ -1,0 +1,58 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.9375rem 0;
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 18.75rem;
+        max-width: 28.125rem;
+        overflow: hidden;
+        background: #fff;
+        color: #000;
+        border-radius: 0.3125rem;
+        box-shadow: 0.1825rem 0.125rem 0.875rem rgba(#262631, 0.2);
+        font-size: 1rem;
+        transition: all 150ms ease-in-out;
+
+        &:hover{
+            transform: translateY(-0.2rem);
+            box-shadow: 0.125rem 0.1875rem 1.125rem rgba(#262631, 0.4);
+        }
+
+        &__image{
+            flex: 0 0 7.5rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 1rem;
+            
+        }
+
+        &__title{
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+        }
+
+        &__snippet{
+            margin-bottom: 0.6rem;
+        }
+
+        &__readmore{
+            margin-top: auto;
+            font-weight: 700;            
+        }
+
+    }
+
+}
