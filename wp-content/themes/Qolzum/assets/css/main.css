@@ -318,6 +318,7 @@ button:hover,
 .website-header .social-icons i {
   margin: 0 7px;
   cursor: pointer;
+  color: #ffffff;
 }
 
 @media (max-width: 39.9375em) {

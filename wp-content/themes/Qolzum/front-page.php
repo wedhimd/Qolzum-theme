@@ -52,13 +52,13 @@
             <h2 class="thumbnail-headings">الاقتصاد</h2>
             <section class="news">
                 <div class="news-container">
-                    <img src="/Sass/dist/images/3.jpg">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" >
                     <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
                 </div>
             </section>
             <section class="news">
                 <div class="news-container">
-                    <img src="/Sass/dist/images/2.jpg">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/2.jpg')?>" >
                     <p class="carousel-text">تنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في</p>
                 </div>
             </section>
@@ -67,13 +67,13 @@
             <h2 class="thumbnail-headings">الرياضة</h2>
             <section class="news">
                 <div class="news-container">
-                    <img src="/Sass/dist/images/3.jpg">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/3.jpg')?>">
                     <p class="carousel-text"> الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، </p>
                 </div>
             </section>
             <section class="news">
                 <div class="news-container">
-                    <img src="/Sass/dist/images/1.jpg">
+                    <img src="<?php echo get_theme_file_uri('/assets/images/4.webp')?>">
                     <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
                 </div>
             </section>
@@ -92,7 +92,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url('<?php echo get_theme_file_uri('/assets/images/1.jpg')?>');"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -102,7 +102,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -112,7 +112,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -122,7 +122,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -141,7 +141,7 @@
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -151,7 +151,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -161,7 +161,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/1.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
@@ -171,7 +171,7 @@
                             </a>
 
                             <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/Sass/dist/images/2.jpg');"></div>
+                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
                                     <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
