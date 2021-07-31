@@ -30,16 +30,7 @@ add_action("wp_enqueue_scripts", "load_stylesheets");
 function load_js()
 {
     // load bootstrap.bundle.min.js scripts 5.0.1 CDN
-    wp_enqueue_script("bootstrap-bundle-min-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js");
-
-    // load jquery CDN
-    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-3.2.1.slim.min.js");
-
-    // load popper script 1.12.9 CDN
-    wp_enqueue_script("popper", "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js");
-
-    // load bootstap 4.0.0 CDN
-    wp_enqueue_script("bootstrap-4.0.0", "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js");
+    wp_enqueue_script("bootstrap-bundle-min-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js");
 
     // load custom scripts
     wp_enqueue_script("custom-js", get_theme_file_uri("/assets/js/scripts.js"), "", 1, true);

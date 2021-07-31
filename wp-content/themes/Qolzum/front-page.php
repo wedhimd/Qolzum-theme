@@ -14,21 +14,21 @@
                         </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="/Sass/dist/images/1.jpg" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
                                 <div class="carousel-caption  d-md-block">
                                     <h5>الفئة</h5>
                                     <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/Sass/dist/images/2.jpg" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
                                 <div class="carousel-caption  d-md-block">
                                     <h5>الفئة</h5>
                                     <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="/Sass/dist/images/3.jpg" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
                                 <div class="carousel-caption  d-md-block">
                                 <h5>الفئة</h5>
                                 <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم</p>
