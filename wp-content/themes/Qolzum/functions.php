@@ -18,7 +18,10 @@ function load_stylesheets()
 
 
     // loading custom css
-    wp_register_style("main-css", get_template_directory_uri() . "/style.css", array(), false, "all");
+    wp_register_style("theme-css", get_template_directory_uri() . "/style.css", array(), false, "all");
+    wp_enqueue_style("theme-css");
+
+    wp_register_style("main-css", get_template_directory_uri() . "/assets/css/main.css", array(), false, "all");
     wp_enqueue_style("main-css");
 }
 add_action("wp_enqueue_scripts", "load_stylesheets");

@@ -4,6 +4,7 @@ version: 0.1.0
 Author: Mohammed Ali Himd
 */
 
+
 body {
   background-color: #e7e7e7;
   padding: 0;
@@ -81,24 +82,24 @@ nav ul {
   font-weight: 600;
   margin: auto 0;
 }
-/* .breaking-news {
+.breaking-news {
   padding: 30px;
   color: #fff;
   text-decoration: none;
   font-weight: 800;
-} */
-/* .breaking-news:hover,
+} 
+.breaking-news:hover,
 .social-icons i:hover {
   color: #e08b6c;
   cursor: pointer;
-} */
-/* .bntime {
+} 
+.bntime {
   display: inline-block;
   color: rgba(255, 255, 255, 0.5);
   padding: 0 10px;
   font-size: 12px;
-} */
-/* .popular-news {
+}
+.popular-news {
   display: flex;
   flex-wrap: wrap;
   margin: 30px 5%;
