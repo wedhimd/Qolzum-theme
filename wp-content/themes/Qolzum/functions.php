@@ -2,8 +2,8 @@
 
 function load_stylesheets()
 {
-    // loading main bootstrap 4.0.0 CDN
-    wp_enqueue_style("bootstrap", "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+    // loading main bootstrap 5.0.2 CDN
+    wp_enqueue_style("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 
     // loading font awsome css CDN
     wp_enqueue_style("font-awsome", "https://use.fontawesome.com/releases/v5.7.1/css/all.css");
