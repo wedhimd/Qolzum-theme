@@ -1,0 +1,84 @@
+.widget{
+    .widget-content{
+        .opinion-cards{
+            width: 100%;
+            .box{
+                
+                max-width: 21.875rem;
+                margin: 0.625rem auto;
+                padding: 0.325rem;
+                border: 0.09375rem solid rgb(117, 115, 115);
+                border-radius: 5%;
+
+                .heading{
+                    // position: relative;
+                    background-color: #ece4db;
+                    border-radius: 5%;
+                }
+
+                h2{
+                    // position: absolute;
+                    // top: 30px;
+                    // left: 30px;
+                    margin-bottom: 0.3125rem;
+                    padding-top: 0.3125rem;
+                }
+                h4{
+                    margin: 0.375rem 0;
+                    padding: 0.375rem;
+                }
+
+                img{
+                    max-width: 100px;
+                    height: 100px;
+                    display: block;
+                    object-fit: cover;
+                    padding: 0.3125rem;
+                    border-radius: 10%;
+                }
+                .heading, .text{
+                    text-align: center;
+                    width: 100%;
+                    padding: 0 0.3125rem;
+                    min-width: 18.75rem;
+                }
+
+                p{
+                    margin: 0.625rem 0;
+                }
+
+                a{
+                    display: inline-block;
+                    background: $mainColor;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 0.7rem 1.25rem 0.5rem;
+                    border-radius: 10%;
+                }
+            }
+        }
+
+
+        @include breakpoint-up(medium){
+            .opinion-cards{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .box{
+                    max-width: 43.75rem;
+
+                    img{
+                        float: right;
+                    }
+
+                    .heading, .text{
+                        float: right;
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
