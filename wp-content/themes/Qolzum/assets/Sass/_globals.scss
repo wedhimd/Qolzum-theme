@@ -21,9 +21,7 @@ body {
   min-height: 300vh;
   background-color: #eee;
 
-  @include breakpoint-up(large) {
-    font-size: $font-med;
-  }
+
 
   &.noscroll {
     overflow: hidden;
@@ -62,6 +60,9 @@ h2 {
 p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
+   @include breakpoint-down(small){
+     font-size: $font-sm;
+   }
 }
 
 a,

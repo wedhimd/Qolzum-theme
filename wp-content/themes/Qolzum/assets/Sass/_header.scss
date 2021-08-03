@@ -17,9 +17,7 @@
   }
 
   h1 {
-    margin: auto 0;
     color: white;
-    margin-bottom: -25px;
   }
 
   .social-icons {
@@ -30,6 +28,7 @@
     i {
       margin: 0 7px;
       cursor: pointer;
+      color: $white;
     }
   }
 

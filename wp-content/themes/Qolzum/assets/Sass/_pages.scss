@@ -2,17 +2,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-left: 70px;
     &__banner{
         background-color: aqua;
-    }
-
-    &__container {
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-left: 50px;
-        margin-right: 50px;
-        max-width: 1280px;
     }
 
     .card{
@@ -28,7 +19,7 @@
     }
 
     &__title{
-            font-size: $font-xlg;
+            font-size: $font-lg;
             font-weight: 700;
             margin-bottom: 0.6rem;
             color: $mainColor;
@@ -60,8 +51,14 @@
 
     @include breakpoint-down(medium){
 
-        margin-left: 60px;
-        margin-right: -30px;
+        &__title{
+            font-size: $font-med;
+        }
+
+        &__main-section{
+           padding-left: 0.5rem;
+        }
+
         .container{
             justify-content: center;
             .col-8 {
@@ -80,26 +77,5 @@
             }
         }
 
-        .container{
-            justify-content: center;
-            .col-7 {
-                width: 100%;
-            }
-
-            .col-3 {
-                width: 100%;
-            }
-
-            .col-2 {
-                display: none;
-            }
-            
-            .row{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-
-            }
-        }
     }
 }

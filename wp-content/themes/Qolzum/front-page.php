@@ -95,8 +95,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -105,8 +105,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -115,8 +115,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -125,8 +125,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -144,8 +144,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -154,8 +154,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -164,8 +164,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -174,8 +174,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -194,8 +194,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -204,8 +204,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -224,8 +224,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -234,8 +234,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -254,8 +254,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -264,8 +264,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -284,8 +284,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -294,8 +294,8 @@
                                     <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                     <div class="card__content">
                                         <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة 
-                                        </div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة 
+                                        </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
@@ -313,8 +313,8 @@
                                 <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </div>
+                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                    </p>
                                     <div class="card__readmore">أكمل القراءة</div>
                                 </div>
                             </a>
@@ -323,8 +323,8 @@
                                 <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
                                 <div class="card__content">
                                     <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <div class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </div>
+                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                    </p>
                                     <div class="card__readmore">أكمل القراءة</div>
                                 </div>
                             </a>
