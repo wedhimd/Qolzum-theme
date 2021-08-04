@@ -31,10 +31,8 @@ btnHamburger.addEventListener("click", function(event){
         body.classList.remove(".noscroll");
         header.classList.remove("open");
         fadeElements.forEach(function(element){
-            
             element.classList.add("fade-out")
             element.classList.remove("fade-in")
-            
         })
         
     }else{ // open hamburger menu
@@ -44,7 +42,6 @@ btnHamburger.addEventListener("click", function(event){
         fadeElements.forEach(function(element){
             element.classList.add("fade-in")
             element.classList.remove("fade-out")
-            
         });
         
     }

@@ -241,9 +241,6 @@ button:hover,
   color: #ffffff;
 }
 @media screen and (max-width: 39.9375em) {
-  .website-header {
-    background-color: yellow;
-  }
   .website-header img {
     width: 35px;
     height: 35px;
@@ -301,6 +298,7 @@ button:hover,
 }
 .header__menu {
   position: absolute;
+  z-index: 99;
   width: calc(100% - 3rem);
   left: 50%;
   transform: translateX(-50%);
