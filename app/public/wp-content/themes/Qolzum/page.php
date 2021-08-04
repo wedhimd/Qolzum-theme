@@ -6,10 +6,10 @@
             <div class="container  mt-2"> <!--main container start-->
                 <div class="row"> <!--main row start-->
                     
-                <div class="col-8"> <!-- col-7 start -->
+                <div class="col-8"> <!-- col-8 start -->
                     <div class="page__main-section ">
                         <h1 class="page__title"><?php the_title()?></h1>
-                        <div class="page__image" style="background-image: url('/dist/images/3.jpg');"></div>
+                        <div class="page__image" style="background-image: url(<?php echo get_theme_file_uri('assets/images/1.jpg')?>);"></div>
                         <div class="page__content">
                             <?php the_content();?>                     
                         </div>
@@ -81,8 +81,8 @@
                             </div>
                         </div>
                     </div>
-                </div> <!-- col-7 start -->
-                <!-- col-3 start -->
+                </div> <!-- col-8 start -->
+                <!-- col-4 start -->
                 <div class="col-4">
                         <!-- most recet widget start -->
                         <div class="widget">
@@ -271,7 +271,7 @@
                                 </ul>
                             </div>
                         </div>  <!-- most read widget end -->
-                    </div> <!-- col-3 end -->
+                    </div> <!-- col-4 end -->
                 </div> <!--main row end-->
             </div> <!--main container end-->
         </div> <!--page div end-->

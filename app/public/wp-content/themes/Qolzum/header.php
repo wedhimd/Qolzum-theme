@@ -19,7 +19,7 @@
                 the_custom_logo();
             } ?>
             <!-- <img src="assets/images/logo.png"> -->
-            <h1>القلزم للأخبار</h1>
+            <a href="<?php echo site_url() ?>"><h1>القلزم للأخبار</h1></a>
             <div class="social-icons">
                 <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
@@ -40,20 +40,26 @@
             <span></span>
           </a>
           <div class="header__links hide-for-mobile">
-            <a href="#">الرئيسية</a>
+            <a href="<?php echo site_url() ?>">الرئيسية</a>
             <a href="#">الأخبار العالمية</a>
             <a href="#">الأخبار المحلية</a>
-            <a href="#">أخبار الرياضة</a>
-            <a href="#">التكنلوجيا</a>
+            <a href="#">الإقتصاد</a>
+            <a href="#">الرياضة</a>
+            <a href="#">العلوم والتكنلوجيا</a>
+            <a href="#">الثقافة والفنون</a>
+            <a href="#">المنوعات </a>
           </div>
         </nav>
     
         <div class="header__menu has-fade">
-            <a href="#">الرئيسية</a>
+            <a href="<?php echo site_url() ?>">الرئيسية</a>
             <a href="#">الأخبار العالمية</a>
             <a href="#">الأخبار المحلية</a>
-            <a href="#">أخبار الرياضة</a>
-            <a href="#">التكنلوجيا</a>
+            <a href="#">الإقتصاد</a>
+            <a href="#">الرياضة</a>
+            <a href="#">العلوم والتكنلوجيا</a>
+            <a href="#">الثقافة والفنون</a>
+            <a href="#">المنوعات </a>
         </div>
         <div class="breaking-news-section">
                 <span id="btext">اﻷخبار العاجلة</span>

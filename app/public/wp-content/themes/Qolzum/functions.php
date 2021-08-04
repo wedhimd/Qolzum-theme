@@ -60,8 +60,6 @@ add_action('after_setup_theme', 'qolzum_custom_logo_setup');
 
 // menus support
 
-
-
 register_nav_menus(
     array(
         "top-menu" => __("Top Menu", "theme"),
@@ -72,3 +70,11 @@ register_nav_menus(
 
 add_image_size("smallest", 300, 300, true);
 add_image_size("largest", 700, 700, true);
+
+// title-tag support
+
+function qolzum_title(){
+    add_theme_support("title-tag");
+}
+
+add_action("after_setup_theme", "qolzum_title");

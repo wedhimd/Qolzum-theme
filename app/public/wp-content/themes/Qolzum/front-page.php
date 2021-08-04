@@ -247,7 +247,7 @@
                         <!-- Technology news start -->
                         <div class="block-container mt-5">
                             <h3 class="block-title">
-                                <span>أخبارالتكنلوجيا </span>
+                                <span>أخبار العلوم والتكنلوجيا </span>
                             </h3>
                             <div class="cards">
                                 <a href="#" class="card">
@@ -277,7 +277,7 @@
                         <!-- Cultural and Science news start -->
                         <div class="block-container mt-5">
                             <h3 class="block-title">
-                                <span>أخبار الثقافة والعلوم</span>
+                                <span>أخبار الثقافة والفنون</span>
                             </h3>
                             <div class="cards">
                                 <a href="#" class="card">
@@ -306,7 +306,7 @@
                         <!-- Mecilenious news start -->
                         <div class="block-container mt-5">
                         <h3 class="block-title">
-                            <span>منوعات </span>
+                            <span>أخبار المنوعات </span>
                         </h3>
                         <div class="cards">
                             <a href="#" class="card">
