@@ -16,7 +16,7 @@
                     </div>
                     <div class="container">
                         <div class="widget">
-                            <h3 class="widget-title">عنوان الصفحة </h3>
+                            <!-- <h3 class="widget-title">عنوان الصفحة </h3> -->
                             <div class="cards">
                                 <a href="#" class="card">
                                     <div class="card__image" style="background-image: url('/dist/images/1.jpg');"></div>
@@ -94,7 +94,7 @@
                                     <div class="latest-news-item clearfix">
                                         <?php 
                                         // Define our WP Query Parameters
-                                        $the_query = new WP_Query( 'posts_per_page=5' ); ?>
+                                        $the_query = new WP_Query( 'posts_per_page=4' ); ?>
                                         <?php 
                                         // Start our WP Query
                                         while ($the_query -> have_posts()) : $the_query -> the_post(); 
@@ -109,13 +109,13 @@
                                             </div>
                                             <div class="news-item-container">
                                                 <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                                <p class="news-exerpt">
+                                                <!-- <p class="news-exerpt">
                                                     <?php 
                                                     // Display the Post Excerpt
-                                                    the_excerpt(__('(...المزيد)')); ?>
-                                                </p>
+                                                  //  the_excerpt(__('(...المزيد)')); ?>
+                                                </p> -->
                                                 <div class="news-meta"> 
-                                                    <span class="news-date"> 21 يوليو 2021م </span>
+                                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
                                                 </div>
                                             </div>
                                         </li>

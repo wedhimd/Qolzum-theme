@@ -48,32 +48,32 @@
                 </section>
             </div>
 
-            <div id="latest">
+            <div id="latest-economic">
                 <h2 class="thumbnail-headings">الاقتصاد</h2>
                 <section class="news">
                     <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" >
+                        <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" width="300" height="200">
                         <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
                     </div>
                 </section>
                 <section class="news">
                     <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/2.jpg')?>" >
+                        <img src="<?php echo get_theme_file_uri('/assets/images/2.jpg')?>" width="300" height="200">
                         <p class="carousel-text">تنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في</p>
                     </div>
                 </section>
             </div>
-            <div id="our-picks">
+            <div id="latest-sport">
                 <h2 class="thumbnail-headings">الرياضة</h2>
                 <section class="news">
                     <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/3.jpg')?>">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/3.jpg')?>" width="300" height="200">
                         <p class="carousel-text"> الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، </p>
                     </div>
                 </section>
                 <section class="news">
                     <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/4.webp')?>">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/5.webp')?>" width="300" height="200">
                         <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
                     </div>
                 </section>

@@ -458,17 +458,17 @@ button:hover,
   background-color: black;
   margin-left: 0.3125rem;
 }
-.popular-news #latest {
+.popular-news #latest-economic {
   flex: 1;
 }
-.popular-news #latest h2 {
+.popular-news #latest-economic h2 {
   background-color: darkred;
   margin-left: 0.3125rem;
 }
-.popular-news #our-picks {
+.popular-news #latest-sport {
   flex: 1;
 }
-.popular-news #our-picks h2 {
+.popular-news #latest-sport h2 {
   background-color: darkblue;
   margin-left: 0.3125rem;
 }
@@ -485,16 +485,16 @@ button:hover,
 .popular-news .carousel-text {
   position: absolute;
   word-wrap: normal;
-  bottom: 0.3125rem;
+  bottom: 0;
   z-index: 2;
-  color: #fff;
-  font-size: 1.5rem;
+  color: #000;
+  font-size: 0.875rem;
   font-weight: bolder;
   padding: 0 0.625rem;
   transition-duration: 500ms;
-}
-.popular-news .carousel-text {
-  font-size: 1.125rem;
+  margin-bottom: 0;
+  line-height: 1.3;
+  background: white;
 }
 .popular-news .news-container {
   font-size: 1.125rem;
@@ -513,6 +513,9 @@ button:hover,
   font-weight: 300;
 }
 @media screen and (max-width: 63.9375em) {
+  .popular-news .carousel-text {
+    display: contents;
+  }
   .popular-news .carousel-caption {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -553,10 +556,10 @@ button:hover,
   .popular-news .carousel-caption h5 {
     display: none;
   }
-  .popular-news #latest {
+  .popular-news #latest-economic {
     flex: auto;
   }
-  .popular-news #our-picks {
+  .popular-news #latest-sport {
     flex: auto;
   }
 }

@@ -14,10 +14,7 @@
 
     <header>
         <div class="website-header">
-            <?php
-            if (function_exists('the_custom_logo')) {
-                the_custom_logo();
-            } ?>
+            <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
             <!-- <img src="assets/images/logo.png"> -->
             <a href="<?php echo site_url() ?>"><h1>القلزم للأخبار</h1></a>
             <div class="social-icons">
@@ -62,7 +59,7 @@
             <a href="#">المنوعات </a>
         </div>
         <div class="breaking-news-section">
-                <span id="btext">اﻷخبار العاجلة</span>
+                <span id="btext">عاجل</span>
             <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
                 <a href="#" class="breaking-news">
                     <p class="bntime">time</p>

@@ -38,11 +38,9 @@ function load_js()
 add_action("wp_enqueue_scripts", "load_js");
 
 
-add_theme_support("menus");
-add_theme_support("post-thumbnails");
 
-// custom logo support
-function qolzum_custom_logo_setup()
+// Qolzum theme support
+function qolzum_features()
 {
     [
         'header-text'          => ['site-title', 'site-description'],
@@ -52,29 +50,21 @@ function qolzum_custom_logo_setup()
         'flex-width'           => true,
         'unlink-homepage-logo' => true,
     ];
-
+    register_nav_menus(
+        array(
+            "top-menu" => __("Top Menu", "theme"),
+            "footer-menu" => __("Footer Menu", "theme"),
+        )
+    );
     add_theme_support('custom-logo');
+    add_theme_support("menus");
+    add_theme_support("post-thumbnails");
+    add_theme_support("title-tag");
+
 }
 
-add_action('after_setup_theme', 'qolzum_custom_logo_setup');
-
-// menus support
-
-register_nav_menus(
-    array(
-        "top-menu" => __("Top Menu", "theme"),
-        "footer-menu" => __("Footer Menu", "theme"),
-    )
-);
+add_action('after_setup_theme', 'qolzum_features');
 
 
 add_image_size("smallest", 300, 300, true);
 add_image_size("largest", 700, 700, true);
-
-// title-tag support
-
-function qolzum_title(){
-    add_theme_support("title-tag");
-}
-
-add_action("after_setup_theme", "qolzum_title");
