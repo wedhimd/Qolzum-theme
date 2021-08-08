@@ -1,18 +1,24 @@
 <?php get_header(); ?>
 <div class="container pt-5 pb-5">
-    <h1><?php single_cat_title() ?></h1>
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="card mt-4">
-                <div class="card-body">
-                    <?php if (has_post_thumbnail()) : ?>
-                        <img src="<?php the_post_thumbnail_url("smallest"); ?>" class="img-fluid">
-                    <?php endif; ?>
-                    <h3><?php the_title(); ?> </h3>
-                    <?php the_excerpt(); ?>
-                    <a href="<?php the_permalink() ?>" class="btn btn-success">المزيد</a>
+    <div class="block-container">
+        <h3 class="block-title">
+            <span><?php the_archive_title(); ?></span>
+        </h3>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <div class="cards">
+            <div class="card">
+            <?php if (has_post_thumbnail()) : ?>
+                <img src="<?php the_post_thumbnail_url("smallest"); ?>" class="card__image">
+            <?php endif; ?>
+                <div class="card__content">
+                    <div class="card__title"><?php the_title()?></div>
+                    <p class="card__snippet"><?php the_excerpt()?></p>
+                    <a href="<?php the_permalink()?>" class="card__readmore btn btn-success">أكمل القراءة</a>
                 </div>
             </div>
-    <?php endwhile;
-    endif; ?>
+        </div>
+        <?php endwhile;
+        endif; ?>
+    </div>
 </div>
 <?php get_footer() ?>
