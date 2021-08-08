@@ -93,8 +93,8 @@
 
                 img{
                   width: 100%;
-                  max-width: 600px;
-                  max-height: 400px;
+                  max-width: 605px;
+                  max-height: 405px;
                 }
 
                 .carousel-caption p::before{
@@ -129,13 +129,13 @@
             @include breakpoint-down(small){
               .carousel-inner{
                 width: 100%;
-                min-width: 332px;
+                min-width: 320px;
                 height: 300px;
 
                 .carousel-item{
                   img{ 
                     width: 100%;
-                    min-width: 331px;
+                    min-width: 320px;
                     height: 298px;
                   }
                 }

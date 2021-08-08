@@ -465,8 +465,8 @@ button:hover,
 }
 .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item img {
   width: 100%;
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 605px;
+  max-height: 405px;
 }
 .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item .carousel-caption p::before {
   content: "";
@@ -492,12 +492,12 @@ button:hover,
 @media screen and (max-width: 39.9375em) {
   .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner {
     width: 100%;
-    min-width: 332px;
+    min-width: 320px;
     height: 300px;
   }
   .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item img {
     width: 100%;
-    min-width: 331px;
+    min-width: 320px;
     height: 298px;
   }
 }
