@@ -12,23 +12,16 @@
                 <div class="breaking-news__link"><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
             </div>
         </div>
-        <!-- <div class="breaking-news-section">
-                <span id="btext">عاجل</span>
-            <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>
-                محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب
-                </a>
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>محمد علي يسلم على علي ويقول له ما في أي حاجة إضافة ، تعليق إقتراح
-                </a>
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>اليابان تطلق قمر صناعي جديد إلى المريخ
-                </a>
-            </marquee>
-        </div> -->
+
         <article class="popular-news">
-            <div class="featured">
+            <?php 
+                $featuredNews = new WP_Query(array(
+                "posts_per_page" => 4,
+                // "category_name" => ""
+                ));
+                while($featuredNews->have_posts()){
+                $featuredNews->the_post();?>
+                <div class="featured">
                 <h2 class="thumbnail-headings">آخر اﻷخبار</h2>
                 <section class="popular-news-carousel">
                     <div id="carouselHero" class="carouselHero">
@@ -40,23 +33,20 @@
                             </div> -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
+                                    <img src="<?php the_post_thumbnail_url( get_the_ID(), "smallest");?>" class="d-block"  alt="...">
                                     <div class="carousel-caption  d-md-block">
-                                        <h5>الفئة</h5>
-                                        <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </p>
+                                        <p><?php the_title()?> </p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
+                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block" alt="...">
                                     <div class="carousel-caption  d-md-block">
-                                        <h5>الفئة</h5>
                                         <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block w-100" alt="...">
+                                    <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" class="d-block" alt="...">
                                     <div class="carousel-caption  d-md-block">
-                                    <h5>الفئة</h5>
                                     <p>لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم</p>
                                     </div>
                                 </div>
@@ -73,6 +63,7 @@
                     </div>
                 </section>
             </div>
+            <?php }?>
 
             <div id="latest-economic">
                 <h2 class="thumbnail-headings">الاقتصاد</h2>

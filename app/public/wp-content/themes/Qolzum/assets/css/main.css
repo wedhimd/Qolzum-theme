@@ -388,9 +388,10 @@ button:hover,
   align-items: center;
 }
 .breaking-news__title {
-  background-color: #c00;
+  background-color: #e60000;
   color: #fff;
   padding: 15px;
+  font-weight: 700;
 }
 .breaking-news__body {
   height: 50px;
@@ -435,6 +436,16 @@ button:hover,
 .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-indicators {
   margin-bottom: 0;
 }
+.popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner {
+  width: 100%;
+  max-width: 605px;
+  max-height: 405px;
+  overflow: hidden;
+  position: relative;
+}
+.popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item {
+  overflow: hidden;
+}
 .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
   padding-top: 1rem;
@@ -452,7 +463,12 @@ button:hover,
   line-height: 1;
   margin-bottom: 0.25rem;
 }
-.popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item .carousel-caption::before {
+.popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 400px;
+}
+.popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item .carousel-caption p::before {
   content: "";
   position: absolute;
   top: 0;
@@ -461,6 +477,29 @@ button:hover,
   width: 5px;
   margin-right: 16px;
   background-color: #6aa5f1;
+}
+@media screen and (max-width: 63.9375em) {
+  .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner {
+    width: 100%;
+    min-width: 687px;
+  }
+  .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    min-width: 686px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner {
+    width: 100%;
+    min-width: 332px;
+    height: 300px;
+  }
+  .popular-news .featured .popular-news-carousel .carouselHero .carousel .carousel-inner .carousel-item img {
+    width: 100%;
+    min-width: 331px;
+    height: 298px;
+  }
 }
 .popular-news .featured h2 {
   background-color: black;
