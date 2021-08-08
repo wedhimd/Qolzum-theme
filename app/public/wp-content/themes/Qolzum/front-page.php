@@ -1,6 +1,32 @@
 <?php get_header(); ?>
 
     <main>
+        <div class="breaking-news-wrapper">
+            <div> <h3 class="breaking-news-title">عاجل</h3> </div>
+            <div class="news-ticker">
+                <div><a href="#">محمد علي يسلم على علي 1 </a></div>
+                <div><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div>
+                <div><a href="#">3 لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </a></div>
+                <div><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون يعقبها من الألم والأسي المحت 4</a></div>
+                <div><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
+                <div><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
+            </div>
+        </div>
+        <!-- <div class="breaking-news-section">
+                <span id="btext">عاجل</span>
+            <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
+                <a href="#" class="breaking-news">
+                    <p class="bntime">time</p>
+                محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب
+                </a>
+                <a href="#" class="breaking-news">
+                    <p class="bntime">time</p>محمد علي يسلم على علي ويقول له ما في أي حاجة إضافة ، تعليق إقتراح
+                </a>
+                <a href="#" class="breaking-news">
+                    <p class="bntime">time</p>اليابان تطلق قمر صناعي جديد إلى المريخ
+                </a>
+            </marquee>
+        </div> -->
         <article class="popular-news">
             <div class="featured">
                 <h2 class="thumbnail-headings">آخر اﻷخبار</h2>

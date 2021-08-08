@@ -340,27 +340,97 @@ button:hover,
 .header__links a:hover::before {
   opacity: 1;
 }
-.header .breaking-news-section {
+
+.breaking-news-title {
+  background-color: #c00;
+  color: #fff;
+  padding: 15px;
+}
+
+.breaking-news-wrapper {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.news-ticker {
+  height: 50px;
+  overflow: hidden;
+}
+
+.news-ticker > div a {
+  padding: 5px 15px;
+  height: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.news-ticker div:first-child {
+  animation: slider 15s linear infinite;
+}
+
+@keyframes slider {
+  0% {
+    margin-top: -400px;
+  }
+  10% {
+    margin-top: -400px;
+  }
+  20% {
+    margin-top: -320px;
+  }
+  25% {
+    margin-top: -320px;
+  }
+  35% {
+    margin-top: -240px;
+  }
+  40% {
+    margin-top: -240px;
+  }
+  50% {
+    margin-top: -160px;
+  }
+  55% {
+    margin-top: -160px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  70% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: 0;
+  }
+  99.99% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -400px;
+  }
+}
+.breaking-news-section {
   padding: 0.625rem;
   font-size: 0.75rem;
   font-weight: 400;
   display: flex;
 }
-.header .breaking-news-section marquee {
+.breaking-news-section marquee {
   padding-top: 0.6rem;
 }
 @media screen and (min-width: 40em) {
-  .header .breaking-news-section {
+  .breaking-news-section {
     padding: 0.8rem 1.875rem 0 3.75rem;
     height: 3.75rem;
     font-size: 1rem;
     font-weight: 600;
   }
-  .header .breaking-news-section marquee {
+  .breaking-news-section marquee {
     padding-top: 1rem;
   }
 }
-.header .breaking-news-section #btext {
+.breaking-news-section #btext {
   height: 1.6875rem;
   width: 6.25rem;
   margin: 0;
@@ -372,7 +442,7 @@ button:hover,
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
 }
 @media screen and (min-width: 40em) {
-  .header .breaking-news-section #btext {
+  .breaking-news-section #btext {
     height: 2.5rem;
     width: 10rem;
     margin: 0;
@@ -386,17 +456,17 @@ button:hover,
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 35% 100%);
   }
 }
-.header .breaking-news-section marquee .breaking-news {
+.breaking-news-section marquee .breaking-news {
   padding: 1.875rem;
   color: #627379;
   text-decoration: none;
   font-weight: 800;
 }
-.header .breaking-news-section marquee .breaking-news:hover {
+.breaking-news-section marquee .breaking-news:hover {
   color: #e08b6c;
   cursor: pointer;
 }
-.header .breaking-news-section marquee .breaking-news .bntime {
+.breaking-news-section marquee .breaking-news .bntime {
   display: inline-block;
   color: rgba(255, 255, 255, 0.5);
   padding: 0 0.625rem;

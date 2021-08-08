@@ -58,7 +58,7 @@
             <a href="#">الثقافة والفنون</a>
             <a href="#">المنوعات </a>
         </div>
-        <div class="breaking-news-section">
+        <!-- <div class="breaking-news-section">
                 <span id="btext">عاجل</span>
             <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
                 <a href="#" class="breaking-news">
@@ -72,7 +72,7 @@
                     <p class="bntime">time</p>اليابان تطلق قمر صناعي جديد إلى المريخ
                 </a>
             </marquee>
-        </div>
+        </div> -->
         </section>
 
     </header>
