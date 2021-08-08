@@ -43,3 +43,21 @@
 .fade-out {
   animation: fade-out 200ms ease-in-out forwards;
 }
+
+// breaking news animation
+
+@keyframes breaking-news{
+  0%{margin-top: -400px;}
+  10%{margin-top: -400px;}
+  20%{margin-top: -320px;}
+  25%{margin-top: -320px;}
+  35%{margin-top: -240px;}
+  40%{margin-top: -240px;}
+  50%{margin-top: -160px;}
+  55%{margin-top: -160px;}
+  65%{margin-top: -80px;}
+  70%{margin-top: -80px;}
+  80%{margin-top: 0;}
+  99.99%{margin-top: 0;}
+  100%{margin-top: -400px;}
+}

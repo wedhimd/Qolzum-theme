@@ -1,15 +1,15 @@
 <?php get_header(); ?>
 
     <main>
-        <div class="breaking-news-wrapper">
-            <div> <h3 class="breaking-news-title">عاجل</h3> </div>
-            <div class="news-ticker">
-                <div><a href="#">محمد علي يسلم على علي 1 </a></div>
-                <div><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div>
-                <div><a href="#">3 لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </a></div>
-                <div><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون يعقبها من الألم والأسي المحت 4</a></div>
-                <div><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
-                <div><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
+        <div class="breaking-news">
+            <div> <h3 class="breaking-news__title">عاجل</h3> </div>
+            <div class="breaking-news__body">
+                <div class="breaking-news__link"><a href="#">محمد علي يسلم على علي 1 </a></div>
+                <div class="breaking-news__link"><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div>
+                <div class="breaking-news__link"><a href="#">3 لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </a></div>
+                <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون يعقبها من الألم والأسي المحت 4</a></div>
+                <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
+                <div class="breaking-news__link"><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
             </div>
         </div>
         <!-- <div class="breaking-news-section">
