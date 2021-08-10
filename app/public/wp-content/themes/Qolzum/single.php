@@ -30,10 +30,14 @@
             <!-- most recet widget start -->
             <div class="widget">
                 <h3 class="widget-title">آخر اﻷخبار</h3>
-                <?php 
+                <?php  $recentNews = new WP_Query(array(
                     // Define our WP Query Parameters
-                    $recentNews = new WP_Query( 'posts_per_page=4' ); 
-                ?>
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'category_name' => 'news',
+                    'meta_query' => array(array('key' => '_thumbnail_id')),
+                    "posts_per_page" => 4,
+                )); ?>
 
                 <?php 
                     // Start our WP Query
@@ -62,7 +66,7 @@
                                         } ?> <a href="<?php the_permalink(); ?>">...  المزيد</a>
                                     </p>
                                     <div class="news-meta">
-                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
+                                    <span class="news-date"> <?php the_modified_date('j  F,  Y'); ?> م</span>
                                     </div>
                                 </div>
                             </div>
@@ -75,6 +79,7 @@
                     wp_reset_postdata();
                 ?>
             </div> <!-- most recet widget end -->
+            
                     <!-- Categories widget-->
                     <div class="card mb-4">
                         <!-- <div class="card-header">Categories</div>

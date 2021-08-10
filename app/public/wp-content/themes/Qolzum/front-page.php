@@ -36,23 +36,25 @@
                             </div> -->
                             <div class="carousel-inner">
                                 <?php  $featuredNews = new WP_Query(array(
-                                    "posts_per_page" => 4,
-                                    // "category_name" => ""
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'news',
+                                    'meta_query' => array(array('key' => '_thumbnail_id')),
+                                    "posts_per_page" => 6,
                                 ));
                                 $firstSlide = 0;
                                 while($featuredNews->have_posts()){
                                     $featuredNews->the_post(); $firstSlide ++ ?>
-
-                                <?php if($firstSlide == 1) {?>
-                                    <div class="carousel-item active">
-                                <?php }else {?>
-                                        <div class="carousel-item">
-                                <?php }?>
-                                    <img src="<?php the_post_thumbnail_url( get_the_ID(), "smallest");?>" class="d-block"  alt="...">
-                                    <div class="carousel-caption  d-md-block">
-                                        <p><?php the_title()?> </p>
+                                    <?php if($firstSlide == 1) {?>
+                                        <div class="carousel-item active">
+                                    <?php }else {?>
+                                            <div class="carousel-item">
+                                    <?php }?>
+                                        <img src="<?php the_post_thumbnail_url( get_the_ID(), "smallest");?>" class="d-block"  alt="...">
+                                        <div class="carousel-caption  d-md-block">
+                                            <p><?php the_title()?> </p>
+                                        </div>
                                     </div>
-                                </div>
                                 <?php } wp_reset_postdata();?>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -78,14 +80,15 @@
                         'category_name' => 'economy',
                         'posts_per_page' => 2,
                     )); ?>
-
-                    <?php    while($economyNews->have_posts()){
-                        $economyNews->the_post(); ?>
-                            <div class="news-container">
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
-                            </div>
-                    <?php } wp_reset_postdata() ?>
+                    <?php if ($economyNews->have_posts()) : while ($economyNews->have_posts()) : $economyNews->the_post(); ?>
+                        <?php if(has_post_thumbnail()): ?>
+                        <div class="news-container">
+                            <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                            <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                        </div>
+                        <?php endif?>
+                    <?php endwhile;
+                    endif; wp_reset_postdata();?>
                 </section>
             </div>
             <div id="latest-sport">
@@ -96,16 +99,17 @@
                         'post_type' => 'post',
                         'post_status' => 'publish',
                         'category_name' => 'sports',
+                        'meta_query' => array(array('key' => '_thumbnail_id')),
                         'posts_per_page' => 2,
                     )); ?>
 
-                    <?php    while($sportNews->have_posts()){
-                        $sportNews->the_post(); ?>
-                            <div class="news-container">
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
-                            </div>
-                    <?php } wp_reset_postdata() ?>
+                    <?php if ($sportNews->have_posts()) : while ($sportNews->have_posts()) : $sportNews->the_post(); ?>
+                        <div class="news-container">
+                            <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                            <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                        </div>
+                    <?php endwhile;
+                    endif; wp_reset_postdata();?>
                 </section>
                 <!-- <section class="news">
                     <div class="news-container">
@@ -378,10 +382,14 @@
                              <!-- most recet widget start -->
                             <div class="widget">
                                 <h3 class="widget-title">آخر اﻷخبار</h3>
-                                <?php 
+                                <?php  $recentNews = new WP_Query(array(
                                     // Define our WP Query Parameters
-                                    $recentNews = new WP_Query( 'posts_per_page=4' ); 
-                                ?>
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'news',
+                                    'meta_query' => array(array('key' => '_thumbnail_id')),
+                                    "posts_per_page" => 4,
+                                )); ?>
 
                                 <?php 
                                     // Start our WP Query
@@ -410,7 +418,7 @@
                                                         } ?> <a href="<?php the_permalink(); ?>">...  المزيد</a>
                                                     </p>
                                                     <div class="news-meta">
-                                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
+                                                    <span class="news-date"> <?php the_modified_date('j  F,  Y'); ?> م</span>
                                                     </div>
                                                 </div>
                                             </div>
