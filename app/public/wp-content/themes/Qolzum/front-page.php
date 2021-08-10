@@ -6,7 +6,7 @@
             <div class="breaking-news__body">
                 <?php 
                     $breakingNews = new WP_Query(array(
-                        "post_per_page" => "6",
+                        "posts_per_page" => 6,
                         // "category_name" => ""
                     ));
 
@@ -24,7 +24,7 @@
         </div>
 
         <article class="popular-news">
-                <div class="featured">
+            <div class="featured">
                 <h2 class="thumbnail-headings">آخر اﻷخبار</h2>
                 <section class="popular-news-carousel">
                     <div id="carouselHero" class="carouselHero">
@@ -71,32 +71,48 @@
             <div id="latest-economic">
                 <h2 class="thumbnail-headings">الاقتصاد</h2>
                 <section class="news">
-                    <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/1.jpg')?>" width="300" height="200">
-                        <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
-                    </div>
-                </section>
-                <section class="news">
-                    <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/2.jpg')?>" width="300" height="200">
-                        <p class="carousel-text">تنكر هؤلاء الرجال المفتونون بنشوة اللحظة الهائمون في</p>
-                    </div>
+                    <?php 
+                    $economyNews = new WP_Query(array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'category_name' => 'economy',
+                        'posts_per_page' => 2,
+                    )); ?>
+
+                    <?php    while($economyNews->have_posts()){
+                        $economyNews->the_post(); ?>
+                            <div class="news-container">
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                            </div>
+                    <?php } wp_reset_postdata() ?>
                 </section>
             </div>
             <div id="latest-sport">
                 <h2 class="thumbnail-headings">الرياضة</h2>
                 <section class="news">
-                    <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/3.jpg')?>" width="300" height="200">
-                        <p class="carousel-text"> الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحتم، </p>
-                    </div>
+                <?php 
+                    $sportNews = new WP_Query(array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'category_name' => 'sports',
+                        'posts_per_page' => 2,
+                    )); ?>
+
+                    <?php    while($sportNews->have_posts()){
+                        $sportNews->the_post(); ?>
+                            <div class="news-container">
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                            </div>
+                    <?php } wp_reset_postdata() ?>
                 </section>
-                <section class="news">
+                <!-- <section class="news">
                     <div class="news-container">
                         <img src="<?php echo get_theme_file_uri('/assets/images/5.webp')?>" width="300" height="200">
                         <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
                     </div>
-                </section>
+                </section> -->
             </div>
         </article>
 

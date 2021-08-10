@@ -16,7 +16,7 @@
                 </header>
                 <!-- Preview image figure-->
                 <?php if (has_post_thumbnail()) : ?>
-                    <img src="<?php the_post_thumbnail_url("smallest"); ?>" class="card__image">
+                    <img src="<?php the_post_thumbnail_url("largest"); ?>" class="card__image">
                     
                 <?php endif; ?>
                 <!-- Post content-->
