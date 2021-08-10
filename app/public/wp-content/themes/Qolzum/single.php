@@ -1,25 +1,5 @@
 <?php get_header(); ?>
 
-<!-- <div class="container pt-5 pb-5">
-    <div class="block-container">
-        <h3 class="block-title">
-            <span><?php the_title()?></span>
-        </h3>
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="card">
-            <?php if (has_post_thumbnail()) : ?>
-                <img src="<?php the_post_thumbnail_url("medium"); ?>" class="card__image">
-            <?php endif; ?>
-                <div class="card__content">
-                    <div class="card__title"><?php the_title()?></div>
-                    <p class="card__snippet"><?php the_content()?></p>
-                </div>
-            </div>
-        <?php endwhile;
-        endif; ?>
-    </div>
-</div> -->
-
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
@@ -36,7 +16,7 @@
                 </header>
                 <!-- Preview image figure-->
                 <?php if (has_post_thumbnail()) : ?>
-                    <figure class="mb-4"><img src="<?php the_post_thumbnail_url("smallest"); ?>" class="card__image"></figure>
+                    <img src="<?php the_post_thumbnail_url("smallest"); ?>" class="card__image">
                     
                 <?php endif; ?>
                 <!-- Post content-->
@@ -47,49 +27,54 @@
         </div>
         <!-- Side widgets-->
         <div class="col-lg-4">
+            <!-- most recet widget start -->
             <div class="widget">
                 <h3 class="widget-title">آخر اﻷخبار</h3>
+                <?php 
+                    // Define our WP Query Parameters
+                    $recentNews = new WP_Query( 'posts_per_page=4' ); 
+                ?>
+
+                <?php 
+                    // Start our WP Query
+                    while ($recentNews -> have_posts()) : $recentNews -> the_post(); 
+                    // Display the Post Title with Hyperlink
+                ?>
+
                 <div class="widget-content">
                     <ul class="latest-news">
-                        <div class="latest-news-item clearfix">
-                            <?php 
-                            // Define our WP Query Parameters
-                            $the_query = new WP_Query( 'posts_per_page=4' ); ?>
-                            <?php 
-                            // Start our WP Query
-                            while ($the_query -> have_posts()) : $the_query -> the_post(); 
-                            // Display the Post Title with Hyperlink
-                            ?>
-
-                            <li>
+                        <li>
+                            <div class="latest-news-item clearfix">
                                 <div class="item-thumbnail">
-                                    <a href="<?php the_permalink()?>">
+                                <a href="<?php the_permalink()?>">
                                         <?php if (has_post_thumbnail()) : ?>
-                                        <figure class="mb-4"><img src="<?php the_post_thumbnail_url(); ?>" width="700" height="500" class="latest-news-img"></figure>
+                                        <img src="<?php the_post_thumbnail_url(); ?>" class="latest-news-img">
                                         <?php endif; ?>
                                     </a>
                                 </div>
                                 <div class="news-item-container">
-                                    <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                    <!-- <p class="news-exerpt">
-                                        <?php 
-                                        // Display the Post Excerpt
-                                        //  the_excerpt(__('(...المزيد)')); ?>
-                                    </p> -->
-                                    <div class="news-meta"> 
-                                        <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
+                                    <h2 class="news-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                                    <p class="news-exerpt">
+                                        <?php if(has_excerpt()){
+                                            echo get_the_excerpt();
+                                        } else {
+                                            echo wp_trim_words(get_the_content(), 18);
+                                        } ?> <a href="<?php the_permalink(); ?>">...  المزيد</a>
+                                    </p>
+                                    <div class="news-meta">
+                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
                                     </div>
                                 </div>
-                            </li>
-                            <?php 
-                            // Repeat the process and reset once it hits the limit
-                            endwhile;
-                            wp_reset_postdata();
-                            ?>
-                        </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>   <!-- most recet widget start -->
+                <?php 
+                    // Repeat the process and reset once it hits the limit
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
+            </div> <!-- most recet widget end -->
                     <!-- Categories widget-->
                     <div class="card mb-4">
                         <!-- <div class="card-header">Categories</div>
@@ -109,6 +94,7 @@
                                         <li><a href="#!">Tutorials</a></li>
                                     </ul>
                                 </div>
+                      
                             </div>
                         </div> -->
                     </div>

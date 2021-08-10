@@ -84,108 +84,54 @@
                 </div> <!-- col-8 start -->
                 <!-- col-4 start -->
                 <div class="col-4">
-                        <!-- most recet widget start -->
-                        <div class="widget">
-                            <h3 class="widget-title">آخر اﻷخبار</h3>
-                            <div class="widget-content">
-                                <ul class="latest-news">
+                    <!-- most recet widget start -->
+            <div class="widget">
+                <h3 class="widget-title">آخر اﻷخبار</h3>
+                <?php 
+                    // Define our WP Query Parameters
+                    $recentNews = new WP_Query( 'posts_per_page=4' ); 
+                ?>
 
-                                <ul class="latest-news">
-                                    <div class="latest-news-item clearfix">
-                                        <?php 
-                                        // Define our WP Query Parameters
-                                        $the_query = new WP_Query( 'posts_per_page=4' ); ?>
-                                        <?php 
-                                        // Start our WP Query
-                                        while ($the_query -> have_posts()) : $the_query -> the_post(); 
-                                        // Display the Post Title with Hyperlink
-                                        ?>
+                <?php 
+                    // Start our WP Query
+                    while ($recentNews -> have_posts()) : $recentNews -> the_post(); 
+                    // Display the Post Title with Hyperlink
+                ?>
 
-                                        <li>
-                                            <div class="item-thumbnail">
-                                                <a href="#">
-                                                    <img src="/dist/images/1.jpg" class="latest-news-img" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="news-item-container">
-                                                <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-                                                <!-- <p class="news-exerpt">
-                                                    <?php 
-                                                    // Display the Post Excerpt
-                                                  //  the_excerpt(__('(...المزيد)')); ?>
-                                                </p> -->
-                                                <div class="news-meta"> 
-                                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <?php 
-                                        // Repeat the process and reset once it hits the limit
-                                        endwhile;
-                                        wp_reset_postdata();
-                                        ?>
+                <div class="widget-content">
+                    <ul class="latest-news">
+                        <li>
+                            <div class="latest-news-item clearfix">
+                                <div class="item-thumbnail">
+                                <a href="<?php the_permalink()?>">
+                                        <?php if (has_post_thumbnail()) : ?>
+                                        <img src="<?php the_post_thumbnail_url(); ?>" class="latest-news-img">
+                                        <?php endif; ?>
+                                    </a>
+                                </div>
+                                <div class="news-item-container">
+                                    <h2 class="news-title"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                                    <p class="news-exerpt">
+                                        <?php if(has_excerpt()){
+                                            echo get_the_excerpt();
+                                        } else {
+                                            echo wp_trim_words(get_the_content(), 18);
+                                        } ?> <a href="<?php the_permalink(); ?>">...  المزيد</a>
+                                    </p>
+                                    <div class="news-meta">
+                                    <span class="news-date"> <?php the_date('j  F,  Y'); ?> م</span>
                                     </div>
-                                </ul>
-                                    <li>
-                                        <div class="latest-news-item clearfix">
-                                            <div class="item-thumbnail">
-                                                <a href="#">
-                                                    <img src="/dist/images/1.jpg" class="latest-news-img" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="news-item-container">
-                                                <h2 class="news-title">العنوان</h2>
-                                                <p class="news-exerpt">
-                                                    وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،
-                                                </p>
-                                                <div class="news-meta"> 
-                                                <span class="news-date"> 21 يوليو 2021م </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="latest-news-item clearfix">
-                                            <div class="item-thumbnail">
-                                                <a href="#">
-                                                    <img src="/dist/images/1.jpg" class="latest-news-img" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="news-item-container">
-                                                <h2 class="news-title">العنوان</h2>
-                                                <p class="news-exerpt">
-                                                    وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،
-                                                </p>
-                                                <div class="news-meta"> 
-                                                <span class="news-date"> 21 يوليو 2021م </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="latest-news-item clearfix">
-                                            <div class="item-thumbnail">
-                                                <a href="#">
-                                                    <img src="/dist/images/1.jpg" class="latest-news-img" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="news-item-container">
-                                                <h2 class="news-title">العنوان</h2>
-                                                <p class="news-exerpt">
-                                                    وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة،
-                                                </p>
-                                                <div class="news-meta"> 
-                                                <span class="news-date"> 21 يوليو 2021م </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                </ul>
+                                </div>
                             </div>
-                        </div>   <!-- most recet widget start -->
+                        </li>
+                    </ul>
+                </div>
+                <?php 
+                    // Repeat the process and reset once it hits the limit
+                    endwhile;
+                    wp_reset_postdata();
+                ?>
+            </div> <!-- most recet widget end -->
 
                         <!-- most read widget start -->
                         <div class="widget">
