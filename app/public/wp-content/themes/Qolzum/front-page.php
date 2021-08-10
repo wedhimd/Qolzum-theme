@@ -4,8 +4,18 @@
         <div class="breaking-news">
             <div> <h3 class="breaking-news__title">عاجل</h3> </div>
             <div class="breaking-news__body">
-                <div class="breaking-news__link"><a href="#">محمد علي يسلم على علي 1 </a></div>
-                <div class="breaking-news__link"><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div>
+                <?php 
+                    $breakingNews = new WP_Query(array(
+                        "post_per_page" => "6",
+                        // "category_name" => ""
+                    ));
+
+                    while($breakingNews->have_posts()){
+                        $breakingNews->the_post(); ?>
+                        <div class="breaking-news__link"><a href="<?php the_permalink() ?>"> <?php the_title() ?> </a></div>
+                    <?php } wp_reset_postdata() ?>
+                
+                <!-- <div class="breaking-news__link"><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div> -->
                 <div class="breaking-news__link"><a href="#">3 لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </a></div>
                 <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون يعقبها من الألم والأسي المحت 4</a></div>
                 <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
@@ -25,19 +35,19 @@
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div> -->
                             <div class="carousel-inner">
-                            <?php  $featuredNews = new WP_Query(array(
-                                "posts_per_page" => 4,
-                                // "category_name" => ""
+                                <?php  $featuredNews = new WP_Query(array(
+                                    "posts_per_page" => 4,
+                                    // "category_name" => ""
                                 ));
                                 $firstSlide = 0;
                                 while($featuredNews->have_posts()){
                                     $featuredNews->the_post(); $firstSlide ++ ?>
 
-                                    <?php if($firstSlide == 1) {?>
-                                        <div class="carousel-item active">
-                                        <?php }else {?>
-                                <div class="carousel-item">
-                                    <?php }?>
+                                <?php if($firstSlide == 1) {?>
+                                    <div class="carousel-item active">
+                                <?php }else {?>
+                                        <div class="carousel-item">
+                                <?php }?>
                                     <img src="<?php the_post_thumbnail_url( get_the_ID(), "smallest");?>" class="d-block"  alt="...">
                                     <div class="carousel-caption  d-md-block">
                                         <p><?php the_title()?> </p>
