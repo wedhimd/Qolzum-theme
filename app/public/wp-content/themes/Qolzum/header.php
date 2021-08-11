@@ -36,43 +36,33 @@
             <span></span>
             <span></span>
           </a>
+
           <div class="header__links hide-for-mobile">
-            <a href="<?php echo site_url() ?>">الرئيسية</a>
-            <a href="#">الأخبار العالمية</a>
-            <a href="#">الأخبار المحلية</a>
-            <a href="#">الإقتصاد</a>
-            <a href="#">الرياضة</a>
-            <a href="#">العلوم والتكنلوجيا</a>
-            <a href="#">الثقافة والفنون</a>
-            <a href="#">المنوعات </a>
+              <ul class="flex">
+                  <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
+                  <li><a href="#">الأخبار العالمية</a></li>
+                  <li><a href="#">الأخبار المحلية</a></li>
+                  <li><a href="#">الإقتصاد</a></li>
+                  <li><a href="#">الرياضة</a></li>
+                  <li><a href="#">العلوم والتكنلوجيا</a></li>
+                  <li><a href="#">الثقافة والفنون</a></li>
+                  <li><a href="#">المنوعات </a></li>
+              </ul>
           </div>
         </nav>
     
         <div class="header__menu has-fade">
-            <a href="<?php echo site_url() ?>">الرئيسية</a>
-            <a href="#">الأخبار العالمية</a>
-            <a href="#">الأخبار المحلية</a>
-            <a href="#">الإقتصاد</a>
-            <a href="#">الرياضة</a>
-            <a href="#">العلوم والتكنلوجيا</a>
-            <a href="#">الثقافة والفنون</a>
-            <a href="#">المنوعات </a>
+            <ul>
+                <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
+                <li><a href="#">الأخبار العالمية</a></li>
+                <li><a href="#">الأخبار المحلية</a></li>
+                <li><a href="#">الإقتصاد</a></li>
+                <li><a href="#">الرياضة</a></li>
+                <li><a href="#">العلوم والتكنلوجيا</a></li>
+                <li><a href="#">الثقافة والفنون</a></li>
+                <li><a href="#">المنوعات </a></li>
+            </ul>
         </div>
-        <!-- <div class="breaking-news-section">
-                <span id="btext">عاجل</span>
-            <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>
-                محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب
-                </a>
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>محمد علي يسلم على علي ويقول له ما في أي حاجة إضافة ، تعليق إقتراح
-                </a>
-                <a href="#" class="breaking-news">
-                    <p class="bntime">time</p>اليابان تطلق قمر صناعي جديد إلى المريخ
-                </a>
-            </marquee>
-        </div> -->
         </section>
 
     </header>
