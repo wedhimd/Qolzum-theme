@@ -14,9 +14,9 @@
 
     <header>
         <div class="website-header">
-            <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
-            <!-- <img src="assets/images/logo.png"> -->
+            <img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار">
             <a href="<?php echo site_url() ?>"><h1>القلزم للأخبار</h1></a>
+            <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
             <div class="social-icons">
                 <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
@@ -27,10 +27,8 @@
         <section class="header">
         <div class="overlay has-fade"></div>
         <nav class="my-container my-container--pall flex flex-jc-sb flex-ai-c">
-          <a href="/" class="header__logo"><img src="<?php
-            if (function_exists('the_custom_logo')) {
-                the_custom_logo();
-            } ?>" alt="logo"></a>
+        <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
+        <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
           <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
             <span></span>
             <span></span>
