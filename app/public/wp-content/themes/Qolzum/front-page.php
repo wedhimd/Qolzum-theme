@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
     <main>
+        <!-- breaking news headlines start -->
         <div class="breaking-news">
             <div> <h3 class="breaking-news__title">عاجل</h3> </div>
             <div class="breaking-news__body">
@@ -21,8 +22,9 @@
                 <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
                 <div class="breaking-news__link"><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
             </div>
-        </div>
-
+        </div> <!-- breaking news headlines end -->
+        
+        <!-- carousel start -->
         <article class="popular-news">
             <div class="featured">
                 <h2 class="thumbnail-headings">آخر اﻷخبار</h2>
@@ -118,7 +120,7 @@
                     </div>
                 </section> -->
             </div>
-        </article>
+        </article> <!-- carousel start -->
 
         <section class="main-content mt-5">
             <div class="container"> <!-- Container start -->
@@ -130,47 +132,34 @@
                             <h3 class="block-title">
                                 <span>أخبار القرن الإفريقي</span>
                             </h3>
+                            <?php  $localNews = new WP_Query(array(
+                                    // Define our WP Query Parameters
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'local',
+                                    "posts_per_page" => 6,
+                                )); ?>
                             <div class="cards">
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
+                                <?php
+                                    // Start our WP Query
+                                    if ($localNews->have_posts()) : while ($localNews->have_posts()) : $localNews->the_post(); 
+                                ?>
+                            
+                                <a href="<?php the_permalink() ?>" class="card">
+                                        <?php if(has_post_thumbnail()) {?>
+                                        <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
+                                        <?php } else {?>
+                                            <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                        <?php } ?>
+                                        <div class="card__content">
+                                            <div class="card__title"><?php the_title() ?></div>
+                                            <p class="card__snippet">
+                                                <?php  echo wp_trim_words(get_the_content(), 18);?>
+                                            </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-                                
+                                <?php  endwhile; endif; wp_reset_postdata();?>                                
                             </div>
                         </div> <!--local news end-->
 
@@ -179,47 +168,34 @@
                             <h3 class="block-title">
                                 <span>الأخبار العالمية</span>
                             </h3>
+                            <?php  $worldNews = new WP_Query(array(
+                                    // Define our WP Query Parameters
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'world',
+                                    "posts_per_page" => 6,
+                                )); ?>
                             <div class="cards">
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
+                                <?php
+                                    // Start our WP Query
+                                    if ($worldNews->have_posts()) : while ($worldNews->have_posts()) : $worldNews->the_post(); 
+                                ?>
+                            
+                                <a href="<?php the_permalink() ?>" class="card">
+                                        <?php if(has_post_thumbnail()) {?>
+                                        <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
+                                        <?php } else {?>
+                                            <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                        <?php } ?>
+                                        <div class="card__content">
+                                            <div class="card__title"><?php the_title() ?></div>
+                                            <p class="card__snippet">
+                                                <?php  echo wp_trim_words(get_the_content(), 18);?>
+                                            </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/2.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/3.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-                                
+                                <?php  endwhile; endif; wp_reset_postdata();?>                                
                             </div>
                         </div>
                         <!--world news end-->                   
@@ -273,7 +249,7 @@
                             <div class="cards">
                                 <?php
                                     // Start our WP Query
-                                    if ($sportsFeaturedNews->have_posts()) : while ($sportsNews->have_posts()) : $sportsNews->the_post(); 
+                                    if ($sportsNews->have_posts()) : while ($sportsNews->have_posts()) : $sportsNews->the_post(); 
                                 ?>
                             
                                 <a href="<?php the_permalink() ?>" class="card">
@@ -300,27 +276,34 @@
                             <h3 class="block-title">
                                 <span>أخبار العلوم والتكنلوجيا </span>
                             </h3>
+                            <?php  $scienceNews = new WP_Query(array(
+                                    // Define our WP Query Parameters
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'science',
+                                    "posts_per_page" => 3,
+                                )); ?>
                             <div class="cards">
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
+                                <?php
+                                    // Start our WP Query
+                                    if ($scienceNews->have_posts()) : while ($scienceNews->have_posts()) : $scienceNews->the_post(); 
+                                ?>
+                            
+                                <a href="<?php the_permalink() ?>" class="card">
+                                        <?php if(has_post_thumbnail()) {?>
+                                        <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID(), $size = "smallest")?>');"></div>
+                                        <?php } else {?>
+                                            <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                        <?php } ?>
+                                        <div class="card__content">
+                                            <div class="card__title"><?php the_title() ?></div>
+                                            <p class="card__snippet">
+                                                <?php  echo wp_trim_words(get_the_content(), 18);?>
+                                            </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-                                
+                                <?php  endwhile; endif; wp_reset_postdata();?>                                
                             </div>
                         </div>
                         <!-- Technology news end -->
@@ -330,61 +313,75 @@
                             <h3 class="block-title">
                                 <span>أخبار الثقافة والفنون</span>
                             </h3>
+                            <?php  $culturalNews = new WP_Query(array(
+                                    // Define our WP Query Parameters
+                                    'post_type' => 'post',
+                                    'post_status' => 'publish',
+                                    'category_name' => 'cultural',
+                                    "posts_per_page" => 3,
+                                )); ?>
                             <div class="cards">
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                        </p>
+                                <?php
+                                    // Start our WP Query
+                                    if ($culturalNews->have_posts()) : while ($culturalNews->have_posts()) : $culturalNews->the_post(); 
+                                ?>
+                            
+                                <a href="<?php the_permalink() ?>" class="card">
+                                        <?php if(has_post_thumbnail()) {?>
+                                        <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
+                                        <?php } else {?>
+                                            <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                        <?php } ?>
+                                        <div class="card__content">
+                                            <div class="card__title"><?php the_title() ?></div>
+                                            <p class="card__snippet">
+                                                <?php  echo wp_trim_words(get_the_content(), 18);?>
+                                            </p>
                                         <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
-
-                                <a href="#" class="card">
-                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                    <div class="card__content">
-                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة 
-                                        </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
-                                    </div>
-                                </a>
-                                
+                                <?php  endwhile; endif; wp_reset_postdata();?>                                
                             </div>
                         </div> <!-- Cultural and Science news end -->
 
-                        <!-- Mecilenious news start -->
+                        <!-- Miscellaneous news start -->
                         <div class="block-container mt-5">
-                        <h3 class="block-title">
-                            <span>أخبار المنوعات </span>
-                        </h3>
-                        <div class="cards">
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                <div class="card__content">
-                                    <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </p>
-                                    <div class="card__readmore">أكمل القراءة</div>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                <div class="card__content">
-                                    <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </p>
-                                    <div class="card__readmore">أكمل القراءة</div>
-                                </div>
-                            </a>
-                            
-                        </div>
-                        </div> <!-- Mecilenious news end -->
+                            <h3 class="block-title">
+                                <span>أخبار المنوعات </span>
+                            </h3>
+                            <?php  $miscellaneousNews = new WP_Query(array(
+                                        // Define our WP Query Parameters
+                                        'post_type' => 'post',
+                                        'post_status' => 'publish',
+                                        'category_name' => 'miscellaneous',
+                                        "posts_per_page" => 3,
+                                )); ?>
+                            <div class="cards">
+                                    <?php
+                                        // Start our WP Query
+                                        if ($miscellaneousNews->have_posts()) : while ($miscellaneousNews->have_posts()) : $miscellaneousNews->the_post(); 
+                                    ?>
+                                
+                                    <a href="<?php the_permalink() ?>" class="card">
+                                            <?php if(has_post_thumbnail()) {?>
+                                            <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
+                                            <?php } else {?>
+                                                <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                            <?php } ?>
+                                            <div class="card__content">
+                                                <div class="card__title"><?php the_title() ?></div>
+                                                <p class="card__snippet">
+                                                    <?php  echo wp_trim_words(get_the_content(), 18);?>
+                                                </p>
+                                            <div class="card__readmore">أكمل القراءة</div>
+                                        </div>
+                                    </a>
+                                    <?php  endwhile; endif; wp_reset_postdata();?>                                
+                            </div>
+                        </div> <!-- Miscellaneous news end -->
 
                     </div> <!-- Main content column end -->
-                    
+
                     <!-- sidebar content column start -->
                     <div class="col-lg-4 col-md-12">
                         <!-- sidebar start  -->
@@ -615,14 +612,14 @@
                                 <div class="widget-content">
                                     <div class="categories">
                                         <ul>
-                                            <li><a href="#"> سياسة</a><span>65</span></li>
-                                            <li><a href="#"> إقتصاد</a><span>35</span></li>
-                                            <li><a href="#"> رياضة</a><span>34</span></li>
-                                            <li><a href="#"> التكنلوجيا</a><span>25</span></li>
-                                            <li><a href="#"> ثقافة وعلوم</a><span>40</span></li>
-                                            <li><a href="#"> منوعات </a><span>43</span></li>
-                                            <li><a href="#"> القرن الإفريقي</a><span>55</span></li>
-                                            <li><a href="#"> العالم</a><span>48</span></li>
+                                            <li><a href="#"> سياسة</a><span><?php echo count_cat_post("politics"); ?></span></li>
+                                            <li><a href="#"> القرن الإفريقي</a><span><?php echo count_cat_post("local"); ?></span></li>
+                                            <li><a href="#"> العالم</a><span><?php echo count_cat_post("world"); ?></span></li>
+                                            <li><a href="#"> إقتصاد</a><span><?php echo count_cat_post("economy"); ?></span></li>
+                                            <li><a href="#"> رياضة</a><span><?php echo count_cat_post("sports"); ?></span></li>
+                                            <li><a href="#"> العلوم والتكنلوجيا</a><span><?php echo count_cat_post("science"); ?></span></li>
+                                            <li><a href="#"> الثقافة والفنون</a><span><?php echo count_cat_post("cultural"); ?></span></li>
+                                            <li><a href="#"> منوعات </a><span><?php echo count_cat_post("miscellaneous"); ?></span></li>
                                         </ul>
                                     </div>
                                 </div>

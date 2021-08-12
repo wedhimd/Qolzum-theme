@@ -37,7 +37,14 @@ function load_js()
 }
 add_action("wp_enqueue_scripts", "load_js");
 
-
+// Posts per category counter
+function count_cat_post($cat){
+    $CategoryName = get_term_by('slug', $cat, 'category');
+    if(!$CategoryName){
+    return 0;
+    }
+    return $CategoryName->count;
+}
 
 // Qolzum theme support
 function qolzum_features()
