@@ -16,7 +16,7 @@
                 </header>
                 <!-- Preview image figure-->
                 <?php if (has_post_thumbnail()) : ?>
-                    <img src="<?php the_post_thumbnail_url("largest"); ?>" class="card__image">
+                    <img src="<?php the_post_thumbnail_url("large"); ?>" class="card__image">
                     
                 <?php endif; ?>
                 <!-- Post content-->
@@ -52,7 +52,7 @@
                                 <div class="item-thumbnail">
                                 <a href="<?php the_permalink()?>">
                                         <?php if (has_post_thumbnail()) : ?>
-                                        <img src="<?php the_post_thumbnail_url(); ?>" class="latest-news-img">
+                                        <img src="<?php the_post_thumbnail_url($size = "smallest"); ?>" class="latest-news-img">
                                         <?php endif; ?>
                                     </a>
                                 </div>

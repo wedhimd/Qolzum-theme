@@ -50,7 +50,7 @@
                                     <?php }else {?>
                                             <div class="carousel-item">
                                     <?php }?>
-                                        <img src="<?php the_post_thumbnail_url( get_the_ID(), "smallest");?>" class="d-block"  alt="...">
+                                        <img src="<?php the_post_thumbnail_url( get_the_ID(), "small");?>" class="d-block"  alt="...">
                                         <div class="carousel-caption  d-md-block">
                                             <p><?php the_title()?> </p>
                                         </div>
@@ -415,7 +415,7 @@
                                                 <div class="item-thumbnail">
                                                 <a href="<?php the_permalink()?>">
                                                         <?php if (has_post_thumbnail()) : ?>
-                                                        <img src="<?php the_post_thumbnail_url(); ?>" class="latest-news-img">
+                                                        <img src="<?php the_post_thumbnail_url($size = "smallest"); ?>" class="latest-news-img">
                                                         <?php endif; ?>
                                                     </a>
                                                 </div>

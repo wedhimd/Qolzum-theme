@@ -8,7 +8,7 @@
         <div class="cards">
             <div class="card">
             <?php if (has_post_thumbnail()) : ?>
-                <img src="<?php the_post_thumbnail_url("smallest"); ?>" class="card__image">
+                <img src="<?php the_post_thumbnail_url("small"); ?>" class="card__image">
             <?php endif; ?>
                 <div class="card__content">
                     <div class="card__title"><?php the_title()?></div>

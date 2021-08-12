@@ -15,7 +15,7 @@
                             <div class="cards">
                                 <a href="<?php the_permalink()?>" class="card">
                                 <?php if (has_post_thumbnail()) : ?>
-                                    <img src="<?php the_post_thumbnail_url("largest"); ?>" class="card__image">
+                                    <img src="<?php the_post_thumbnail_url("large"); ?>" class="card__image">
                                 <?php endif; ?>
                                     <!-- <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div> -->
                                     <div class="card__content">
