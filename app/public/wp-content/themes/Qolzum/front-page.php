@@ -308,22 +308,22 @@
                         </div>
                         <!-- Technology news end -->
 
-                        <!-- Cultural and Science news start -->
+                        <!-- Culture news start -->
                         <div class="block-container mt-5">
                             <h3 class="block-title">
                                 <span>أخبار الثقافة والفنون</span>
                             </h3>
-                            <?php  $culturalNews = new WP_Query(array(
+                            <?php  $cultureNews = new WP_Query(array(
                                     // Define our WP Query Parameters
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
-                                    'category_name' => 'cultural',
+                                    'category_name' => 'culture',
                                     "posts_per_page" => 3,
                                 )); ?>
                             <div class="cards">
                                 <?php
                                     // Start our WP Query
-                                    if ($culturalNews->have_posts()) : while ($culturalNews->have_posts()) : $culturalNews->the_post(); 
+                                    if ($cultureNews->have_posts()) : while ($cultureNews->have_posts()) : $cultureNews->the_post(); 
                                 ?>
                             
                                 <a href="<?php the_permalink() ?>" class="card">
@@ -342,7 +342,7 @@
                                 </a>
                                 <?php  endwhile; endif; wp_reset_postdata();?>                                
                             </div>
-                        </div> <!-- Cultural and Science news end -->
+                        </div> <!-- Culture news end -->
 
                         <!-- Miscellaneous news start -->
                         <div class="block-container mt-5">
@@ -612,14 +612,14 @@
                                 <div class="widget-content">
                                     <div class="categories">
                                         <ul>
-                                            <li><a href="#"> سياسة</a><span><?php echo count_cat_post("politics"); ?></span></li>
-                                            <li><a href="#"> القرن الإفريقي</a><span><?php echo count_cat_post("local"); ?></span></li>
-                                            <li><a href="#"> العالم</a><span><?php echo count_cat_post("world"); ?></span></li>
-                                            <li><a href="#"> إقتصاد</a><span><?php echo count_cat_post("economy"); ?></span></li>
-                                            <li><a href="#"> رياضة</a><span><?php echo count_cat_post("sports"); ?></span></li>
-                                            <li><a href="#"> العلوم والتكنلوجيا</a><span><?php echo count_cat_post("science"); ?></span></li>
-                                            <li><a href="#"> الثقافة والفنون</a><span><?php echo count_cat_post("cultural"); ?></span></li>
-                                            <li><a href="#"> منوعات </a><span><?php echo count_cat_post("miscellaneous"); ?></span></li>
+                                            <li><a href="/news/politics/"> سياسة</a><span><?php echo count_cat_post("politics"); ?></span></li>
+                                            <li><a href="/news/politics/local/"> القرن الإفريقي</a><span><?php echo count_cat_post("local"); ?></span></li>
+                                            <li><a href="/news/politics/world/"> العالم</a><span><?php echo count_cat_post("world"); ?></span></li>
+                                            <li><a href="/news/economy/"> إقتصاد</a><span><?php echo count_cat_post("economy"); ?></span></li>
+                                            <li><a href="/news/sports/"> رياضة</a><span><?php echo count_cat_post("sports"); ?></span></li>
+                                            <li><a href="/news/science/"> العلوم والتكنلوجيا</a><span><?php echo count_cat_post("science"); ?></span></li>
+                                            <li><a href="/news/culture/"> الثقافة والفنون</a><span><?php echo count_cat_post("culture"); ?></span></li>
+                                            <li><a href="/news/miscellaneous/"> منوعات </a><span><?php echo count_cat_post("miscellaneous"); ?></span></li>
                                         </ul>
                                     </div>
                                 </div>

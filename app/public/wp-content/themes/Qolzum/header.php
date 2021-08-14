@@ -38,13 +38,13 @@
           <div class="header__links hide-for-mobile">
               <ul class="flex">
                   <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
-                  <li><a href="#">الأخبار العالمية</a></li>
-                  <li><a href="#">الأخبار المحلية</a></li>
-                  <li><a href="#">الإقتصاد</a></li>
-                  <li><a href="#">الرياضة</a></li>
-                  <li><a href="#">العلوم والتكنلوجيا</a></li>
-                  <li><a href="#">الثقافة والفنون</a></li>
-                  <li><a href="#">المنوعات </a></li>
+                  <li><a href="<?php echo site_url("/news/politics/local/") ?>">الأخبار المحلية</a></li>
+                  <li><a href="<?php echo site_url("/news/politics/world/") ?>">الأخبار العالمية</a></li>
+                  <li><a href="<?php echo site_url("/news/economy/") ?>">الإقتصاد</a></li>
+                  <li><a href="<?php echo site_url("/news/sports/") ?>">الرياضة</a></li>
+                  <li><a href="<?php echo site_url("/news/science/") ?>">العلوم والتكنلوجيا</a></li>
+                  <li><a href="<?php echo site_url("/news/culture/") ?>">الثقافة والفنون</a></li>
+                  <li><a href="<?php echo site_url("/news/miscellaneous/") ?>">المنوعات </a></li>
               </ul>
           </div>
         </nav>
@@ -52,13 +52,13 @@
         <div class="header__menu has-fade">
             <ul>
                 <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
-                <li><a href="#">الأخبار العالمية</a></li>
-                <li><a href="#">الأخبار المحلية</a></li>
-                <li><a href="#">الإقتصاد</a></li>
-                <li><a href="#">الرياضة</a></li>
-                <li><a href="#">العلوم والتكنلوجيا</a></li>
-                <li><a href="#">الثقافة والفنون</a></li>
-                <li><a href="#">المنوعات </a></li>
+                <li><a href="<?php echo site_url("/news/politics/local/") ?>">الأخبار المحلية</a></li>
+                <li><a href="<?php echo site_url("/news/politics/world/") ?>">الأخبار العالمية</a></li>
+                <li><a href="<?php echo site_url("/news/politics/economy/") ?>">الإقتصاد</a></li>
+                <li><a href="<?php echo site_url("/news/politics/sports/") ?>">الرياضة</a></li>
+                <li><a href="<?php echo site_url("/news/politics/science/") ?>">العلوم والتكنلوجيا</a></li>
+                <li><a href="<?php echo site_url("/news/politics/culture/") ?>">الثقافة والفنون</a></li>
+                <li><a href="<?php echo site_url("/news/politics/miscellaneous/") ?>">المنوعات </a></li>
             </ul>
         </div>
         </section>
