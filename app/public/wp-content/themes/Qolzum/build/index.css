@@ -153,6 +153,22 @@
     margin-top: -400px;
   }
 }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -1311,6 +1327,16 @@ body.admin-bar .search-overlay {
   .site-header__search-trigger {
     display: none;
   }
+}
+.spinner-loader {
+  margin-top: 45px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid rgba(0, 0, 0, 0.2);
+  border-top-color: black;
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
 }
 
 /*# sourceMappingURL=index.css.map*/
