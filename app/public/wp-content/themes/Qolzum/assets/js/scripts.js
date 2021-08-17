@@ -5,26 +5,6 @@ const overlay = document.querySelector(".overlay");
 const fadeElements = document.querySelectorAll(".has-fade");
 const carouselHero = document.getElementById("carouselHero");
 
-// carousel
-
-// const mediaQueryList = window.matchMedia('screen and (min-width: 1023px)');
-
-// mediaQueryList.addEventListener('change', event => {
-//   if (event.matches) {
-//     carouselHero.classList.add("w-50");
-//   } else {
-//     carouselHero.classList.remove("w-50");
-//   }
-// })
-
-// if(mediaQueryList.matches) {
-//   carouselHero.classList.add("w-50");
-// }
-// else {
-//   carouselHero.classList.remove("w-50");
-// }
-
-//carousel
 btnHamburger.addEventListener("click", function(event){
     event.stopPropagation();
     if(header.classList.contains("open")){ // close hamburger menu

@@ -2,6 +2,21 @@
   visibility: hidden;
 }
 
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 @keyframes fade-in {
   from {
     visibility: hidden;
@@ -17,7 +32,23 @@
   }
 }
 .fade-in {
-  animation: fade-in 200ms ease-in-out forwards;
+  -webkit-animation: fade-in 200ms ease-in-out forwards;
+          animation: fade-in 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @keyframes fade-out {
@@ -35,7 +66,50 @@
   }
 }
 .fade-out {
-  animation: fade-out 200ms ease-in-out forwards;
+  -webkit-animation: fade-out 200ms ease-in-out forwards;
+          animation: fade-out 200ms ease-in-out forwards;
+}
+
+@-webkit-keyframes breaking-news {
+  0% {
+    margin-top: -400px;
+  }
+  10% {
+    margin-top: -400px;
+  }
+  20% {
+    margin-top: -320px;
+  }
+  25% {
+    margin-top: -320px;
+  }
+  35% {
+    margin-top: -240px;
+  }
+  40% {
+    margin-top: -240px;
+  }
+  50% {
+    margin-top: -160px;
+  }
+  55% {
+    margin-top: -160px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  70% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: 0;
+  }
+  99.99% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -400px;
+  }
 }
 
 @keyframes breaking-news {
@@ -404,7 +478,8 @@ button:hover,
   display: block;
 }
 .breaking-news__body div:first-child {
-  animation: breaking-news 15s linear infinite;
+  -webkit-animation: breaking-news 15s linear infinite;
+          animation: breaking-news 15s linear infinite;
 }
 @media screen and (max-width: 39.9375em) {
   .breaking-news__body {
@@ -769,7 +844,8 @@ button:hover,
   max-width: 100px;
   height: 100px;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   padding: 0.3125rem;
   border-radius: 10%;
 }
@@ -1003,7 +1079,8 @@ footer p {
   width: 100%;
   background: #383838;
   padding: 0.5rem 6.25rem;
-  text-align-last: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
   color: #999;
 }
 
@@ -1040,6 +1117,8 @@ footer p {
   }
 
   .recent-news img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -1233,4 +1312,5 @@ body.admin-bar .search-overlay {
     display: none;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=index.css.map*/

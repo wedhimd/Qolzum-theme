@@ -32,8 +32,11 @@ function load_js()
     // load bootstrap.bundle.min.js scripts 5.0.1 CDN
     wp_enqueue_script("bootstrap-bundle-min-js", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js");
 
-    // load custom scripts
-    wp_enqueue_script("custom-js", get_theme_file_uri("/assets/js/scripts.js"), "", 1, true);
+    // load main script
+    wp_enqueue_script("main-js", get_theme_file_uri("/assets/js/scripts.js"), "", 1, true);
+
+    // load search script
+    wp_enqueue_script("search-js", get_theme_file_uri("/assets/js/search.js"), "", 1, true);
 }
 add_action("wp_enqueue_scripts", "load_js");
 
