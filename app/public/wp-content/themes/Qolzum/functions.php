@@ -1,5 +1,13 @@
 <?php
 
+require get_theme_file_path("/includes/search-route.php");
+
+function qolzum_custom_REST_Api(){
+    register_rest_field("post", "authorName", array(
+        "get_callback" => function(){return "";} 
+    ));
+}
+
 function load_stylesheets()
 {
     // loading main bootstrap 5.0.2 CDN
@@ -34,6 +42,11 @@ function load_js()
 
     // load main script
     wp_enqueue_script("main-js", get_theme_file_uri("/build/index.js"), "", 1, true);
+
+    // localize
+    wp_localize_script("main-js", "dataObj", array(
+        "root_url" => get_site_url()
+    ));
 
 }
 add_action("wp_enqueue_scripts", "load_js");
@@ -83,4 +96,54 @@ function qolzum_custom_logo_setup()
 }
 
 add_action('after_setup_theme', 'qolzum_custom_logo_setup');
+
+
+
+function wpb_add_googleanalytics() {
+ 
+// Paste your Google Analytics tracking code from Step 4 here
+ 
+}
+add_action('wp_head', 'wpb_add_googleanalytics');
+
+// set post views
+function wpb_set_post_views($postID) {
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+//To keep the count accurate, lets get rid of prefetching
+remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+
+
+//track post view
+function wpb_track_post_views ($post_id) {
+    if ( !is_single() ) return;
+    if ( empty ( $post_id) ) {
+        global $post;
+        $post_id = $post->ID;    
+    }
+    wpb_set_post_views($post_id);
+}
+add_action( 'wp_head', 'wpb_track_post_views');
+
+
+// get post views
+function wpb_get_post_views($postID){
+    $count_key = 'wpb_post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 مشاهدات";
+    }
+    return $count.'  مشاهدات';
+}
 
