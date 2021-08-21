@@ -1,12 +1,15 @@
 <?php
 
-require get_theme_file_path("/includes/search-route.php");
+require get_theme_file_path("/inc/search-route.php");
 
 function qolzum_custom_REST_Api(){
     register_rest_field("post", "authorName", array(
-        "get_callback" => function(){return "";} 
+        'get_callback' => function() {return get_the_author();}
     ));
 }
+add_action('rest_api_init', 'qolzum_custom_REST_Api');
+
+
 
 function load_stylesheets()
 {
@@ -99,12 +102,12 @@ add_action('after_setup_theme', 'qolzum_custom_logo_setup');
 
 
 
-function wpb_add_googleanalytics() {
+// function wpb_add_googleanalytics() {
  
-// Paste your Google Analytics tracking code from Step 4 here
+// // Paste your Google Analytics tracking code from Step 4 here
  
-}
-add_action('wp_head', 'wpb_add_googleanalytics');
+// }
+// add_action('wp_head', 'wpb_add_googleanalytics');
 
 // set post views
 function wpb_set_post_views($postID) {

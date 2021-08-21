@@ -14,7 +14,6 @@
 
     <header>
         <div class="website-header">
-        <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
             <img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار">
             <a href="<?php echo site_url() ?>"><h1>القلزم للأخبار</h1></a>
             <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
@@ -61,6 +60,7 @@
                 <li><a href="<?php echo site_url("/news/politics/science/") ?>">العلوم والتكنلوجيا</a></li>
                 <li><a href="<?php echo site_url("/news/politics/culture/") ?>">الثقافة والفنون</a></li>
                 <li><a href="<?php echo site_url("/news/politics/miscellaneous/") ?>">المنوعات </a></li>
+                <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
             </ul>
         </div>
         </section>

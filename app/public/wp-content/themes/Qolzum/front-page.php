@@ -441,7 +441,6 @@
                             </div> <!-- most recet widget end -->
 
                             <!-- most read widget start -->
-
                             <div class="widget">
                                 <h3 class="widget-title">الأكثر قراءة </h3>
                                 <div class="widget-content">
