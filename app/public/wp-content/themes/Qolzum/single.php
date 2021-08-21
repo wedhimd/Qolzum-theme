@@ -10,9 +10,9 @@
                     <!-- Post title-->
                     <h1 class="fw-bolder mb-1"><?php the_title()?></h1>
                     <!-- Post meta content-->
-                    <div class="text-muted fst-italic mb-2">تم النشر في <?php the_time( 'j F, Y' )?> بواسطة  <?php the_author()?> </div>
+                    <div class="text-muted fst-italic mb-2">  <?php the_time( 'd/m/Y' )?> م</div>
                     <!-- Post categories-->
-                    <a class="" href="<?php the_permalink()?>"><?php the_category()?></a>
+                    <a class="flex flex-d-c" href="<?php the_permalink()?>"><?php the_category()?></a>
                 </header>
                 <!-- Preview image figure-->
                 <?php if (has_post_thumbnail()) : ?>

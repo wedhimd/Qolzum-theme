@@ -489,18 +489,30 @@
                                 <h3 class="widget-title">الرأي</h3>
                                 <div class="widget-content">
                                     <div class="opinion-cards">
-                                        <div class="box">
-                                            
-                                            <div class="heading">
-                                                <h2>علي نائب</h2>
-                                                <!-- <img src="..." alt=""> -->
+                                        
+                                        <?php  $opinions = new WP_Query(array(
+                                            // Define our WP Query Parameters
+                                            'post_type' => 'post',
+                                            'post_status' => 'publish',
+                                            'category_name' => 'opinions',
+                                            "posts_per_page" => 3,
+                                        )); ?>
+                                            <?php
+                                                // Start our WP Query
+                                                if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
+                                            ?>
+                                            <div class="box">
+                                                <div class="heading">
+                                                    <h2><?php the_author() ?> </h2>
+                                                    <!-- <img src="..." alt=""> -->
+                                                </div>
+                                                <div class="text">
+                                                    <h4><?php the_title() ?> </h4>
+                                                    <p> <?php  echo wp_trim_words(get_the_content(), 18);?></p>
+                                                    <a href="<?php the_permalink() ?> ">أكمل القراءة</a>
+                                                </div>
                                             </div>
-                                            <div class="text">
-                                                <h4>العنوان</h4>
-                                                <p>من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة</p>
-                                                <a href="#">أكمل القراءة</a>
-                                            </div>
-                                        </div>
+                                            <?php  endwhile; endif; ?>
                                         <div class="box">
                                             
                                             <div class="heading">

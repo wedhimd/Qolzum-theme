@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <div class="container pt-5 pb-5">
-    <div class="block-container">
-        <h3 class="block-title">
+<h3 class="block-title">
             <span><?php the_archive_title(); ?></span>
         </h3>
+    <div class="block-container flex">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="cards">
-            <div class="card">
+            <div class="card mx-2">
             <?php if (has_post_thumbnail()) : ?>
                 <img src="<?php the_post_thumbnail_url("small"); ?>" class="card__image">
             <?php endif; ?>

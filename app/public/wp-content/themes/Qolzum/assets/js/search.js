@@ -59,7 +59,7 @@ class Search {
           <div class="one-third">
             <h2 class="search-overlay__section-title">نتائج البحث</h2>
             ${results.generalInfo.length ? '<ul class="link-list min-list">' : "<p>ﻻ توجد نتائج مطابقة</p>"}
-              ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a> ${item.postType == "post" ? `by ${item.authorName}` : ""}</li>`).join("")}
+              ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join("")}
             ${results.generalInfo.length ? "</ul>" : ""}
           </div>
         </div>
@@ -85,7 +85,6 @@ class Search {
     document.body.classList.add("body-no-scroll")
     this.searchField.value = ""
     setTimeout(() => this.searchField.focus(), 301)
-    console.log("our open method just ran!")
     this.isOverlayOpen = true
     return false
   }
@@ -93,7 +92,6 @@ class Search {
   closeOverlay() {
     this.searchOverlay.classList.remove("search-overlay--active")
     document.body.classList.remove("body-no-scroll")
-    console.log("our close method just ran!")
     this.isOverlayOpen = false
   }
 

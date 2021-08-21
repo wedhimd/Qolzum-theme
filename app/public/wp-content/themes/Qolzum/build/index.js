@@ -209,9 +209,9 @@ class Search {
       this.resultsDiv.innerHTML = `
         <div class="row">
           <div class="one-third">
-            <h2 class="search-overlay__section-title">General Information</h2>
-            ${results.generalInfo.length ? '<ul class="link-list min-list">' : "<p>No general information matches that search.</p>"}
-              ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a> ${item.postType == "post" ? `by ${item.authorName}` : ""}</li>`).join("")}
+            <h2 class="search-overlay__section-title">نتائج البحث</h2>
+            ${results.generalInfo.length ? '<ul class="link-list min-list">' : "<p>ﻻ توجد نتائج مطابقة</p>"}
+              ${results.generalInfo.map(item => `<li><a href="${item.permalink}">${item.title}</a></li>`).join("")}
             ${results.generalInfo.length ? "</ul>" : ""}
           </div>
         </div>
@@ -237,7 +237,6 @@ class Search {
     document.body.classList.add("body-no-scroll");
     this.searchField.value = "";
     setTimeout(() => this.searchField.focus(), 301);
-    console.log("our open method just ran!");
     this.isOverlayOpen = true;
     return false;
   }
@@ -245,7 +244,6 @@ class Search {
   closeOverlay() {
     this.searchOverlay.classList.remove("search-overlay--active");
     document.body.classList.remove("body-no-scroll");
-    console.log("our close method just ran!");
     this.isOverlayOpen = false;
   }
 
@@ -255,7 +253,7 @@ class Search {
         <div class="search-overlay__top">
           <div class="container">
             <i class="fa fa-search search-overlay__icon" aria-hidden="true"></i>
-            <input type="text" class="search-term" placeholder="What are you looking for?" id="search-term">
+            <input type="text" class="search-term" placeholder="ماذا تبحث؟" id="search-term">
             <i class="fa fa-window-close search-overlay__close" aria-hidden="true"></i>
           </div>
         </div>

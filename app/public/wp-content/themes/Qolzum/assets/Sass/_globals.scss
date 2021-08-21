@@ -146,6 +146,10 @@ ul, ol{
   &-ai-c {
     align-items: center;
   }
+
+  &-d-c{
+    flex-direction: column;
+  }
 }
 
 // Buttons
