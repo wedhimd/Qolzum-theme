@@ -25,44 +25,55 @@
             </div>
         </div>
         <section class="header">
-        <div class="overlay has-fade"></div>
-        <nav class="my-container my-container--pall flex flex-jc-sb flex-ai-c">
-        <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
-        <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
-          <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-
-          <div class="header__links hide-for-mobile">
-              <ul class="flex">
-                  <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
-                  <li><a href="<?php echo site_url("/news/politics/local/") ?>">الأخبار المحلية</a></li>
-                  <li><a href="<?php echo site_url("/news/politics/world/") ?>">الأخبار العالمية</a></li>
-                  <li><a href="<?php echo site_url("/news/economy/") ?>">الإقتصاد</a></li>
-                  <li><a href="<?php echo site_url("/news/sports/") ?>">الرياضة</a></li>
-                  <li><a href="<?php echo site_url("/news/science/") ?>">العلوم والتكنلوجيا</a></li>
-                  <li><a href="<?php echo site_url("/news/culture/") ?>">الثقافة والفنون</a></li>
-                  <li><a href="<?php echo site_url("/news/miscellaneous/") ?>">المنوعات </a></li>
-                  <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-              </ul>
-          </div>
-        </nav>
-    
-        <div class="header__menu has-fade">
-            <ul>
-                <li><a href="<?php echo site_url() ?>">الرئيسية</a></li>
-                <li><a href="<?php echo site_url("/news/politics/local/") ?>">الأخبار المحلية</a></li>
-                <li><a href="<?php echo site_url("/news/politics/world/") ?>">الأخبار العالمية</a></li>
-                <li><a href="<?php echo site_url("/news/politics/economy/") ?>">الإقتصاد</a></li>
-                <li><a href="<?php echo site_url("/news/politics/sports/") ?>">الرياضة</a></li>
-                <li><a href="<?php echo site_url("/news/politics/science/") ?>">العلوم والتكنلوجيا</a></li>
-                <li><a href="<?php echo site_url("/news/politics/culture/") ?>">الثقافة والفنون</a></li>
-                <li><a href="<?php echo site_url("/news/politics/miscellaneous/") ?>">المنوعات </a></li>
-                <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-            </ul>
-        </div>
+            <div class="overlay has-fade"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid header__links hide-for-mobile">
+                <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
+                <a class="navbar-brand"  href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                    <a href="#" id="btnHamburger" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" class="navbar-toggler header__toggle hide-for-desktop">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="<?php echo site_url() ?>">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo site_url("/politics") ?>">الأخبار </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="<?php echo site_url("/politics/local") ?>">الأخبار المحلية</a></li>
+                            <li><a class="dropdown-item" href="<?php echo site_url("/politics/local") ?>">الأخبار المحلية</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/economy") ?>">الإقتصاد</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/sports") ?>">الرياضة</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/science") ?>">العلوم والتكنلوجيا</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/culture") ?>">الثقافة والفنون</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/miscellaneous") ?>">المنوعات </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="<?php echo site_url("/opinions") ?>">الآراء </a>
+                        </li>
+                        <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
         </section>
 
     </header>

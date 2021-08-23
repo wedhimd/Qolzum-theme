@@ -447,11 +447,12 @@ button:hover,
   color: #2d314d;
   text-align: center;
 }
-.header__links ul li:not(:first-child) {
+.header__links ul .nav-item {
   margin-right: 2rem;
 }
 .header__links ul li a {
   position: relative;
+  text-align: center;
   font-size: 0.875rem;
   color: #9698a6;
   transition: 300ms ease-in-out;
@@ -472,7 +473,7 @@ button:hover,
   color: #2d314d;
 }
 .header__links ul li a:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 .breaking-news {
