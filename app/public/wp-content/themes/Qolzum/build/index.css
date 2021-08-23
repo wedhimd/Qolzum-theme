@@ -1207,6 +1207,11 @@ footer p {
   }
 }
 
+.single .related-posts-after-content .related-thumb {
+  display: inline-block;
+  width: 32%;
+}
+
 .search-overlay {
   overflow-y: auto;
   overflow-x: hidden;
