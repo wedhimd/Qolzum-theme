@@ -4,7 +4,7 @@
     <h3 class="block-title">
         <span><?php the_title()?> </span>
     </h3>
-    <?php  $economyNews = new WP_Query(array(
+    <?php  $local = new WP_Query(array(
             // Define our WP Query Parameters
             'post_type' => 'post',
             'post_status' => 'publish',
@@ -14,7 +14,7 @@
     <div class="cards">
         <?php
             // Start our WP Query
-            if ($economyNews->have_posts()) : while ($economyNews->have_posts()) : $economyNews->the_post(); 
+            if ($local->have_posts()) : while ($local->have_posts()) : $local->the_post(); 
         ?>
     
         <a href="<?php the_permalink() ?>" class="card">

@@ -15,12 +15,6 @@
                         $breakingNews->the_post(); ?>
                         <div class="breaking-news__link"><a href="<?php the_permalink() ?>"> <?php the_title() ?> </a></div>
                     <?php } wp_reset_postdata() ?>
-                
-                <!-- <div class="breaking-news__link"><a href="#"> محمد علي يسلم على علي ويقول كل سنة ، وأنت طيب 2</a></div> -->
-                <div class="breaking-news__link"><a href="#">3 لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة </a></div>
-                <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون يعقبها من الألم والأسي المحت 4</a></div>
-                <div class="breaking-news__link"><a href="#">  الرجال المفتونون بنشوة اللحظة الهائمون في رغباتهم فلا يدركون ما يعقبها من الألم والأسي المحت 5</a></div>
-                <div class="breaking-news__link"><a href="#"> من أجل الحصول على ميزة أو فائدة؟ 6</a></div>
             </div>
         </div> <!-- breaking news headlines end -->
         
@@ -558,7 +552,7 @@
                                 <div class="widget-content">
                                 <div class="sidebar-tags">
                                         <ul>
-                                            <li><a href="#"> #سياسة</a></li>
+                                            <li><a href="<?php echo site_url("/tag/sports") ?>"> #سياسة</a></li>
                                             <li><a href="#"> #رياضة</a></li>
                                             <li><a href="#"> #إقتصاد</a></li>
                                             <li><a href="#"> #تكنلوجيا</a></li>

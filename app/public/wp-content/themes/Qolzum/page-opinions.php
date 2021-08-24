@@ -4,17 +4,17 @@
     <h3 class="block-title">
         <span><?php the_title()?> </span>
     </h3>
-    <?php  $sports = new WP_Query(array(
+    <?php  $opinions = new WP_Query(array(
             // Define our WP Query Parameters
             'post_type' => 'post',
             'post_status' => 'publish',
-            'category_name' => 'sports',
+            'category_name' => 'opinions',
             "posts_per_page" => 10,
         )); ?>
     <div class="cards">
         <?php
             // Start our WP Query
-            if ($sports->have_posts()) : while ($sports->have_posts()) : $sports->the_post(); 
+            if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
         ?>
     
         <a href="<?php the_permalink() ?>" class="card">
