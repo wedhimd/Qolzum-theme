@@ -1,13 +1,12 @@
-.main-content {
-     .block-title{
-         border-bottom: 0.125rem solid $titleColor;
-         color: $white;
-         font-size: 0.9275rem;
-         padding-bottom: 0.1875rem;
 
-         span{
-             background: $titleColor;
-             padding: 0.7rem 0.375rem 0.25rem;
-         }
-     }
- }
+.block-title{
+    border-bottom: 0.125rem solid $titleColor;
+    color: $white;
+    font-size: 0.9275rem;
+    padding-bottom: 0.1875rem;
+
+    span{
+        background: $titleColor;
+        padding: 0.7rem 0.375rem 0rem;
+    }
+}
