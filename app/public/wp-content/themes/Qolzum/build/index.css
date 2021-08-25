@@ -375,10 +375,16 @@ button:hover,
   color: #ffffff;
 }
 @media screen and (max-width: 39.9375em) {
+  .website-header {
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
   .website-header img {
-    width: 35px;
-    height: 35px;
-    padding: 5px;
+    float: left;
+    width: 60px;
+    height: 88px;
+    margin: -25px 0px;
   }
   .website-header h1 {
     display: none;
@@ -474,6 +480,11 @@ button:hover,
 }
 .header__links ul li a:hover::before {
   opacity: 0;
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
 }
 
 .breaking-news {

@@ -14,9 +14,13 @@
 
     <header>
         <div class="website-header">
-            <img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار">
-            <a href="<?php echo esc_url(site_url() )?>"><h1>القلزم للأخبار</h1></a>
-            <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?> 
+            <div class="flex">
+                <a href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
+            </div>
+            <div> 
+                <a href="<?php echo esc_url(site_url() )?>"><h1>القلزم للأخبار</h1></a>
+            </div>
             <div class="social-icons">
                 <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
@@ -28,8 +32,8 @@
             <div class="overlay has-fade"></div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid header__links hide-for-mobile">
-                <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
-                <a class="navbar-brand"  href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                    <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
+                    <a class="navbar-brand"  href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
                     <a href="#" id="btnHamburger" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" class="navbar-toggler header__toggle hide-for-desktop">
                         <span></span>
                         <span></span>
