@@ -3,7 +3,7 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-8">
-                <h3 class="block-title">
+                <h3 class="page__title block-title">
                     <span><?php the_title()?> </span>
                 </h3>
                 <div class="widget">
@@ -11,16 +11,10 @@
                         <div class="opinion">
                             <div class="opinion__boxes">
                                 <div class="box">
-                                    <?php  $opinions = new WP_Query(array(
-                                    // Define our WP Query Parameters
-                                    'post_type' => 'post',
-                                    'post_status' => 'publish',
-                                    'category_name' => 'opinions',
-                                    "posts_per_page" => 10,
-                                    )); ?>
                                     <?php
                                     // Start our WP Query
-                                    if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
+                                    query_posts('category_name=opinions');
+                                    if (have_posts()) : while (have_posts()) : the_post(); 
                                     ?>
                                     <div class="box__content">
                                         <img src="<?php echo get_theme_file_uri("/assets/images/logo.png")?>" alt="">
@@ -30,7 +24,7 @@
                                         <a  class="box__btn" href="<?php the_permalink() ?> ">أكمل القراءة</a>
                                     </div>
                                     
-                                    <?php  endwhile; endif; wp_reset_postdata();?> 
+                                    <?php  endwhile; endif; wp_reset_query();?> 
                             </div>
                             </div>
                         </div>
@@ -95,6 +89,4 @@
         <?php echo paginate_links()?>
     </div>
 </div>
-
-
 <?php get_footer()?>

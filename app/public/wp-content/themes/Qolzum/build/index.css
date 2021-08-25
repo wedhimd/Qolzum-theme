@@ -971,6 +971,7 @@ footer {
   position: relative;
   width: 100%;
   height: auto;
+  margin-top: auto;
   padding: 3.125rem 6.25rem;
   background: #333;
   display: flex;
