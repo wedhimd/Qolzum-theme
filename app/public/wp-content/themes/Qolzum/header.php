@@ -40,37 +40,37 @@
                         <span></span>
                     </a>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?php echo esc_url(site_url()) ?>">الرئيسية</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(site_url("/politics")) ?>">الأخبار </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/local")) ?>">الأخبار المحلية</a></li>
-                            <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/world")) ?>">الأخبار العالمية</a></li>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="<?php echo esc_url(site_url()) ?>">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(site_url("/politics")) ?>">الأخبار </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/local")) ?>">الأخبار المحلية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/world")) ?>">الأخبار العالمية</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/economy")) ?>">الإقتصاد</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/sports")) ?>">الرياضة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/science")) ?>">العلوم والتكنلوجيا</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/culture")) ?>">الثقافة والفنون</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/miscellaneous")) ?>">المنوعات </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(site_url("/opinions")) ?>">الآراء </a>
+                            </li>
+                            <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
                         </ul>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/economy")) ?>">الإقتصاد</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/sports")) ?>">الرياضة</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/science")) ?>">العلوم والتكنلوجيا</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/culture")) ?>">الثقافة والفنون</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/miscellaneous")) ?>">المنوعات </a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="<?php echo esc_url(site_url("/opinions")) ?>">الآراء </a>
-                        </li>
-                        <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
-                    </ul>
                     </div>
                 </div>
             </nav>

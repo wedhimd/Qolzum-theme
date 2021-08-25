@@ -87,6 +87,7 @@
                 </div> <!-- most recet widget end -->
             </div>
         </div>
+        <?php echo paginate_links()?>
     </div>
 </div>
 

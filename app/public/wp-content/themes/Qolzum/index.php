@@ -241,31 +241,31 @@
 
                         <!-- Mecilenious news start -->
                         <div class="block-container mt-5">
-                        <h3 class="block-title">
-                            <span>أخبار المنوعات </span>
-                        </h3>
-                        <div class="cards">
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                <div class="card__content">
-                                    <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </p>
-                                    <div class="card__readmore">أكمل القراءة</div>
-                                </div>
-                            </a>
+                            <h3 class="block-title">
+                                <span>أخبار المنوعات </span>
+                            </h3>
+                            <div class="cards">
+                                <a href="#" class="card">
+                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
+                                        <div class="card__readmore">أكمل القراءة</div>
+                                    </div>
+                                </a>
 
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
-                                <div class="card__content">
-                                    <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
-                                    <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
-                                    </p>
-                                    <div class="card__readmore">أكمل القراءة</div>
-                                </div>
-                            </a>
-                            
-                        </div>
+                                <a href="#" class="card">
+                                    <div class="card__image" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/1.jpg')?>);"></div>
+                                    <div class="card__content">
+                                        <div class="card__title">منطقية فيعرضهم هذا لمواجهة الظروف الأليمة</div>
+                                        <p class="card__snippet">من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة
+                                        </p>
+                                        <div class="card__readmore">أكمل القراءة</div>
+                                    </div>
+                                </a>
+                                
+                            </div>
                         </div> <!-- Mecilenious news end -->
 
                     </div> <!-- Main content column end -->
