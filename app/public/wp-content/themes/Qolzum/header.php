@@ -26,7 +26,7 @@
         </div>
         <section class="header">
             <div class="overlay has-fade"></div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid header__links hide-for-mobile">
                 <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
                 <a class="navbar-brand"  href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
@@ -35,10 +35,6 @@
                         <span></span>
                         <span></span>
                     </a>
-                    
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button> -->
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">

@@ -8,7 +8,7 @@
                 <?php 
                     $breakingNews = new WP_Query(array(
                         "posts_per_page" => 6,
-                        // "category_name" => ""
+                        "category_name" => "news"
                     ));
 
                     while($breakingNews->have_posts()){
@@ -25,11 +25,6 @@
                 <section class="popular-news-carousel">
                     <div id="carouselHero" class="carouselHero">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                            <!-- <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div> -->
                             <div class="carousel-inner">
                                 <?php  $featuredNews = new WP_Query(array(
                                     'post_type' => 'post',
@@ -107,14 +102,8 @@
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
                 </section>
-                <!-- <section class="news">
-                    <div class="news-container">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/5.webp')?>" width="300" height="200">
-                        <p class="carousel-text">لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم نشأت بالفعل،</p>
-                    </div>
-                </section> -->
             </div>
-        </article> <!-- carousel start -->
+        </article> <!-- carousel end -->
 
         <section class="main-content mt-5">
             <div class="container"> <!-- Container start -->
@@ -482,57 +471,30 @@
                             <div class="widget">
                                 <h3 class="widget-title">الرأي</h3>
                                 <div class="widget-content">
-                                    <div class="opinion-cards">
-                                        
-                                        <?php  $opinions = new WP_Query(array(
-                                            // Define our WP Query Parameters
-                                            'post_type' => 'post',
-                                            'post_status' => 'publish',
-                                            'category_name' => 'opinions',
-                                            "posts_per_page" => 3,
-                                        )); ?>
-                                            <?php
-                                                // Start our WP Query
-                                                if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
-                                            ?>
+                                    <div class="opinion">
+                                        <div class="opinion__boxes">
                                             <div class="box">
-                                                <div class="heading">
-                                                    <h2><?php the_author() ?> </h2>
-                                                    <!-- <img src="..." alt=""> -->
-                                                </div>
-                                                <div class="text">
+                                                <?php  $opinions = new WP_Query(array(
+                                                // Define our WP Query Parameters
+                                                'post_type' => 'post',
+                                                'post_status' => 'publish',
+                                                'category_name' => 'opinions',
+                                                "posts_per_page" => 3,
+                                                )); ?>
+                                                <?php
+                                                    // Start our WP Query
+                                                    if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
+                                                ?>
+                                                <div class="box__content">
+                                                    <img src="<?php echo get_theme_file_uri("/assets/images/logo.png")?>" alt="">
+                                                    <h5><?php the_author() ?> </h2>
                                                     <h4><?php the_title() ?> </h4>
                                                     <p> <?php  echo wp_trim_words(get_the_content(), 18);?></p>
-                                                    <a href="<?php the_permalink() ?> ">أكمل القراءة</a>
+                                                    <a class="box__btn" href="<?php the_permalink() ?> ">أكمل القراءة</a>
                                                 </div>
-                                            </div>
-                                            <?php  endwhile; endif; ?>
-                                        <div class="box">
-                                            
-                                            <div class="heading">
-                                                <h2>علي حمد</h2>
-                                                <!-- <img src="..." alt=""> -->
-                                            </div>
-                                            <div class="text">
-                                                <h4>العنوان</h4>
-                                                <p>من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة</p>
-                                                <a href="#">أكمل القراءة</a>
+                                                <?php  endwhile; endif; ?>
                                             </div>
                                         </div>
-
-                                        <div class="box">
-                                            
-                                            <div class="heading">
-                                                <h2>علي نائب</h2>
-                                                <!-- <img src="..." alt=""> -->
-                                            </div>
-                                            <div class="text">
-                                                <h4>العنوان</h4>
-                                                <p>من منا لم يتحمل جهد بدني شاق إلا من أجل الحصول على ميزة أو فائدة؟ ولكن من لديه الحق أن ينتقد شخص ما أراد أن يشعر بالسعادة</p>
-                                                <a href="#">أكمل القراءة</a>
-                                            </div>
-                                        </div>
-                                        
                                     </div>
                                 </div>
                             </div> <!-- latest opinion widget  end -->
@@ -592,58 +554,6 @@
                         </div> <!-- sidebar end-->
                     </div>  <!-- sidebar content column start -->
                 </div> <!--Main row end-->
-                <!-- authors list start -->
-                <!-- <div class="block-container mt-5">
-                    <h3 class="block-title">
-                        <span>كتاب القلزم </span>
-                    </h3>
-                    <div class="authors__cards">
-
-                        <div class="cards">
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/dist/images/Ali.N.jpg');"></div>
-                                <div class="card__content">
-                                    <div class="card__title">علي نائب </div>
-                                    <div class="card__readmore">رئيس التحرير</div>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/dist/images/Ali.N.jpg');"></div>
-                                <div class="card__content">
-                                    <div class="card__title">علي نائب </div>
-                                    <div class="card__readmore">رئيس التحرير</div>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/dist/images/Ali.N.jpg');"></div>
-                                <div class="card__content">
-                                    <div class="card__title">علي نائب </div>
-                                    <div class="card__readmore">رئيس التحرير</div>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/dist/images/Ali.N.jpg');"></div>
-                                <div class="card__content">
-                                    <div class="card__title">علي نائب </div>
-                                    <div class="card__readmore">رئيس التحرير</div>
-                                </div>
-                            </a>
-
-                            <a href="#" class="card">
-                                <div class="card__image" style="background-image: url('/dist/images/Ali.N.jpg');"></div>
-                                <div class="card__content">
-                                    <div class="card__title">علي نائب </div>
-                                    <div class="card__readmore">رئيس التحرير</div>
-                                </div>
-                            </a>
-                            
-                        </div>
-                    </div>
-                </div> -->
-                <!-- authors list end -->
             </div> <!-- Container end -->
         </section>
     </main>
