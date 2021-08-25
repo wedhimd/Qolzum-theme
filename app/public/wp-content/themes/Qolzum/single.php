@@ -16,7 +16,7 @@
                 </header>
                 <!-- Preview image figure-->
                 <?php if (has_post_thumbnail()) : ?>
-                    <img src="<?php the_post_thumbnail_url("large"); ?>" class="card__image">
+                    <img src="<?php the_post_thumbnail_url("large"); ?>" style="width: 100%;" class="card__image">
                     
                 <?php endif; ?>
                 <!-- Post content-->
@@ -38,7 +38,7 @@
                             'caller_get_posts'=>1
                 ); ?>
                 <div class="widget">
-                    <h3 class="widget-title"> مواضيع مشابهة أخرى</h3>
+                    <h3 class="widget-title"> مواضيع أخرى قد تعجبك</h3>
                     <div class="flex">
                         <?php        
                             $relatedPosts = new wp_query( $args );
@@ -55,7 +55,7 @@
                                                 <?php if (has_post_thumbnail()) { ?>
                                                     <img src="<?php the_post_thumbnail_url($size = "smallest"); ?>" class="latest-news-img">
                                                 <?php }else { ?>
-                                                    <img src="https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp" class="latest-news-img">
+                                                    <img src="https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp"  class="latest-news-img">
                                                 <?php }?>
                                             </a>
                                         </div>

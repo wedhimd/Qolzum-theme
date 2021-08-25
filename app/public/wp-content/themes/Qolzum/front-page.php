@@ -129,17 +129,17 @@
                                 ?>
                             
                                 <a href="<?php the_permalink() ?>" class="card">
-                                        <?php if(has_post_thumbnail()) {?>
-                                        <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
-                                        <?php } else {?>
-                                            <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
-                                        <?php } ?>
-                                        <div class="card__content">
+                                    <?php if(has_post_thumbnail()) {?>
+                                    <div class="card__image" style="background-image: url('<?php echo the_post_thumbnail_url(get_the_ID())?>');"></div>
+                                    <?php } else {?>
+                                        <div class="card__image" style="background-image: url('https://res.cloudinary.com/wedhimd/image/upload/v1628691789/Qolzum/sport_jl6hs2.webp');"></div>
+                                    <?php } ?>
+                                    <div class="card__content">
                                             <div class="card__title"><?php the_title() ?></div>
                                             <p class="card__snippet">
                                                 <?php  echo wp_trim_words(get_the_content(), 18);?>
                                             </p>
-                                        <div class="card__readmore">أكمل القراءة</div>
+                                            <div class="card__readmore">أكمل القراءة</div>
                                     </div>
                                 </a>
                                 <?php  endwhile; endif; wp_reset_postdata();?>                                
