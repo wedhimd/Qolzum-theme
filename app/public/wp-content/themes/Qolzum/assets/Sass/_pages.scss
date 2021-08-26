@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    min-height: calc(300vh - 410px);
 
     .card{
         flex: 1 0 14rem;
@@ -47,6 +48,8 @@
     }
 
     @include breakpoint-down(medium){
+
+        min-height: calc(300vh - 810px);
 
         &__title{
             font-size: $font-med;

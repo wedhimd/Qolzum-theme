@@ -21,10 +21,18 @@ body {
   min-height: 300vh;
   background-color: #eee;
 
-
-
   &.noscroll {
     overflow: hidden;
+  }
+
+  main{
+    min-height: calc(300vh - 410px);
+  }
+
+  @include breakpoint-down(medium){
+    main{
+      min-height: calc(300vh - 810px);
+    }
   }
 }
 

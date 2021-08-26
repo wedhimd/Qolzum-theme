@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="page">
 <div class="container mt-5">
     <div class="row">
         <div class="col-lg-8">
@@ -166,5 +166,7 @@
         </div>
     </div>
 </div>
+</div>
+
 
 <?php get_footer() ?>

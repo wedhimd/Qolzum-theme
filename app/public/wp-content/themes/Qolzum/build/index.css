@@ -194,6 +194,14 @@ body {
 body.noscroll {
   overflow: hidden;
 }
+body main {
+  min-height: calc(300vh - 410px);
+}
+@media screen and (max-width: 63.9375em) {
+  body main {
+    min-height: calc(300vh - 810px);
+  }
+}
 
 h1,
 h2,
@@ -976,9 +984,10 @@ button:hover,
 footer {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 365px;
   margin-top: auto;
-  padding: 3.125rem 6.25rem;
+  padding: 1.2rem 6.25rem;
+  padding-bottom: 0;
   background: #333;
   display: flex;
   justify-content: space-between;
@@ -1081,7 +1090,7 @@ footer p {
 
 .contact .info li {
   display: flex;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .contact .info li span {
@@ -1111,10 +1120,16 @@ footer p {
        text-align-last: center;
   color: #999;
 }
+.copyrightText p {
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 991px) {
   footer {
-    padding: 2.5rem;
+    padding: 1.2rem 2.5rem;
+    padding-bottom: 0;
+    margin-top: auto;
+    height: 765px;
   }
 
   footer .container {
@@ -1123,7 +1138,7 @@ footer p {
 
   footer .container .sec {
     margin-right: 0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5;
   }
 
   footer .container .sec.about-us,
@@ -1154,6 +1169,7 @@ footer p {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  min-height: calc(300vh - 410px);
 }
 .page .card {
   flex: 1 0 14rem;
@@ -1191,6 +1207,9 @@ footer p {
   }
 }
 @media screen and (max-width: 63.9375em) {
+  .page {
+    min-height: calc(300vh - 810px);
+  }
   .page__title {
     font-size: 1.125rem;
   }
