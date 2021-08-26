@@ -16,7 +16,7 @@
                     </header>
                     <!-- Preview image figure-->
                     <?php if (has_post_thumbnail()) : ?>
-                        <img src="<?php the_post_thumbnail_url(); ?>" width="700" height="440" class="card__image">
+                        <img src="<?php the_post_thumbnail_url(); ?>" class="single__img card__image">
                         
                     <?php endif; ?>
                     <!-- Post content-->

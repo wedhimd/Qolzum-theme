@@ -188,3 +188,16 @@
 	color: transparent;
 	border-color: transparent;
 }
+
+.navbar{ 
+  .search-trigger {
+  margin-right: 20px;
+  padding: 0.5rem 1rem;
+  }
+
+  @include breakpoint-down(medium){
+    .search-trigger {
+      display: none;
+      }
+  }
+}

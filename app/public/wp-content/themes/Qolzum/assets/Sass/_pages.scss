@@ -41,6 +41,16 @@
         
     }
 
+    .single__img{
+        width: 100%;
+        height: 440px;
+
+        @include breakpoint-down(small){
+            width: 100%;
+            height: 220px;
+        }
+    }
+
     @include breakpoint-up(medium){
         &__image{
             flex: 0 0 28.75rem;

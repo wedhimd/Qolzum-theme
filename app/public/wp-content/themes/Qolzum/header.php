@@ -21,7 +21,9 @@
             <div> 
                 <a href="<?php echo esc_url(site_url() )?>"><h1>القلزم للأخبار</h1></a>
             </div>
+            
             <div class="social-icons">
+                <i class="fa fa-search search-trigger js-search-trigger" aria-hidden="true"></i>
                 <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
                 <i class="fab fa-instagram"></i>

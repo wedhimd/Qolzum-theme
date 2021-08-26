@@ -495,6 +495,16 @@ button:hover,
   border-color: transparent;
 }
 
+.navbar .search-trigger {
+  margin-right: 20px;
+  padding: 0.5rem 1rem;
+}
+@media screen and (max-width: 63.9375em) {
+  .navbar .search-trigger {
+    display: none;
+  }
+}
+
 .breaking-news {
   padding: 5px;
   display: flex;
@@ -1201,6 +1211,16 @@ footer p {
   height: 100%;
   padding: 1rem;
 }
+.page .single__img {
+  width: 100%;
+  height: 440px;
+}
+@media screen and (max-width: 39.9375em) {
+  .page .single__img {
+    width: 100%;
+    height: 220px;
+  }
+}
 @media screen and (min-width: 40em) {
   .page__image {
     flex: 0 0 28.75rem;
@@ -1318,20 +1338,11 @@ body.admin-bar .search-overlay {
 }
 
 .search-trigger {
-  display: none;
   color: #9698a6;
   position: relative;
   cursor: pointer;
-  top: 1px;
-  margin-right: 40px;
 }
 
-@media (min-width: 960px) {
-  .search-trigger {
-    display: inline-block;
-    top: 3px;
-  }
-}
 .search-trigger:hover {
   opacity: 0.65;
 }
@@ -1340,20 +1351,11 @@ body.admin-bar .search-overlay {
   cursor: pointer;
   color: #FFF;
   font-size: 1.2rem;
-  position: absolute;
-  top: 6px;
-  right: 16px;
 }
 
 @media (min-width: 530px) {
   .site-header__search-trigger {
-    top: 4px;
     font-size: 1.4rem;
-  }
-}
-@media (min-width: 960px) {
-  .site-header__search-trigger {
-    display: none;
   }
 }
 .spinner-loader {
@@ -1417,14 +1419,7 @@ body.admin-bar .search-overlay {
     margin: 10px 30%;
   }
   .wrapper .content-box {
-    transform: rotate(45deg);
-    text-align: center;
     padding: 8px;
-    width: 100%;
-    height: 100%;
-  }
-  .wrapper .content-box i {
-    display: inline;
   }
   .wrapper .content-box h1 {
     font-size: 3rem;
