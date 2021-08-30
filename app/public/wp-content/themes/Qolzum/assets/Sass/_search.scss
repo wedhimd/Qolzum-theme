@@ -55,7 +55,7 @@
     &__section-title {
       margin: 30px 0 1px 0;
       font-weight: 400;
-      color: rgb(59, 59, 116);
+      color: rgb(255, 255, 255);
       font-size: 2rem;
       padding: 15px 0;
       border-bottom: 1px solid #CCC;
@@ -147,6 +147,15 @@
     -webkit-animation: spin 1s infinite linear;
     animation: spin 1s infinite linear;
   }
-  
 
-  // linear-gradient(#2d314d, #e2e2e6eb)
+.link-list{
+  a{
+    color: #000;
+  }
+}
+
+#search-overlay__results{
+  p{
+    color: #000;
+  }
+}
