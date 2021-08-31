@@ -1,10 +1,10 @@
 <?php get_header()?>
-<div class="page">
+<div id="post-<?php the_ID(); ?>" <?php post_class( 'page' ); ?>>
     <div class="container mt-4">
         <div class="row">
             <div class="col-8">
                 <h3 class="page__title block-title">
-                <span><?php  wp_title($sep=" ")?> </span>
+                <span><?php  the_title($sep=" ")?> </span>
                 </h3>
                 <?php
                     // Start our WP Query

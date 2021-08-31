@@ -143,7 +143,7 @@
 <div class="widget-content">
 <div class="sidebar-tags">
         <ul>
-            <li><a href="<?php echo esc_url(site_url("/tag/sports")) ?>"> #سياسة</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/sports")) ?>"> #سياسة</a></li>
             <li><a href="#"> #رياضة</a></li>
             <li><a href="#"> #إقتصاد</a></li>
             <li><a href="#"> #تكنلوجيا</a></li>

@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-8">
             <h3 class="page__title block-title">
-                <span><?php wp_title($sep=" ") ?> </span>
+                <span><?php the_title($sep=" ") ?> </span>
             </h3>
             <div class="cards">
                 <?php

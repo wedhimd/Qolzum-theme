@@ -72,7 +72,8 @@ function qolzum_features()
             "footer-menu" => __("Footer Menu", "theme"),
         )
     );
-    add_theme_support("menus");
+
+    add_theme_support( 'automatic-feed-links' );
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
     add_image_size("smallest", 100, 100, true);
@@ -82,6 +83,14 @@ function qolzum_features()
 }
 
 add_action('after_setup_theme', 'qolzum_features');
+
+
+
+function filterd_title_separator() {
+    return '|';
+}
+add_filter( 'document_title_separator', 'filterd_title_separator' );
+
 
 
 function qolzum_custom_logo_setup()
@@ -123,7 +132,7 @@ function wpb_set_post_views($postID) {
     }
 }
 //To keep the count accurate, lets get rid of prefetching
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
+// remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 
 //track post view

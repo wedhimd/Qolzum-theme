@@ -6,7 +6,7 @@
                 <h1>4<i class="fas fa-microscope"></i>4</h1>
                 <!-- <div class="microscope"><i class="fas fa-microscope"></i></div> -->
                 <h4>للأسف لم نجد الصفحة التي تبحث عنها</h4>
-                <a href="<?php echo esc_url(site_url()) ?>" ><button> الرجوع إلى الصفحة الرئيسية</button></a>
+                <a href="<?php echo esc_url(home_url()) ?>" ><button> الرجوع إلى الصفحة الرئيسية</button></a>
             </div>
         </div>
     </div>

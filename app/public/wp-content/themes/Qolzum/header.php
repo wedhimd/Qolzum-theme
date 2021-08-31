@@ -1,25 +1,29 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html <?php language_attributes()?>>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="One stop for all the Horn of Africa news">
-    <title> Qolzum - القلزم </title>
     <?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class() ?>>
+<?php if ( ! function_exists( 'wp_body_open' ) ) {
+    function wp_body_open() {
+        do_action( 'wp_body_open' );
+    }
+} ?>
 
     <header>
         <div class="website-header">
             <div class="flex">
-                <a href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                <a href="<?php echo esc_url(home_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
                 <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
             </div>
             <div> 
-                <a href="<?php echo esc_url(site_url() )?>"><h1>القلزم للأخبار</h1></a>
+                <a href="<?php echo esc_url(home_url() )?>"><h1>القلزم للأخبار</h1></a>
             </div>
             
             <div class="social-icons">
@@ -35,7 +39,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid header__links hide-for-mobile">
                     <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
-                    <a class="navbar-brand"  href="<?php echo esc_url(site_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                    <a class="navbar-brand"  href="<?php echo esc_url(home_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
                     <a href="#" id="btnHamburger" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" class="navbar-toggler header__toggle hide-for-desktop">
                         <span></span>
                         <span></span>
@@ -44,32 +48,32 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="<?php echo esc_url(site_url()) ?>">الرئيسية</a>
+                                <a class="nav-link active" aria-current="page" href="<?php echo esc_url(home_url()) ?>">الرئيسية</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(site_url("/politics")) ?>">الأخبار </a>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(home_url("/politics")) ?>">الأخبار </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/local")) ?>">الأخبار المحلية</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(site_url("/politics/world")) ?>">الأخبار العالمية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/local")) ?>">الأخبار المحلية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/world")) ?>">الأخبار العالمية</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/economy")) ?>">الإقتصاد</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/economy")) ?>">الإقتصاد</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/sports")) ?>">الرياضة</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/sports")) ?>">الرياضة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/science")) ?>">العلوم والتكنلوجيا</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/science")) ?>">العلوم والتكنلوجيا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/culture")) ?>">الثقافة والفنون</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/culture")) ?>">الثقافة والفنون</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/miscellaneous")) ?>">المنوعات </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/miscellaneous")) ?>">المنوعات </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(site_url("/opinions")) ?>">الآراء </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/opinions")) ?>">الآراء </a>
                             </li>
                             <span class="search-trigger js-search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
                         </ul>

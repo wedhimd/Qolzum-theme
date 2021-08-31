@@ -12,7 +12,7 @@
                         <!-- Post meta content-->
                         <div class="text-muted fst-italic mb-2">  <?php the_time( 'd/m/Y' )?> م</div>
                         <!-- Post categories-->
-                        <a class="catLink flex flex-d-c" href="<?php the_permalink()?>"><?php the_category()?></a>
+                        <div class="catLink flex flex-d-c"><?php the_category()?></div>
                     </header>
                     <!-- Preview image figure-->
                     <?php if (has_post_thumbnail()) : ?>

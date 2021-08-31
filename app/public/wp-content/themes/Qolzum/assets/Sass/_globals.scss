@@ -151,6 +151,31 @@ ul, ol{
 // Flexbox
 .flex {
   display: flex;
+  flex-wrap: wrap;
+
+  &-grow {
+    flex-grow: 1;
+  }
+
+  &-grow-2 {
+    flex-grow: 2;
+  } 
+
+  &-grow-3 {
+    flex-grow: 3;
+  }
+
+  &-shrink {
+    flex-shrink: 1;
+  }
+
+  &-shrink-2 {
+    flex-shrink: 2;
+  } 
+
+  &-shrink-3 {
+    flex-shrink: 3;
+  }
 
   &-jc-sb {
     justify-content: space-between;
