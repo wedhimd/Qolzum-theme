@@ -25,7 +25,7 @@
                 <?php  endwhile; endif;?>                                
             </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
                 <!-- most recet widget start -->
                 <div class="widget">
                     <h3 class="widget-title">آخر اﻷخبار</h3>

@@ -2,7 +2,7 @@
 <div id="post-<?php the_ID(); ?>" <?php post_class( 'page' ); ?>>
     <div class="container mt-4">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8 col-md-12">
                 <h3 class="page__title block-title">
                 <span><?php  the_title($sep=" ")?> </span>
                 </h3>
@@ -22,7 +22,7 @@
                 </div>
                 <?php  endwhile; endif;?>                                
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
                 <?php get_sidebar("page"); ?>
             </div>
             

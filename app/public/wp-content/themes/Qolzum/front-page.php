@@ -42,9 +42,9 @@
                                             <div class="carousel-item">
                                     <?php }?>
                                         <img src="<?php the_post_thumbnail_url( get_the_ID(), "small");?>" class="d-block"  alt="...">
-                                        <div class="carousel-caption  d-md-block">
+                                        <a href="<?php the_permalink() ?>"><div class="carousel-caption  d-md-block">
                                             <p><?php the_title()?> </p>
-                                        </div>
+                                        </div></a>
                                     </div>
                                 <?php } wp_reset_postdata();?>
                             </div>

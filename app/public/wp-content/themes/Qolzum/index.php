@@ -2,7 +2,7 @@
 <div class="page">
     <div class="container mt-4">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8 col-md-12">
             <h3 class="page__title block-title">
                 <span><?php the_title($sep=" ") ?> </span>
             </h3>
@@ -26,7 +26,7 @@
                 <?php  endwhile; endif;  wp_reset_query();?>                                
             </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
                 <!-- most recet widget start -->
                 <div class="widget">
                     <h3 class="widget-title">آخر اﻷخبار</h3>

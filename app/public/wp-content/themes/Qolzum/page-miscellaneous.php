@@ -2,7 +2,7 @@
 <div class="page">
     <div class="container mt-4">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8 col-md-12">
                 <h3 class="page__title block-title">
                     <span><?php the_title()?> </span>
                 </h3>
@@ -32,7 +32,7 @@
                     <?php  endwhile; endif; wp_reset_postdata();?>                                
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-12">
                 <?php get_sidebar("page"); ?>
             </div>
         </div>
