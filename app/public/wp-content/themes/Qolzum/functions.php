@@ -48,7 +48,7 @@ function load_js()
 
     // localize
     wp_localize_script("main-js", "dataObj", array(
-        "root_url" => get_site_url()
+        "root_url" => get_home_url()
     ));
 
 }
