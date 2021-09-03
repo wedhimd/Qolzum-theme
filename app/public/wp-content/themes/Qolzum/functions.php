@@ -4,7 +4,8 @@ require get_theme_file_path("/inc/search-route.php");
 
 function qolzum_custom_REST_Api(){
     register_rest_field("post", "authorName", array(
-        'get_callback' => function() {return get_the_author();}
+        'get_callback' => function() {return get_the_author();},
+        'permission_callback' => '__return_true'
     ));
 }
 add_action('rest_api_init', 'qolzum_custom_REST_Api');
