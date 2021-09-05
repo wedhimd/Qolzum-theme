@@ -143,20 +143,20 @@
 <div class="widget-content">
 <div class="sidebar-tags">
         <ul>
-            <li><a href="<?php echo esc_url(home_url("/tag/sports")) ?>"> #سياسة</a></li>
-            <li><a href="#"> #رياضة</a></li>
-            <li><a href="#"> #إقتصاد</a></li>
-            <li><a href="#"> #تكنلوجيا</a></li>
-            <li><a href="#"> #ثقافة وعلوم</a></li>
-            <li><a href="#"> #منوعات</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/politics")) ?>"> #سياسة</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/sports")) ?>"> #رياضة</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/economy")) ?>"> #إقتصاد</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/science")) ?>"> #تكنلوجيا</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/culture")) ?>"> #ثقافة وعلوم</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/miscellaneous")) ?>"> #منوعات</a></li>
         </ul>
         <ul>
-            <li><a href="#"> #إريتريا</a></li>
-            <li><a href="#"> #السودان</a></li>
-            <li><a href="#"> #أثيوبيا</a></li>
-            <li><a href="#"> #الصومال</a></li>
-            <li><a href="#"> #جيبوتي</a></li>
-            <li><a href="#"> #جنوب_السودان</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/eritrea")) ?>"> #إريتريا</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/sudan")) ?>"> #السودان</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/ethiopia")) ?>"> #أثيوبيا</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/somalia")) ?>"> #الصومال</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/djibouti")) ?>"> #جيبوتي</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/south-sudan")) ?>"> #جنوب_السودان</a></li>
         </ul>
 </div> 
 </div>
