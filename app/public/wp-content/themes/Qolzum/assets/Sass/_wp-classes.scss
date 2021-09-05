@@ -111,11 +111,13 @@ a img.aligncenter {
 
 .post-categories{
     display: flex;
+    flex-wrap: wrap;
     li{
         margin-left: 15px;
         padding: 5px;
         background-color: #768673;
         border-radius: 5px;
+        margin-bottom: 0.625rem;
     }
 
     a, .catLink{
