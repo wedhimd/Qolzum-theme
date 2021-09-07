@@ -398,6 +398,7 @@ button:hover,
   width: 80px;
   height: 80px;
   margin: -25px 30px;
+  margin-right: 48px;
 }
 .website-header h1 {
   color: white;
@@ -406,11 +407,20 @@ button:hover,
   text-align: left;
   flex-grow: 1;
   margin-top: 8px;
+  margin-left: 46px;
 }
 .website-header .social-icons i {
   margin: 0 7px;
   cursor: pointer;
   color: #ffffff;
+}
+@media screen and (max-width: 63.9375em) {
+  .website-header img {
+    margin-right: 18px;
+  }
+  .website-header .social-icons {
+    margin-left: 16px;
+  }
 }
 @media screen and (max-width: 39.9375em) {
   .website-header {
@@ -419,16 +429,17 @@ button:hover,
     margin-bottom: 5px;
   }
   .website-header img {
-    float: left;
     width: 60px;
     height: 88px;
     margin: -25px 0px;
+    margin-right: 9px;
   }
   .website-header h1 {
     display: none;
   }
   .website-header .social-icons {
     flex-basis: 100%;
+    margin-left: 4px;
   }
 }
 
@@ -520,18 +531,36 @@ button:hover,
   opacity: 0;
 }
 
-.navbar-light .navbar-toggler {
-  color: transparent;
-  border-color: transparent;
-}
-
-.navbar .search-trigger {
+.header .navbar .search-trigger {
   margin-right: 20px;
   padding: 0.5rem 1rem;
 }
 @media screen and (max-width: 63.9375em) {
-  .navbar .search-trigger {
+  .header .navbar .search-trigger {
     display: none;
+  }
+}
+.header .navbar .navbar-logo {
+  margin-right: 40px;
+}
+@media screen and (max-width: 63.9375em) {
+  .header .navbar .navbar-logo {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .header .navbar .navbar-logo {
+    margin-right: -9px;
+  }
+}
+.header .navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+  margin-left: 16px;
+}
+@media screen and (max-width: 39.9375em) {
+  .header .navbar-light .navbar-toggler {
+    margin-left: -2px;
   }
 }
 
@@ -545,6 +574,17 @@ button:hover,
   color: #fff;
   padding: 15px;
   font-weight: 700;
+  margin-right: 64px;
+}
+@media screen and (max-width: 63.9375em) {
+  .breaking-news__title {
+    margin-right: 33px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .breaking-news__title {
+    margin-right: 14px;
+  }
 }
 .breaking-news__body {
   height: 50px;
@@ -762,6 +802,20 @@ button:hover,
   }
   .popular-news #latest-sport {
     flex: auto;
+  }
+}
+
+.main-content .container {
+  max-width: 1244px;
+}
+@media screen and (max-width: 63.9375em) {
+  .main-content .container {
+    max-width: 715px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .main-content .container {
+    max-width: 400px;
   }
 }
 

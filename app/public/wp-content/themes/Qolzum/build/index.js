@@ -148,7 +148,6 @@ btnHamburger.addEventListener("click", function (event) {
   for (let i = 0, len = menuItems.length; i < len; i++) {
     if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
       menuItems[i].className += " active";
-      console.log("fired");
     }
   }
 })();

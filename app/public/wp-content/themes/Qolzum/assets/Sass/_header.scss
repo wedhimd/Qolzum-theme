@@ -1,5 +1,4 @@
- 
- .website-header {
+.website-header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,8 +13,8 @@
     width: 80px;
     height: 80px;
     margin: -25px 30px;
+    margin-right: 48px;
   }
-  
 
   h1 {
     color: white;
@@ -25,6 +24,7 @@
     text-align: left;
     flex-grow: 1;
     margin-top: 8px;
+    margin-left: 46px;
 
     i {
       margin: 0 7px;
@@ -33,17 +33,26 @@
     }
   }
 
-  @include breakpoint-down(small){
+  @include breakpoint-down(medium) {
+    img {
+      margin-right: 18px;
+    }
 
+    .social-icons {
+      margin-left: 16px;
+    }
+  }
+
+  @include breakpoint-down(small) {
     padding: 10px;
     height: 60px;
     margin-bottom: 5px;
 
     img {
-      float: left;
       width: 60px;
       height: 88px;
       margin: -25px 0px;
+      margin-right: 9px;
     }
 
     h1 {
@@ -52,8 +61,8 @@
 
     .social-icons {
       flex-basis: 100%;
+      margin-left: 4px;
     }
-  
   }
 }
 
@@ -127,8 +136,8 @@
     padding: 1.625rem;
     border-radius: 0.3125rem;
 
-    ul{
-      li{
+    ul {
+      li {
         a {
           display: block;
           padding: 0.625rem;
@@ -136,16 +145,15 @@
           text-align: center;
         }
       }
-    } 
+    }
   }
 
   &__links {
-    ul{
-      .nav-item{
-          margin-right: 2rem;
-        }
-      li{
-        
+    ul {
+      .nav-item {
+        margin-right: 2rem;
+      }
+      li {
         // &:not(:first-child) {
         //   margin-right: 2rem;
         // }
@@ -155,7 +163,7 @@
           font-size: $font-sm;
           color: $grayishBlue;
           transition: 300ms ease-in-out;
-          
+
           &::before {
             content: "";
             position: absolute;
@@ -168,36 +176,53 @@
             opacity: 0;
             transition: opacity 300ms ease-in-out;
           }
-    
+
           &:hover {
             color: $darkBlue;
-    
+
             &::before {
               opacity: 0;
             }
           }
         }
       }
-      
     }
-    
   }
 }
 
-.navbar-light .navbar-toggler {
-	color: transparent;
-	border-color: transparent;
-}
-
-.navbar{ 
-  .search-trigger {
-  margin-right: 20px;
-  padding: 0.5rem 1rem;
-  }
-
-  @include breakpoint-down(medium){
+.header {
+  .navbar {
     .search-trigger {
-      display: none;
+      margin-right: 20px;
+      padding: 0.5rem 1rem;
+    }
+
+    @include breakpoint-down(medium) {
+      .search-trigger {
+        display: none;
       }
+    }
+
+    .navbar-logo {
+      margin-right: 40px;
+
+      @include breakpoint-down(medium) {
+        margin-right: 10px;
+      }
+
+      @include breakpoint-down(small) {
+        margin-right: -9px;
+      }
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+    margin-left: 16px;
+
+    @include breakpoint-down(small) {
+      margin-left: -2px;
+    }
   }
 }
