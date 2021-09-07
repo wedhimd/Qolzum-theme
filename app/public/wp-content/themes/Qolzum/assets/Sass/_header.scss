@@ -185,20 +185,34 @@
   }
 }
 
-.navbar-light .navbar-toggler {
-  color: transparent;
-  border-color: transparent;
-}
+.header {
+  .navbar {
+    .search-trigger {
+      margin-right: 20px;
+      padding: 0.5rem 1rem;
+    }
 
-.navbar {
-  .search-trigger {
-    margin-right: 20px;
-    padding: 0.5rem 1rem;
+    @include breakpoint-down(medium) {
+      .search-trigger {
+        display: none;
+      }
+    }
+
+    .navbar-logo {
+      margin-right: 40px;
+
+      @include breakpoint-down(medium) {
+        margin-right: 10px;
+      }
+
+      @include breakpoint-down(medium) {
+        margin-right: -9px;
+      }
+    }
   }
 
-  @include breakpoint-down(medium) {
-    .search-trigger {
-      display: none;
-    }
+  .navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
   }
 }

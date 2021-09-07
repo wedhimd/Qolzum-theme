@@ -527,19 +527,31 @@ button:hover,
   opacity: 0;
 }
 
-.navbar-light .navbar-toggler {
-  color: transparent;
-  border-color: transparent;
-}
-
-.navbar .search-trigger {
+.header .navbar .search-trigger {
   margin-right: 20px;
   padding: 0.5rem 1rem;
 }
 @media screen and (max-width: 63.9375em) {
-  .navbar .search-trigger {
+  .header .navbar .search-trigger {
     display: none;
   }
+}
+.header .navbar .navbar-logo {
+  margin-right: 40px;
+}
+@media screen and (max-width: 63.9375em) {
+  .header .navbar .navbar-logo {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 63.9375em) {
+  .header .navbar .navbar-logo {
+    margin-right: -9px;
+  }
+}
+.header .navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
 }
 
 .breaking-news {

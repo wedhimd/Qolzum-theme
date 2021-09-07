@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes()?>>
+<html <?php language_attributes() ?>>
 
 <head>
     <meta charset="UTF-8">
@@ -10,22 +10,27 @@
 </head>
 
 <body <?php body_class() ?>>
-<?php if ( ! function_exists( 'wp_body_open' ) ) {
-    function wp_body_open() {
-        do_action( 'wp_body_open' );
-    }
-} ?>
+    <?php if (!function_exists('wp_body_open')) {
+        function wp_body_open()
+        {
+            do_action('wp_body_open');
+        }
+    } ?>
 
     <header>
         <div class="website-header">
             <div class="flex">
-                <a href="<?php echo esc_url(home_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
-                <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
+                <a href="<?php echo esc_url(home_url()) ?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg") ?>" alt="الشعار"></a>
+                <?php if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                } ?>
             </div>
-            <div> 
-                <a href="<?php echo esc_url(home_url() )?>"><h1>القلزم للأخبار</h1></a>
+            <div>
+                <a href="<?php echo esc_url(home_url()) ?>">
+                    <h1>القلزم للأخبار</h1>
+                </a>
             </div>
-            
+
             <div class="social-icons">
                 <i class="fa fa-search search-trigger js-search-trigger" aria-hidden="true"></i>
                 <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
@@ -38,8 +43,10 @@
             <div class="overlay has-fade"></div>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid header__links hide-for-mobile">
-                    <?php if (function_exists('the_custom_logo')) { the_custom_logo(); } ?>
-                    <a class="navbar-brand"  href="<?php echo esc_url(home_url() )?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg")?>" alt="الشعار"></a>
+                    <?php if (function_exists('the_custom_logo')) {
+                        the_custom_logo();
+                    } ?>
+                    <a class="navbar-brand" href="<?php echo esc_url(home_url()) ?>"><img class="navbar-logo" src="<?php echo get_theme_file_uri("/assets/images/logo.svg") ?>" alt="الشعار"></a>
                     <a href="#" id="btnHamburger" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" class="navbar-toggler header__toggle hide-for-desktop">
                         <span></span>
                         <span></span>
