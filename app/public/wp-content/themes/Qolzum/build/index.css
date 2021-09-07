@@ -407,6 +407,7 @@ button:hover,
   text-align: left;
   flex-grow: 1;
   margin-top: 8px;
+  margin-left: 46px;
 }
 .website-header .social-icons i {
   margin: 0 7px;
@@ -417,6 +418,9 @@ button:hover,
   .website-header img {
     margin-right: 18px;
   }
+  .website-header .social-icons {
+    margin-left: 16px;
+  }
 }
 @media screen and (max-width: 39.9375em) {
   .website-header {
@@ -425,7 +429,6 @@ button:hover,
     margin-bottom: 5px;
   }
   .website-header img {
-    float: left;
     width: 60px;
     height: 88px;
     margin: -25px 0px;
@@ -436,6 +439,7 @@ button:hover,
   }
   .website-header .social-icons {
     flex-basis: 100%;
+    margin-left: 4px;
   }
 }
 
@@ -552,6 +556,12 @@ button:hover,
 .header .navbar-light .navbar-toggler {
   color: transparent;
   border-color: transparent;
+  margin-left: 16px;
+}
+@media screen and (max-width: 39.9375em) {
+  .header .navbar-light .navbar-toggler {
+    margin-left: -2px;
+  }
 }
 
 .breaking-news {
@@ -795,16 +805,16 @@ button:hover,
   }
 }
 
-main .main-content .container {
+.main-content .container {
   max-width: 1244px;
 }
 @media screen and (max-width: 63.9375em) {
-  main .main-content .container {
+  .main-content .container {
     max-width: 715px;
   }
 }
 @media screen and (max-width: 39.9375em) {
-  main .main-content .container {
+  .main-content .container {
     max-width: 400px;
   }
 }

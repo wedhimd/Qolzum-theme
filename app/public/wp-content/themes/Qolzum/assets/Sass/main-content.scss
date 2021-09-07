@@ -1,15 +1,13 @@
-main {
-  .main-content {
-    .container {
-      max-width: 1244px;
+.main-content {
+  .container {
+    max-width: 1244px;
 
-      @include breakpoint-down(medium) {
-        max-width: 715px;
-      }
+    @include breakpoint-down(medium) {
+      max-width: 715px;
+    }
 
-      @include breakpoint-down(small) {
-        max-width: 400px;
-      }
+    @include breakpoint-down(small) {
+      max-width: 400px;
     }
   }
 }
