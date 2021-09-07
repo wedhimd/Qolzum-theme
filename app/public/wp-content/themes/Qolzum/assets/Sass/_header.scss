@@ -1,5 +1,4 @@
- 
- .website-header {
+.website-header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -14,8 +13,8 @@
     width: 80px;
     height: 80px;
     margin: -25px 30px;
+    margin-right: 48px;
   }
-  
 
   h1 {
     color: white;
@@ -33,8 +32,13 @@
     }
   }
 
-  @include breakpoint-down(small){
+  @include breakpoint-down(medium) {
+    img {
+      margin-right: 18px;
+    }
+  }
 
+  @include breakpoint-down(small) {
     padding: 10px;
     height: 60px;
     margin-bottom: 5px;
@@ -44,6 +48,7 @@
       width: 60px;
       height: 88px;
       margin: -25px 0px;
+      margin-right: 9px;
     }
 
     h1 {
@@ -53,7 +58,6 @@
     .social-icons {
       flex-basis: 100%;
     }
-  
   }
 }
 
@@ -127,8 +131,8 @@
     padding: 1.625rem;
     border-radius: 0.3125rem;
 
-    ul{
-      li{
+    ul {
+      li {
         a {
           display: block;
           padding: 0.625rem;
@@ -136,16 +140,15 @@
           text-align: center;
         }
       }
-    } 
+    }
   }
 
   &__links {
-    ul{
-      .nav-item{
-          margin-right: 2rem;
-        }
-      li{
-        
+    ul {
+      .nav-item {
+        margin-right: 2rem;
+      }
+      li {
         // &:not(:first-child) {
         //   margin-right: 2rem;
         // }
@@ -155,7 +158,7 @@
           font-size: $font-sm;
           color: $grayishBlue;
           transition: 300ms ease-in-out;
-          
+
           &::before {
             content: "";
             position: absolute;
@@ -168,36 +171,34 @@
             opacity: 0;
             transition: opacity 300ms ease-in-out;
           }
-    
+
           &:hover {
             color: $darkBlue;
-    
+
             &::before {
               opacity: 0;
             }
           }
         }
       }
-      
     }
-    
   }
 }
 
 .navbar-light .navbar-toggler {
-	color: transparent;
-	border-color: transparent;
+  color: transparent;
+  border-color: transparent;
 }
 
-.navbar{ 
+.navbar {
   .search-trigger {
-  margin-right: 20px;
-  padding: 0.5rem 1rem;
+    margin-right: 20px;
+    padding: 0.5rem 1rem;
   }
 
-  @include breakpoint-down(medium){
+  @include breakpoint-down(medium) {
     .search-trigger {
       display: none;
-      }
+    }
   }
 }

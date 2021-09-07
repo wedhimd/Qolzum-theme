@@ -398,6 +398,7 @@ button:hover,
   width: 80px;
   height: 80px;
   margin: -25px 30px;
+  margin-right: 48px;
 }
 .website-header h1 {
   color: white;
@@ -412,6 +413,11 @@ button:hover,
   cursor: pointer;
   color: #ffffff;
 }
+@media screen and (max-width: 63.9375em) {
+  .website-header img {
+    margin-right: 18px;
+  }
+}
 @media screen and (max-width: 39.9375em) {
   .website-header {
     padding: 10px;
@@ -423,6 +429,7 @@ button:hover,
     width: 60px;
     height: 88px;
     margin: -25px 0px;
+    margin-right: 9px;
   }
   .website-header h1 {
     display: none;
