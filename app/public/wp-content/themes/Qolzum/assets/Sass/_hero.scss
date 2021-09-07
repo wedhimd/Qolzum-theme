@@ -1,186 +1,188 @@
-.breaking-news{
+.breaking-news {
   padding: 5px;
   display: flex;
   align-items: center;
 
-&__title{
-  background-color: #e60000;
-  color: #fff;
-  padding: 15px;
-  font-weight: 700;
-}
+  &__title {
+    background-color: #e60000;
+    color: #fff;
+    padding: 15px;
+    font-weight: 700;
+    margin-right: 64px;
 
-&__body{
-  height: 50px;
-  overflow: hidden;
-}
+    @include breakpoint-down(medium) {
+      margin-right: 33px;
+    }
 
-&__body > div a{
-  padding: 5px 15px;
-  height: 50px;
-  margin-bottom: 30px;
-  display: block;
-}
+    @include breakpoint-down(small) {
+      margin-right: 14px;
+    }
+  }
 
+  &__body {
+    height: 50px;
+    overflow: hidden;
+  }
 
-&__body div:first-child{
-  animation: breaking-news 15s linear infinite;
-}
+  &__body > div a {
+    padding: 5px 15px;
+    height: 50px;
+    margin-bottom: 30px;
+    display: block;
+  }
 
-@include breakpoint-down(small){
-  &__body{
-    font-size: 12px;
+  &__body div:first-child {
+    animation: breaking-news 15s linear infinite;
+  }
+
+  @include breakpoint-down(small) {
+    &__body {
+      font-size: 12px;
+    }
   }
 }
-}
 
-.popular-news{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1.875rem 5%;
+.popular-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.875rem 5%;
 
-    h2{
+  h2 {
     margin: 0;
     padding: 0.9375rem 0.3125rem 0rem;
     color: #fff;
-    }
+  }
 
-    img {
-        width: 100%;
-        filter: brightness(0.7);
-        transition-duration: 500ms;
-    }
+  img {
+    width: 100%;
+    filter: brightness(0.7);
+    transition-duration: 500ms;
+  }
 
-    section {
+  section {
     cursor: pointer;
-    }
+  }
 
-    .featured{
-
-      .popular-news-carousel{
-        .carouselHero{
-          .carousel{
-            .carousel-indicators{
-              margin-bottom: 0;
-            }
-            .carousel-inner{
-              width: 100%;
-              max-width: 605px;
-              max-height: 405px;
+  .featured {
+    .popular-news-carousel {
+      .carouselHero {
+        .carousel {
+          .carousel-indicators {
+            margin-bottom: 0;
+          }
+          .carousel-inner {
+            width: 100%;
+            max-width: 605px;
+            max-height: 405px;
+            overflow: hidden;
+            position: relative;
+            .carousel-item {
               overflow: hidden;
-              position: relative;
-              .carousel-item{
-                overflow: hidden;
-                .carousel-caption{
-                  position: absolute;
-                  padding-top: 1rem;
-                  padding-bottom: 1rem;
-                  padding-right: 30px;
-                  right: 0;
-                  bottom: 0;
-                  left: 0;
-                  width: 100%;
-                  text-align: right;
-                  background-color:whitesmoke;
-                  color: #000;
-                  
-                  p{
-                    line-height: 1;
-                    margin-bottom: 0.25rem;
-                  }
+              .carousel-caption {
+                position: absolute;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-right: 30px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-align: right;
+                background-color: whitesmoke;
+                color: #000;
 
-                }
-
-                img{
-                  width: 100%;
-                  max-width: 605px;
-                  max-height: 405px;
-                }
-
-                .carousel-caption p::before{
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  height: 80px;
-                  width: 5px;
-                  margin-right: 16px;
-                  background-color: $mainColor;
+                p {
+                  line-height: 1;
+                  margin-bottom: 0.25rem;
                 }
               }
 
-            }
-
-            @include breakpoint-down(medium){
-              .carousel-inner{
+              img {
                 width: 100%;
-                min-width: 687px;
+                max-width: 605px;
+                max-height: 405px;
+              }
 
-                .carousel-item{
-                  img{
-                    width: 100%;
-                    min-width: 686px;
-                    height: 400px;
-                  }
+              .carousel-caption p::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 80px;
+                width: 5px;
+                margin-right: 16px;
+                background-color: $mainColor;
+              }
+            }
+          }
+
+          @include breakpoint-down(medium) {
+            .carousel-inner {
+              width: 100%;
+              min-width: 687px;
+
+              .carousel-item {
+                img {
+                  width: 100%;
+                  min-width: 686px;
+                  height: 400px;
                 }
               }
             }
+          }
 
-            @include breakpoint-down(small){
-              .carousel-inner{
-                width: 100%;
-                min-width: 320px;
-                height: 300px;
+          @include breakpoint-down(small) {
+            .carousel-inner {
+              width: 100%;
+              min-width: 320px;
+              height: 300px;
 
-                .carousel-item{
-                  img{ 
-                    width: 100%;
-                    min-width: 320px;
-                    height: 298px;
-                  }
+              .carousel-item {
+                img {
+                  width: 100%;
+                  min-width: 320px;
+                  height: 298px;
                 }
               }
             }
           }
         }
       }
-        flex: 2;
-        h2{
-            background-color: black;
-            margin-left: 0.3125rem;
-        }
     }
-
-    #latest-economic{
-        flex: 1;
-        h2{
-            background-color: darkred;
-            margin-left: 0.3125rem;
-        }
+    flex: 2;
+    h2 {
+      background-color: black;
+      margin-left: 0.3125rem;
     }
+  }
 
-    #latest-sport{
-        flex: 1;
-        h2{
-            background-color: darkblue;
-            margin-left: 0.3125rem;
-        }
+  #latest-economic {
+    flex: 1;
+    h2 {
+      background-color: darkred;
+      margin-left: 0.3125rem;
     }
+  }
 
-    .thumbnail-headings {
-        text-align: right;
-        padding-top: 0.9375rem;
-      }
+  #latest-sport {
+    flex: 1;
+    h2 {
+      background-color: darkblue;
+      margin-left: 0.3125rem;
+    }
+  }
 
-    .carousel,
-   .news-container {
+  .thumbnail-headings {
+    text-align: right;
+    padding-top: 0.9375rem;
+  }
+
+  .carousel,
+  .news-container {
     position: relative;
     margin-left: 0.3125rem;
     margin-bottom: 0.3125rem;
-
-    
   }
-
 
   .carousel-text {
     position: absolute;
@@ -197,18 +199,17 @@
     background: white;
   }
 
-  .news-container{
+  .news-container {
     font-size: $font-med;
-    &:hover{
-        img {
-            filter: brightness(0.4);
-          }
-        .carousel-text {
-            bottom: 0.625rem;
-          }
+    &:hover {
+      img {
+        filter: brightness(0.4);
       }
+      .carousel-text {
+        bottom: 0.625rem;
+      }
+    }
   }
- 
 
   .carousel-date {
     display: block;
@@ -218,68 +219,59 @@
     font-weight: 300;
   }
 
-  @include breakpoint-down(medium){
-  .carousel-text {
-    display: contents;
-  }
+  @include breakpoint-down(medium) {
+    .carousel-text {
+      display: contents;
+    }
     .carousel-caption {
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
-      p{
+      p {
         margin-top: 0;
         margin-bottom: 0;
-
       }
     }
     .breaking-news-section {
-        padding: 0.625rem;
-        flex-wrap: wrap;
-      }
-      .featured {
-        flex: auto;
-      }
-      .news-section,
-      aside,
-      .news-section article,
-      .social-links section {
-        flex-basis: 100%;
-      }
-      aside {
-        border-width: 0;
-      }
-  
-     
+      padding: 0.625rem;
+      flex-wrap: wrap;
+    }
+    .featured {
+      flex: auto;
+    }
+    .news-section,
+    aside,
+    .news-section article,
+    .social-links section {
+      flex-basis: 100%;
+    }
+    aside {
+      border-width: 0;
+    }
   }
 
-  @include breakpoint-down(small){
-    .carousel-caption::before{
-     display: none;
+  @include breakpoint-down(small) {
+    .carousel-caption::before {
+      display: none;
     }
     .carousel-caption {
       padding-top: 0.25rem;
       padding-bottom: 0.25rem;
-      p{
+      p {
         margin-top: 0;
         margin-bottom: 0;
-
       }
 
-      h5{
+      h5 {
         display: none;
       }
     }
 
-    #latest-economic{
+    #latest-economic {
       flex: auto;
-
     }
 
-    #latest-sport{
+    #latest-sport {
       flex: auto;
     }
   }
-
-  
-
 }
-

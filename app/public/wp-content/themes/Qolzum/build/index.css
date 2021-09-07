@@ -544,7 +544,7 @@ button:hover,
     margin-right: 10px;
   }
 }
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 39.9375em) {
   .header .navbar .navbar-logo {
     margin-right: -9px;
   }
@@ -564,6 +564,17 @@ button:hover,
   color: #fff;
   padding: 15px;
   font-weight: 700;
+  margin-right: 64px;
+}
+@media screen and (max-width: 63.9375em) {
+  .breaking-news__title {
+    margin-right: 33px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .breaking-news__title {
+    margin-right: 14px;
+  }
 }
 .breaking-news__body {
   height: 50px;
