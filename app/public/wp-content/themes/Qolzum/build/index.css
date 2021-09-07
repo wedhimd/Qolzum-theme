@@ -795,6 +795,20 @@ button:hover,
   }
 }
 
+main .main-content .container {
+  max-width: 1244px;
+}
+@media screen and (max-width: 63.9375em) {
+  main .main-content .container {
+    max-width: 715px;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  main .main-content .container {
+    max-width: 400px;
+  }
+}
+
 .block-title {
   border-bottom: 0.125rem solid #f2552c;
   color: #ffffff;
