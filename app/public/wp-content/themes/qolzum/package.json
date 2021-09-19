@@ -1,0 +1,28 @@
+{
+  "name": "qolzum-theme",
+  "version": "1.0.0",
+  "description": "news website wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wedhimd/Qolzum-theme.git"
+  },
+  "author": "Mohammed Ali",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wedhimd/Qolzum-theme/issues"
+  },
+  "homepage": "https://github.com/wedhimd/Qolzum-theme#readme",
+  "dependencies": {
+    "@wordpress/scripts": "^18.0.1",
+    "axios": "^0.21.4",
+    "normalize.css": "^8.0.1"
+  }
+}

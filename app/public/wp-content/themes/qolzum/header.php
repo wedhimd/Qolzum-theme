@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="One stop for all the Horn of Africa news">
+    <link rel="shortcut icon" href="<?php echo get_theme_file_uri("/assets/images/favicon.ico") ?>" type="image/x-icon"> 
     <?php wp_head(); ?>
 
 </head>
@@ -60,8 +61,8 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(home_url("/politics")) ?>">الأخبار </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/local")) ?>">الأخبار المحلية</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/world")) ?>">الأخبار العالمية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/news/local")) ?>">الأخبار المحلية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/news/world")) ?>">الأخبار العالمية</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
