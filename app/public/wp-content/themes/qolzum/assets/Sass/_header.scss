@@ -226,3 +226,22 @@
     }
   }
 }
+
+// bootstrap class customization
+
+.dropdown-menu {
+  min-width: auto;
+  background-color: inherit;
+}
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -25px;
+  margin-top: 0.125rem;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  background-color: #eee;
+}
