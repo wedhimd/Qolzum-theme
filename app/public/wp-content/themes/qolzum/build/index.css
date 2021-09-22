@@ -189,7 +189,7 @@ body {
   font-family: "El Messiri", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300;
   font-size: 1.125rem;
-  color: #9698a6;
+  color: #333333;
   line-height: 1.3;
   min-height: 300vh;
   background-color: #eee;
@@ -211,7 +211,7 @@ h2,
 h3 {
   font-weight: 300;
   line-height: 1.15;
-  color: #353535;
+  color: #333333;
   margin-top: 0px;
 }
 
@@ -248,7 +248,7 @@ p {
 }
 
 blockquote {
-  border-right: 3px solid #333;
+  border-right: 3px solid #333333;
   padding-right: 10px;
   margin: 0 1rem 0;
 }
@@ -261,10 +261,11 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #333;
+  color: #333333;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -360,7 +361,7 @@ button,
 .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background: linear-gradient(to right, #31d35c, #00cecb);
+  background-color: #6c9b11;
   border: 0;
   border-radius: 3.125rem;
   cursor: pointer;
@@ -390,7 +391,7 @@ button:hover,
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #333;
+  background-color: #333333;
   color: white;
   padding: 20px;
   height: 80px;
@@ -415,7 +416,7 @@ button:hover,
 .website-header .social-icons i {
   margin: 0 7px;
   cursor: pointer;
-  color: #ffffff;
+  color: white;
 }
 @media screen and (max-width: 63.9375em) {
   .website-header img {
@@ -494,7 +495,7 @@ button:hover,
   width: calc(100% - 3rem);
   left: 50%;
   transform: translateX(-50%);
-  background: #ffffff;
+  background: white;
   margin-top: 1.5rem;
   padding: 1.625rem;
   border-radius: 0.3125rem;
@@ -528,7 +529,7 @@ button:hover,
   transition: opacity 300ms ease-in-out;
 }
 .header__links ul li a:hover {
-  color: #2d314d;
+  color: #f2552c;
 }
 .header__links ul li a:hover::before {
   opacity: 0;
@@ -841,13 +842,13 @@ button:hover,
 }
 
 .block-title {
-  border-bottom: 0.125rem solid #f2552c;
-  color: #ffffff;
+  border-bottom: 0.125rem solid #6c9b11;
+  color: white;
   font-size: 0.9275rem;
   padding-bottom: 0.1875rem;
 }
 .block-title span {
-  background: #f2552c;
+  background: #6c9b11;
   padding: 0.7rem 0.375rem 0rem;
 }
 
@@ -855,7 +856,7 @@ button:hover,
   margin-bottom: 2.1875rem;
 }
 .widget .widget-title {
-  background-color: #333;
+  background-color: #6c9b11;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 0.625rem;
@@ -891,7 +892,7 @@ button:hover,
   margin-bottom: 0.5rem;
 }
 .latest-news .news-item-container .news-title a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 .latest-news .news-item-container .news-date {
@@ -917,7 +918,7 @@ button:hover,
   display: inline;
   background-color: #c1c4c7e5;
   border: 1px solid #dfe0e0;
-  color: #333;
+  color: #333333;
   font-size: 0.75rem;
   padding: 0.375rem 0.3rem;
 }
@@ -937,7 +938,7 @@ button:hover,
   font-weight: 400;
 }
 .widget .widget-content .categories ul li span {
-  background-color: #f2552c;
+  background-color: #6c9b11;
   float: left;
   color: #fff;
   font-size: 0.75rem;
@@ -1079,7 +1080,7 @@ button:hover,
   margin-top: auto;
   font-weight: 700;
   background-color: green;
-  color: #ffffff;
+  color: white;
   text-align: center;
   padding: 10px 20px;
   border-radius: 5px;
@@ -1129,7 +1130,7 @@ footer {
   margin-top: auto;
   padding: 1.2rem 6.25rem;
   padding-bottom: 0;
-  background: #333;
+  background: #333333;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1196,7 +1197,7 @@ footer p {
 }
 
 .footer-social-icons li a:hover {
-  background: #f00;
+  background: #f2552c;
 }
 
 .footer-social-icons li a .fa {
@@ -1222,7 +1223,7 @@ footer p {
 }
 
 .quickLinks ul li a:hover {
-  color: #fff;
+  color: white;
 }
 
 .copyrightText {
@@ -1322,7 +1323,7 @@ footer p {
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
-  color: #ffffff;
+  color: white;
 }
 .page__image {
   width: 100%;
