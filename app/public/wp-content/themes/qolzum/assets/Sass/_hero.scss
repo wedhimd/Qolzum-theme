@@ -4,7 +4,7 @@
   align-items: center;
 
   &__title {
-    background-color: #e60000;
+    background-color: $logoRed;
     color: #fff;
     padding: 15px;
     font-weight: 700;
@@ -151,24 +151,39 @@
     }
     flex: 2;
     h2 {
-      background-color: black;
+      background-color: $gray3;
       margin-left: 0.3125rem;
+      border-radius: 0 0.3125rem 0 0;
+      @include breakpoint-down(medium) {
+        border-radius: 0.3125rem 0.3125rem 0 0;
+      }
     }
   }
 
   #latest-economic {
     flex: 1;
     h2 {
-      background-color: darkred;
+      background-color: $logoRed;
       margin-left: 0.3125rem;
+      @include breakpoint-down(medium) {
+        border-radius: 0 0.3125rem 0 0;
+      }
+
+      @include breakpoint-down(small) {
+        border-radius: 0.3125rem 0.3125rem 0 0;
+      }
     }
   }
 
   #latest-sport {
     flex: 1;
     h2 {
-      background-color: darkblue;
+      background-color: $logoblue;
       margin-left: 0.3125rem;
+      border-radius: 0.3125rem 0 0 0;
+      @include breakpoint-down(small) {
+        border-radius: 0.3125rem 0.3125rem 0 0;
+      }
     }
   }
 

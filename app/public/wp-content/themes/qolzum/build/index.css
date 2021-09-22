@@ -361,7 +361,7 @@ button,
 .button {
   display: inline-block;
   padding: 0.875rem 2.1875rem;
-  background-color: #6c9b11;
+  background-color: #6aa5f1;
   border: 0;
   border-radius: 3.125rem;
   cursor: pointer;
@@ -417,6 +417,12 @@ button:hover,
   margin: 0 7px;
   cursor: pointer;
   color: white;
+  padding: 2px;
+  border-radius: 2px;
+}
+.website-header .social-icons i:hover {
+  opacity: 1;
+  background-color: #f2552c;
 }
 @media screen and (max-width: 63.9375em) {
   .website-header img {
@@ -592,7 +598,7 @@ button:hover,
   align-items: center;
 }
 .breaking-news__title {
-  background-color: #e60000;
+  background-color: #e60b0b;
   color: #fff;
   padding: 15px;
   font-weight: 700;
@@ -718,22 +724,44 @@ button:hover,
   }
 }
 .popular-news .featured h2 {
-  background-color: black;
+  background-color: #333333;
   margin-left: 0.3125rem;
+  border-radius: 0 0.3125rem 0 0;
+}
+@media screen and (max-width: 63.9375em) {
+  .popular-news .featured h2 {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+  }
 }
 .popular-news #latest-economic {
   flex: 1;
 }
 .popular-news #latest-economic h2 {
-  background-color: darkred;
+  background-color: #e60b0b;
   margin-left: 0.3125rem;
+}
+@media screen and (max-width: 63.9375em) {
+  .popular-news #latest-economic h2 {
+    border-radius: 0 0.3125rem 0 0;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .popular-news #latest-economic h2 {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+  }
 }
 .popular-news #latest-sport {
   flex: 1;
 }
 .popular-news #latest-sport h2 {
-  background-color: darkblue;
+  background-color: #6aa5f1;
   margin-left: 0.3125rem;
+  border-radius: 0.3125rem 0 0 0;
+}
+@media screen and (max-width: 39.9375em) {
+  .popular-news #latest-sport h2 {
+    border-radius: 0.3125rem 0.3125rem 0 0;
+  }
 }
 .popular-news .thumbnail-headings {
   text-align: right;
@@ -850,6 +878,7 @@ button:hover,
 .block-title span {
   background: #6c9b11;
   padding: 0.7rem 0.375rem 0rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
 }
 
 .widget {
@@ -860,6 +889,7 @@ button:hover,
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 0.625rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
 }
 
 .latest-news {
@@ -1023,11 +1053,11 @@ button:hover,
 .opinion__boxes .box__btn {
   display: inline-block;
   margin-top: auto;
-  background: green;
+  background: #6aa5f1;
   text-align: center;
   color: #fff;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 1.25rem;
 }
 
 .cards {
@@ -1079,11 +1109,11 @@ button:hover,
 .cards .card__readmore {
   margin-top: auto;
   font-weight: 700;
-  background-color: green;
+  background-color: #6aa5f1;
   color: white;
   text-align: center;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 1.25rem;
 }
 
 .related {

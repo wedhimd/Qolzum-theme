@@ -1,10 +1,11 @@
 .widget {
   margin-bottom: 2.1875rem;
   .widget-title {
-    background-color: $btnGreen;
+    background-color: $titleGreen;
     color: #fff;
     font-size: 1rem;
     padding: 0.5rem 0.625rem;
+    border-radius: 0.3125rem 0.3125rem 0 0;
   }
 }
 
@@ -108,7 +109,7 @@
           font-weight: 400;
 
           span {
-            background-color: $btnGreen;
+            background-color: $titleGreen;
             float: left;
             color: #fff;
             font-size: 0.75rem;
