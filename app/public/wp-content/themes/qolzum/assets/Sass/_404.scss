@@ -2,8 +2,7 @@
   width: 400px;
   height: 400px;
   margin: 50px 30%;
-  background-color: #bbf0f3;
-  background-image: linear-gradient(315deg, #bbf0f3 0%, #f6d285 74%);
+  background-image: $gradient404;
   border-radius: 50% 0 50% 50%;
   transform: rotate(-45deg);
 

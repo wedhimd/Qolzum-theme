@@ -3,7 +3,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   background-color: $gray3;
-  color: white;
+  color: $white;
   padding: 20px;
   height: 80px;
   margin-bottom: 10px;
@@ -17,7 +17,7 @@
   }
 
   h1 {
-    color: white;
+    color: $white;
   }
 
   .social-icons {
@@ -249,5 +249,5 @@
 .dropdown-item:active {
   color: rgba(0, 0, 0, 0.55);
   text-decoration: none;
-  background-color: #eee;
+  background-color: $backgroundGray;
 }

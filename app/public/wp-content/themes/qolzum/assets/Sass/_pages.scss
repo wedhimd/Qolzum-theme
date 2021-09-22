@@ -1,120 +1,112 @@
-.page{
+.page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: calc(300vh - 320px);
+
+  .card {
+    flex: 1 0 14rem;
+  }
+
+  .contact-us {
+    margin-bottom: 1rem;
+    &__banner {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 1rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 0.3125rem;
+    }
+
+    strong {
+      color: $logoblue;
+    }
+    span {
+      color: $limeGreen;
+      font-weight: 700;
+      font-size: $font-lg;
+    }
+
+    .footer-social-icons {
+      margin: 0;
+      justify-content: flex-end;
+    }
+  }
+
+  &__main-section {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    min-height: calc(300vh - 320px);
+    max-width: 100%;
+    overflow: hidden;
+  }
 
-    .card{
-        flex: 1 0 14rem;
+  &__title {
+    font-size: $font-lg;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: $white;
+  }
+
+  &__image {
+    width: 100%;
+    flex: 0 0 16rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 0.3125rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .single__img {
+    width: 100%;
+    height: 440px;
+
+    @include breakpoint-down(small) {
+      width: 100%;
+      height: 220px;
     }
-    
-    .contact-us{
-        margin-bottom: 1rem;
-        &__banner{
-            width: 100%;
-            height: 400px;
-            margin-bottom: 1rem;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            border-radius: 0.3125rem;
-        }
+  }
 
-        strong{
-            color: #5ba4ef;
-        }
-        span{
-            color: rgb(36, 63, 104);
-            font-weight: 700;
-            font-size: $font-lg;
-        }
-
-        .footer-social-icons{
-            margin: 0;
-            justify-content: flex-end;
-        }
+  @include breakpoint-up(medium) {
+    &__image {
+      flex: 0 0 28.75rem;
     }
-    
+  }
 
-    
-    &__main-section{
-        background-color: #e8efe0;
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        overflow: hidden;
+  @include breakpoint-down(medium) {
+    min-height: calc(300vh - 640px);
+
+    &__title {
+      font-size: $font-med;
     }
 
-    &__title{
-            font-size: $font-lg;
-            font-weight: 700;
-            margin-bottom: 0.6rem;
-            color: $white;
+    &__main-section {
+      padding-left: 0.5rem;
     }
 
-
-    &__image{
+    .container {
+      justify-content: center;
+      .col-8 {
         width: 100%;
-        flex: 0 0 16rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        border-radius: 0.3125rem;
-    }
+      }
 
-    &__content{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 1rem;
-        
-    }
-
-    .single__img{
+      .col-4 {
         width: 100%;
-        height: 440px;
+      }
 
-        @include breakpoint-down(small){
-            width: 100%;
-            height: 220px;
-        }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
     }
-
-    @include breakpoint-up(medium){
-        &__image{
-            flex: 0 0 28.75rem;
-        }
-    }
-
-    @include breakpoint-down(medium){
-
-        min-height: calc(300vh - 640px);
-
-        &__title{
-            font-size: $font-med;
-        }
-
-        &__main-section{
-           padding-left: 0.5rem;
-        }
-
-        .container{
-            justify-content: center;
-            .col-8 {
-                width: 100%;
-            }
-
-            .col-4 {
-                width: 100%;
-            }
-            
-            .row{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-
-            }
-        }
-
-    }
+  }
 }

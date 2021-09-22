@@ -20,14 +20,14 @@
         align-self: normal;
         margin: 10px 20px;
         padding: 10px 20px;
-        background-color: #eee;
+        background-color: $backgroundGray;
         border-radius: 10px;
-        box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.4);
+        box-shadow: 0 0 15px rgba($color: $black, $alpha: 0.4);
 
         h4 {
           margin: 10px 0;
           font-size: 1.3rem;
-          color: #000000;
+          color: $black;
         }
 
         h5 {
@@ -41,7 +41,7 @@
         }
 
         img {
-          border: 1px solid black;
+          border: 1px solid $black;
           max-width: 100px;
           border-radius: 50%;
         }
@@ -52,7 +52,7 @@
         margin-top: auto;
         background: $logoblue;
         text-align: center;
-        color: #fff;
+        color: $white;
         padding: 10px 20px;
         border-radius: 1.25rem;
       }

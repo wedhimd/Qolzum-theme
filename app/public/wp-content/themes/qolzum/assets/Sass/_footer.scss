@@ -28,7 +28,7 @@ footer .container .sec.about-us {
 
 footer .container h2 {
   position: relative;
-  color: #fff;
+  color: $white;
   font-weight: 500;
   margin-bottom: 0.9375rem;
   text-align: right;
@@ -45,7 +45,7 @@ footer .container h2::before {
 }
 
 footer p {
-  color: #999;
+  color: $gray9;
 }
 
 .footer-social-icons {
@@ -61,14 +61,14 @@ footer p {
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
-  background: #444;
+  background: $gray4;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 0.625rem;
   text-decoration: none;
   border-radius: 0.25rem;
-  color: white;
+  color: $white;
 }
 
 .footer-social-icons li a:hover {
@@ -76,7 +76,7 @@ footer p {
 }
 
 .footer-social-icons li a .fa {
-  color: #fff;
+  color: $white;
   font-size: 1.25rem;
 }
 
@@ -91,7 +91,7 @@ footer p {
 }
 
 .quickLinks ul li a {
-  color: #999;
+  color: $gray9;
   text-decoration: none;
   margin-bottom: 0.625rem;
   display: inline-block;
@@ -106,7 +106,7 @@ footer p {
   background: #383838;
   padding: 0.5rem 6.25rem;
   text-align-last: center;
-  color: #999;
+  color: $gray9;
 
   p {
     margin: 0 auto;
