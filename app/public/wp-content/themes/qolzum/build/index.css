@@ -518,7 +518,8 @@ button:hover,
 .header__links ul li a {
   position: relative;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
+  font-weight: 700;
   color: #9698a6;
   transition: 300ms ease-in-out;
 }
