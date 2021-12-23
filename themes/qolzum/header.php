@@ -58,11 +58,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="<?php echo esc_url(home_url()) ?>">الرئيسية</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/news")) ?>">الأخبار</a>
+                            </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(home_url("/politics")) ?>">الأخبار </a>
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(home_url("/politics")) ?>">السياسة </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/news/local")) ?>">الأخبار المحلية</a></li>
-                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/news/world")) ?>">الأخبار العالمية</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/local")) ?>"> القرن الإفريقي</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo esc_url(home_url("/politics/world")) ?>">العالمية</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
