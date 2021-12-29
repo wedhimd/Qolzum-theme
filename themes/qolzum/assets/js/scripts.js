@@ -33,13 +33,13 @@ btnHamburger.addEventListener("click", function(event){
     
 });
 
-(function () {
-    let current = location.pathname.split('/')[1];
-    if (current === "") return;
-    let menuItems = document.querySelectorAll('.navbar-nav .nav-item a');
-    for (let i = 0, len = menuItems.length; i < len; i++) {
-        if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
-            menuItems[i].className += " active";
-        }
-    }
-})();
+// (function () {
+//     let current = location.pathname.split('/')[1];
+//     if (current === "") return;
+//     let menuItems = document.querySelectorAll('.navbar-nav .nav-item a');
+//     for (let i = 0, len = menuItems.length; i < len; i++) {
+//         if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
+//             menuItems[i].className += " active";
+//         }
+//     }
+// })();
