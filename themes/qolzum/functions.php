@@ -69,8 +69,8 @@ function qolzum_features()
 {
     register_nav_menus(
         array(
-            "top-menu" => __("Top Menu", "theme"),
-            "footer-menu" => __("Footer Menu", "theme"),
+            "top-menu" => __("Top Menu", "qolzum"),
+            "footer-menu" => __("Footer Menu", "qolzum"),
         )
     );
 
@@ -83,7 +83,7 @@ function qolzum_features()
 
 }
 
-add_action('after_setup_theme', 'qolzum_features');
+add_action('after_setup_qolzum', 'qolzum_features');
 
 
 
@@ -108,7 +108,7 @@ function qolzum_custom_logo_setup()
     add_theme_support('custom-logo');
 }
 
-add_action('after_setup_theme', 'qolzum_custom_logo_setup');
+add_action('after_setup_qolzum', 'qolzum_custom_logo_setup');
 
 
 

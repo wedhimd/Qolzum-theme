@@ -15,6 +15,7 @@ app/public/wp-content/plugins/
 upgrade/
 uploads/
 languages/
+plugins/
 # ignore these plugins
 wp-content/plugins/hello.php
 
