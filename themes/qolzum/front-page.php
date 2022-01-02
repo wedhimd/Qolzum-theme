@@ -75,7 +75,7 @@
                         <?php if(has_post_thumbnail()): ?>
                         <div class="news-container">
                             <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                            <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                         <?php endif?>
                     <?php endwhile;
@@ -97,7 +97,7 @@
                     <?php if ($sportsFeaturedNews->have_posts()) : while ($sportsFeaturedNews->have_posts()) : $sportsFeaturedNews->the_post(); ?>
                         <div class="news-container">
                             <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                            <p class="carousel-text"><a href="<?php the_permalink() ?>"> <?php the_title()?> </a> </p>
+                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
