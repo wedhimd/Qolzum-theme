@@ -3,7 +3,7 @@
     <main>
         <!-- breaking news headlines start -->
         <div class="breaking-news">
-            <div> <h3 class="breaking-news__title">عاجل</h3> </div>
+            <div class="breaking-news__title"> <h3 >آخر الأخبار</h3> </div>
             <div class="breaking-news__body">
                 <?php 
                     $breakingNews = new WP_Query(array(
@@ -21,8 +21,8 @@
         <!-- carousel start -->
         <article class="popular-news">
             <div class="featured">
-                <h2 class="thumbnail-headings">آخر اﻷخبار</h2>
-                <section class="popular-news-carousel">
+              <!--  <h2 class="thumbnail-headings">آخر اﻷخبار</h2> -->
+                 <section class="popular-news-carousel">
                     <div id="carouselHero" class="carouselHero">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">

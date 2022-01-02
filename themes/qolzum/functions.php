@@ -83,7 +83,7 @@ function qolzum_features()
 
 }
 
-add_action('after_setup_qolzum', 'qolzum_features');
+add_action('after_setup_theme', 'qolzum_features');
 
 
 

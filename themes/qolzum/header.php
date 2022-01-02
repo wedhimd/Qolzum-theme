@@ -20,12 +20,7 @@
 
     <header>
         <div class="website-header">
-            <div class="flex">
-                <a href="<?php echo esc_url(home_url()) ?>"><img src="<?php echo get_theme_file_uri("/assets/images/logo.svg") ?>" alt="الشعار"></a>
-                <?php if (function_exists('the_custom_logo')) {
-                    the_custom_logo();
-                } ?>
-            </div>
+            
             <div>
                 <a href="<?php echo esc_url(home_url()) ?>">
                     <h1>القلزم للأخبار</h1>

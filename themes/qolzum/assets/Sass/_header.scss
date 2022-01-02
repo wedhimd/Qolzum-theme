@@ -72,6 +72,12 @@
   }
 }
 
+@include breakpoint-down(small) {
+  .website-header {
+    display: none;
+  }
+}
+
 .header {
   position: relative;
   z-index: 3;
