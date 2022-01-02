@@ -4,10 +4,7 @@
   align-items: center;
 
   &__title {
-    position: relative;
-
     h3 {
-      //background-color: $gray3;
       color: $gray3;
       padding: 15px;
       font-weight: 700;
@@ -24,34 +21,38 @@
         font-size: $font-med;
       }
     }
+  }
 
-    h3::before {
+  &__body {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+
+    a {
+      margin-right: 15px;
+    }
+    a::before {
       content: "";
       position: absolute;
       top: 0;
-      right: 180px;
+      right: 0;
       height: 55px;
       width: 7px;
       margin-right: 16px;
       background-color: $logoblue;
 
       @include breakpoint-down(medium) {
-        top: 5px;
-        right: 125px;
+        top: 0;
+        right: 0px;
         height: 47px;
       }
 
       @include breakpoint-down(small) {
-        top: 5px;
-        right: 72px;
+        top: 0;
+        right: 0;
         height: 30px;
       }
     }
-  }
-
-  &__body {
-    height: 50px;
-    overflow: hidden;
   }
 
   &__body > div a {
