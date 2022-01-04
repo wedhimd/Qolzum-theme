@@ -1416,6 +1416,25 @@ footer p {
     height: 220px;
   }
 }
+.page .single__img {
+  width: 100%;
+  height: 440px;
+}
+@media screen and (max-width: 39.9375em) {
+  .page .single__img {
+    width: 100%;
+    height: 220px;
+  }
+}
+.page .single__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 39.9375em) {
+  .page .single__title {
+    font-size: 1.125rem;
+  }
+}
 @media screen and (min-width: 40em) {
   .page__image {
     flex: 0 0 28.75rem;

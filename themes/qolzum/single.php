@@ -8,11 +8,9 @@
                     <!-- Post header-->
                     <header class="mb-4">
                         <!-- Post title-->
-                        <h1 class="fw-bolder mb-1"><?php the_title() ?></h1>
+                        <h1 class="single__title mb-1"><?php the_title() ?></h1>
                         <!-- Post meta content-->
-                        <div class="text-muted fst-italic mb-2"> <?php the_time('d/m/Y') ?> م</div>
-                        <!-- Post categories-->
-                        <div class="catLink flex flex-d-c"><?php the_category() ?></div>
+                        <div class="text-muted fst-italic mb-2"> <?php the_time('Y/m/d') ?> م</div>
                     </header>
                     <!-- Preview image figure-->
                     <?php if (has_post_thumbnail()) : ?>
@@ -22,6 +20,8 @@
                     <!-- Post content-->
                     <section class="mb-5">
                         <p><?php the_content() ?></p>
+                        <!-- Post categories-->
+                        <div class="catLink flex flex-d-c"><?php the_category() ?></div>
                     </section>
                 </article>
                 <?php

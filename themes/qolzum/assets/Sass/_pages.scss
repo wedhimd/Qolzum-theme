@@ -75,6 +75,25 @@
     }
   }
 
+  .single__img {
+    width: 100%;
+    height: 440px;
+
+    @include breakpoint-down(small) {
+      width: 100%;
+      height: 220px;
+    }
+  }
+
+  .single__title {
+    font-size: $font-lg;
+    font-weight: 700;
+
+    @include breakpoint-down(small) {
+      font-size: $font-med;
+    }
+  }
+
   @include breakpoint-up(medium) {
     &__image {
       flex: 0 0 28.75rem;
