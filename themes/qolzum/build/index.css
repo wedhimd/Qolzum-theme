@@ -759,56 +759,42 @@ button:hover,
     height: 298px;
   }
 }
-.popular-news .featured h2 {
-  background-color: #333333;
-  margin-left: 0.3125rem;
-  border-radius: 0 0.3125rem 0 0;
-}
-@media screen and (max-width: 63.9375em) {
-  .popular-news .featured h2 {
-    border-radius: 0.3125rem 0.3125rem 0 0;
-  }
-}
-.popular-news #latest-economic {
-  flex: 1;
-}
-.popular-news #latest-economic h2 {
-  background-color: #e60b0b;
-  margin-left: 0.3125rem;
-}
-@media screen and (max-width: 63.9375em) {
-  .popular-news #latest-economic h2 {
-    border-radius: 0 0.3125rem 0 0;
-  }
+.popular-news #parent {
+  flex: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 39.9375em) {
-  .popular-news #latest-economic h2 {
-    border-radius: 0.3125rem 0.3125rem 0 0;
+  .popular-news #parent {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
-}
-.popular-news #latest-sport {
-  flex: 1;
-}
-.popular-news #latest-sport h2 {
-  background-color: #6aa5f1;
-  margin-left: 0.3125rem;
-  border-radius: 0.3125rem 0 0 0;
-}
-@media screen and (max-width: 39.9375em) {
-  .popular-news #latest-sport h2 {
-    border-radius: 0.3125rem 0.3125rem 0 0;
-  }
-}
-.popular-news .thumbnail-headings {
-  text-align: right;
-  padding-top: 0.9375rem;
 }
 .popular-news .carousel,
 .popular-news .news-container {
+  min-height: 228px;
   position: relative;
   margin-left: 0.3125rem;
   margin-bottom: 0.3125rem;
   background-color: #333333;
+}
+.popular-news .carousel .float,
+.popular-news .news-container .float {
+  position: relative;
+}
+.popular-news .carousel .float__title,
+.popular-news .news-container .float__title {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 99;
+  background-color: #e60b0b;
+  color: white;
+  padding: 3px 5px;
+  font-size: 18px;
+  border-radius: 15% 3% 15% 2%;
 }
 .popular-news a .carousel-text {
   width: 100%;
@@ -884,12 +870,6 @@ button:hover,
   }
   .popular-news .carousel-caption h5 {
     display: none;
-  }
-  .popular-news #latest-economic {
-    flex: auto;
-  }
-  .popular-news #latest-sport {
-    flex: auto;
   }
 }
 

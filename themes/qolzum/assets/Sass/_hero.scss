@@ -95,6 +95,7 @@
   }
 
   .featured {
+    flex: 2;
     .popular-news-carousel {
       .carouselHero {
         .carousel {
@@ -180,55 +181,39 @@
         }
       }
     }
+  }
+
+  #parent {
     flex: 2;
-    h2 {
-      background-color: $gray3;
-      margin-left: 0.3125rem;
-      border-radius: 0 0.3125rem 0 0;
-      @include breakpoint-down(medium) {
-        border-radius: 0.3125rem 0.3125rem 0 0;
-      }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include breakpoint-down(small) {
+      grid-template-columns: 1fr;
     }
-  }
-
-  #latest-economic {
-    flex: 1;
-    h2 {
-      background-color: $logoRed;
-      margin-left: 0.3125rem;
-      @include breakpoint-down(medium) {
-        border-radius: 0 0.3125rem 0 0;
-      }
-
-      @include breakpoint-down(small) {
-        border-radius: 0.3125rem 0.3125rem 0 0;
-      }
-    }
-  }
-
-  #latest-sport {
-    flex: 1;
-    h2 {
-      background-color: $logoblue;
-      margin-left: 0.3125rem;
-      border-radius: 0.3125rem 0 0 0;
-      @include breakpoint-down(small) {
-        border-radius: 0.3125rem 0.3125rem 0 0;
-      }
-    }
-  }
-
-  .thumbnail-headings {
-    text-align: right;
-    padding-top: 0.9375rem;
   }
 
   .carousel,
   .news-container {
+    min-height: 228px;
     position: relative;
     margin-left: 0.3125rem;
     margin-bottom: 0.3125rem;
     background-color: $gray3;
+    .float {
+      position: relative;
+      &__title {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+        z-index: 99;
+        background-color: $logoRed;
+        color: $white;
+        padding: 3px 5px;
+        font-size: 18px;
+        border-radius: 15% 3% 15% 2%;
+      }
+    }
   }
 
   a {
@@ -314,14 +299,6 @@
       h5 {
         display: none;
       }
-    }
-
-    #latest-economic {
-      flex: auto;
-    }
-
-    #latest-sport {
-      flex: auto;
     }
   }
 }

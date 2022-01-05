@@ -21,7 +21,6 @@
         <!-- carousel start -->
         <article class="popular-news">
             <div class="featured">
-              <!--  <h2 class="thumbnail-headings">آخر اﻷخبار</h2> -->
                  <section class="popular-news-carousel">
                     <div id="carouselHero" class="carouselHero">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -60,21 +59,24 @@
                     </div>
                 </section>
             </div>
-
-            <div id="latest-economic">
-                <h2 class="thumbnail-headings">الاقتصاد</h2>
+            <div id="parent">
+                <!-- latest politics end -->
+            <div id="latest-politcs">
                 <section class="news">
                     <?php 
-                    $economyNews = new WP_Query(array(
+                    $politicsNews = new WP_Query(array(
                         'post_type' => 'post',
                         'post_status' => 'publish',
-                        'category_name' => 'economy',
-                        'posts_per_page' => 2,
+                        'category_name' => 'politics',
+                        'posts_per_page' => 1,
                     )); ?>
-                    <?php if ($economyNews->have_posts()) : while ($economyNews->have_posts()) : $economyNews->the_post(); ?>
+                    <?php if ($politicsNews->have_posts()) : while ($politicsNews->have_posts()) : $politicsNews->the_post(); ?>
                         <?php if(has_post_thumbnail()): ?>
                         <div class="news-container">
-                            <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                            <div class="float" >
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <h3 class="float__title">السياسة</h3>
+                            </div>
                             <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                         <?php endif?>
@@ -82,8 +84,62 @@
                     endif; wp_reset_postdata();?>
                 </section>
             </div>
+            <!-- latest politics end -->
+
+            <!-- latest economy start -->
+            <div id="latest-economic">
+                <section class="news">
+                    <?php 
+                    $economyNews = new WP_Query(array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'category_name' => 'economy',
+                        'posts_per_page' => 1,
+                    )); ?>
+                    <?php if ($economyNews->have_posts()) : while ($economyNews->have_posts()) : $economyNews->the_post(); ?>
+                        <?php if(has_post_thumbnail()): ?>
+                        <div class="news-container">
+                            <div class="float" >
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <h3 class="float__title">الاقتصاد</h3>
+                            </div>
+                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                        </div>
+                        <?php endif?>
+                    <?php endwhile;
+                    endif; wp_reset_postdata();?>
+                </section>
+            </div>
+            <!-- latest economy end -->
+
+            <!-- latest science start -->
+            <div id="latest-science">
+                <section class="news">
+                <?php 
+                    $scienceFeaturedNews = new WP_Query(array(
+                        'post_type' => 'post',
+                        'post_status' => 'publish',
+                        'category_name' => 'science',
+                        'meta_query' => array(array('key' => '_thumbnail_id')),
+                        'posts_per_page' => 1,
+                    )); ?>
+
+                    <?php if ($scienceFeaturedNews->have_posts()) : while ($scienceFeaturedNews->have_posts()) : $scienceFeaturedNews->the_post(); ?>
+                        <div class="news-container">
+                            <div class="float" >
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <h3 class="float__title">التكنولوجيا</h3>
+                            </div>
+                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                        </div>
+                    <?php endwhile;
+                    endif; wp_reset_postdata();?>
+                </section>
+            </div>
+            <!-- latest science end -->
+
+            <!-- latest sport start -->
             <div id="latest-sport">
-                <h2 class="thumbnail-headings">الرياضة</h2>
                 <section class="news">
                 <?php 
                     $sportsFeaturedNews = new WP_Query(array(
@@ -91,18 +147,24 @@
                         'post_status' => 'publish',
                         'category_name' => 'sports',
                         'meta_query' => array(array('key' => '_thumbnail_id')),
-                        'posts_per_page' => 2,
+                        'posts_per_page' => 1,
                     )); ?>
 
                     <?php if ($sportsFeaturedNews->have_posts()) : while ($sportsFeaturedNews->have_posts()) : $sportsFeaturedNews->the_post(); ?>
                         <div class="news-container">
-                            <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                            <div class="float" >
+                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                <h3 class="float__title">الرياضة</h3>
+                            </div>
                             <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
                 </section>
             </div>
+            <!-- latst sport end -->
+            </div>
+            
         </article> <!-- carousel end -->
 
         <section class="main-content mt-5">
