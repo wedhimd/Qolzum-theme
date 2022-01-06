@@ -172,8 +172,8 @@
         a {
           position: relative;
           text-align: center;
-          font-size: $font-med;
-          font-weight: 700;
+          font-size: 1rem;
+          font-weight: 600;
           color: $grayishBlue;
           transition: 300ms ease-in-out;
 
@@ -257,4 +257,9 @@
   color: rgba(0, 0, 0, 0.55);
   text-decoration: none;
   background-color: $backgroundGray;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0.5rem;
 }

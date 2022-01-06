@@ -523,8 +523,8 @@ button:hover,
 .header__links ul li a {
   position: relative;
   text-align: center;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #9698a6;
   transition: 300ms ease-in-out;
 }
@@ -596,6 +596,11 @@ button:hover,
   color: rgba(0, 0, 0, 0.55);
   text-decoration: none;
   background-color: #eeeeee;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0.5rem;
 }
 
 .breaking-news {
@@ -1197,6 +1202,9 @@ footer .container .sec {
 
 footer .container .sec.about-us {
   width: 40%;
+}
+footer .container .sec.about-us a {
+  color: #999;
 }
 
 footer .container h2 {
