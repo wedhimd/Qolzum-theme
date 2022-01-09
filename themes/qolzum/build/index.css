@@ -603,6 +603,10 @@ button:hover,
   padding-left: 0.5rem;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: #eee;
+}
+
 .breaking-news {
   padding: 5px;
   display: flex;

@@ -78,16 +78,22 @@
                                 <a class="nav-link" href="<?php echo esc_url(home_url("/sports")) ?>">الرياضة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/science")) ?>">العلوم والتكنلوجيا</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/science")) ?>"> التكنلوجيا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/culture")) ?>">الثقافة والفنون</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/culture")) ?>">الثقافة </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/health")) ?>"> الصحة</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?php echo esc_url(home_url("/miscellaneous")) ?>">المنوعات </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/opinions")) ?>"> المقالات والآراء </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/press")) ?>"> الصحافة</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/opinions")) ?>"> المقالات </a>
                             </li>
                         </ul>
                     </div>

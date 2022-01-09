@@ -255,7 +255,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'category_name' => 'economy',
-                                    "posts_per_page" => 3,
+                                    "posts_per_page" => 4,
                                 )); ?>
                             <div class="cards">
                                 <?php
@@ -289,7 +289,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'category_name' => 'sports',
-                                    "posts_per_page" => 3,
+                                    "posts_per_page" => 4,
                                 )); ?>
                             <div class="cards">
                                 <?php
@@ -326,7 +326,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'category_name' => 'science',
-                                    "posts_per_page" => 3,
+                                    "posts_per_page" => 4,
                                 )); ?>
                             <div class="cards">
                                 <?php
@@ -363,7 +363,7 @@
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
                                     'category_name' => 'culture',
-                                    "posts_per_page" => 3,
+                                    "posts_per_page" => 4,
                                 )); ?>
                             <div class="cards">
                                 <?php
@@ -399,7 +399,7 @@
                                         'post_type' => 'post',
                                         'post_status' => 'publish',
                                         'category_name' => 'miscellaneous',
-                                        "posts_per_page" => 3,
+                                        "posts_per_page" => 4,
                                 )); ?>
                             <div class="cards">
                                     <?php

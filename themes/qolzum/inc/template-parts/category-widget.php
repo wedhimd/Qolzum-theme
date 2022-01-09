@@ -11,7 +11,9 @@
                 <li><a href="category/economy/"> إقتصاد</a><span><?php echo count_cat_post("economy"); ?></span></li>
                 <li><a href="category/sports/"> رياضة</a><span><?php echo count_cat_post("sports"); ?></span></li>
                 <li><a href="category/science/"> العلوم والتكنلوجيا</a><span><?php echo count_cat_post("science"); ?></span></li>
+                <li><a href="category/health/"> الصحة </a><span><?php echo count_cat_post("health"); ?></span></li>
                 <li><a href="category/culture/"> الثقافة والفنون</a><span><?php echo count_cat_post("culture"); ?></span></li>
+                <li><a href="category/press/"> الصحافة </a><span><?php echo count_cat_post("press"); ?></span></li>
                 <li><a href="category/miscellaneous/"> منوعات </a><span><?php echo count_cat_post("miscellaneous"); ?></span></li>
             </ul>
         </div>

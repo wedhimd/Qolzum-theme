@@ -8,7 +8,9 @@
             <li><a href="<?php echo esc_url(home_url("/tag/sports")) ?>"> #رياضة</a></li>
             <li><a href="<?php echo esc_url(home_url("/tag/economy")) ?>"> #إقتصاد</a></li>
             <li><a href="<?php echo esc_url(home_url("/tag/science")) ?>"> #تكنلوجيا</a></li>
-            <li><a href="<?php echo esc_url(home_url("/tag/culture")) ?>"> #ثقافة وعلوم</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/health")) ?>"> #صحة</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/culture")) ?>"> #ثقافة</a></li>
+            <li><a href="<?php echo esc_url(home_url("/tag/press")) ?>"> #صحافة</a></li>
             <li><a href="<?php echo esc_url(home_url("/tag/miscellaneous")) ?>"> #منوعات</a></li>
         </ul>
         <ul>

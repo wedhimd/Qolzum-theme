@@ -1,7 +1,7 @@
 
 <!-- latest opinion  widget start -->
 <div class="widget">
-<h3 class="widget-title">الرأي</h3>
+<h3 class="widget-title">المقالات</h3>
 <div class="widget-content">
     <div class="opinion">
         <div class="opinion__boxes">
