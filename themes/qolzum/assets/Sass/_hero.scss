@@ -256,7 +256,7 @@
 
   @include breakpoint-down(medium) {
     .carousel-text {
-      display: contents;
+      // display: contents;
     }
     .carousel-caption {
       padding-top: 0.25rem;

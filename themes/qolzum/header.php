@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes() ?>>
+<html lang="ar" dir="rtl" >
 
 <head>
     <meta charset="UTF-8">
@@ -54,10 +54,10 @@
                                 <a class="nav-link" aria-current="page" href="<?php echo esc_url(home_url()) ?>">الرئيسية</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/news")) ?>">الأخبار</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/news")) ?>">أخبار</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/politics")) ?>">السياسة</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/politics")) ?>">سياسة</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="<?php echo esc_url(home_url("/local")) ?>">القرن الإفريقي </a>
@@ -72,28 +72,28 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/economy")) ?>">الإقتصاد</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/economy")) ?>">اقتصاد</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/sports")) ?>">الرياضة</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/sports")) ?>">رياضة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/science")) ?>"> التكنلوجيا</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/science")) ?>"> تكنولوجيا</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/culture")) ?>">الثقافة </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/culture")) ?>">ثقافة </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/health")) ?>"> الصحة</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/health")) ?>"> صحة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/miscellaneous")) ?>">المنوعات </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/miscellaneous")) ?>">منوعات </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/press")) ?>"> الصحافة</a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/press")) ?>"> صحافة</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo esc_url(home_url("/opinions")) ?>"> المقالات </a>
+                                <a class="nav-link" href="<?php echo esc_url(home_url("/opinions")) ?>"> مقالات </a>
                             </li>
                         </ul>
                     </div>
