@@ -10,7 +10,7 @@
                     // Define our WP Query Parameters
                     'post_type' => 'post',
                     'post_status' => 'publish',
-                    'category_name' => 'news',
+                    'page_name' => 'news',
                     "posts_per_page" => 10,
                 )); ?>
                 <div class="cards">

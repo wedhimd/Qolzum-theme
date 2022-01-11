@@ -813,7 +813,7 @@ button:hover,
   z-index: 2;
   font-size: 0.875rem;
   font-weight: bolder;
-  padding: 0 0.625rem;
+  padding: 4px 10px;
   transition-duration: 500ms;
   margin-bottom: 0;
   line-height: 1.3;

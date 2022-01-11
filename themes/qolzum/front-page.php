@@ -75,9 +75,9 @@
                         <div class="news-container">
                             <div class="float" >
                                 <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">السياسة</h3>
+                                <h3 class="float__title">سياسة</h3>
                             </div>
-                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                         <?php endif?>
                     <?php endwhile;
@@ -101,9 +101,9 @@
                         <div class="news-container">
                             <div class="float" >
                                 <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">الاقتصاد</h3>
+                                <h3 class="float__title">اقتصاد</h3>
                             </div>
-                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                         <?php endif?>
                     <?php endwhile;
@@ -116,21 +116,21 @@
             <div id="latest-science">
                 <section class="news">
                 <?php 
-                    $scienceFeaturedNews = new WP_Query(array(
+                    $healthFeaturedNews = new WP_Query(array(
                         'post_type' => 'post',
                         'post_status' => 'publish',
-                        'category_name' => 'science',
+                        'category_name' => 'health',
                         'meta_query' => array(array('key' => '_thumbnail_id')),
                         'posts_per_page' => 1,
                     )); ?>
 
-                    <?php if ($scienceFeaturedNews->have_posts()) : while ($scienceFeaturedNews->have_posts()) : $scienceFeaturedNews->the_post(); ?>
+                    <?php if ($healthFeaturedNews->have_posts()) : while ($healthFeaturedNews->have_posts()) : $healthFeaturedNews->the_post(); ?>
                         <div class="news-container">
                             <div class="float" >
                                 <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">التكنولوجيا</h3>
+                                <h3 class="float__title">صحة</h3>
                             </div>
-                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
@@ -154,9 +154,9 @@
                         <div class="news-container">
                             <div class="float" >
                                 <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">الرياضة</h3>
+                                <h3 class="float__title">رياضة</h3>
                             </div>
-                            <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
+                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
                         </div>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
