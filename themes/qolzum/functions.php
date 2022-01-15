@@ -21,7 +21,7 @@ function load_stylesheets()
     wp_enqueue_style("font-awsome", "https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 
     // loading google fonts CDN
-    wp_enqueue_style("google-fonts", "https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+    wp_enqueue_style("google-fonts", "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
 
 
     // load bootstrap.bundle.min.css 5.0.1 LOCAL
