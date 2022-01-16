@@ -805,7 +805,7 @@ button:hover,
   font-size: 18px;
   border-radius: 15% 3% 15% 2%;
 }
-.popular-news a .carousel-text {
+.popular-news div .carousel-text {
   width: 100%;
   position: absolute;
   word-wrap: normal;

@@ -72,13 +72,15 @@
                     )); ?>
                     <?php if ($politicsNews->have_posts()) : while ($politicsNews->have_posts()) : $politicsNews->the_post(); ?>
                         <?php if(has_post_thumbnail()): ?>
-                        <div class="news-container">
-                            <div class="float" >
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">سياسة</h3>
+                        <a href="<?php the_permalink() ?>">
+                            <div class="news-container">
+                                <div class="float" >
+                                    <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                    <h3 class="float__title">سياسة</h3>
+                                </div>
+                                <div ><span class="carousel-text"> <?php the_title()?> </span> </div>
                             </div>
-                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
-                        </div>
+                        </a>    
                         <?php endif?>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
@@ -98,13 +100,15 @@
                     )); ?>
                     <?php if ($economyNews->have_posts()) : while ($economyNews->have_posts()) : $economyNews->the_post(); ?>
                         <?php if(has_post_thumbnail()): ?>
-                        <div class="news-container">
-                            <div class="float" >
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">اقتصاد</h3>
+                        <a href="<?php the_permalink() ?>">
+                            <div class="news-container">
+                                <div class="float" >
+                                    <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                    <h3 class="float__title">اقتصاد</h3>
+                                </div>
+                                <div ><span class="carousel-text"> <?php the_title()?> </span> </div>
                             </div>
-                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
-                        </div>
+                        </a>   
                         <?php endif?>
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
@@ -125,13 +129,15 @@
                     )); ?>
 
                     <?php if ($healthFeaturedNews->have_posts()) : while ($healthFeaturedNews->have_posts()) : $healthFeaturedNews->the_post(); ?>
-                        <div class="news-container">
-                            <div class="float" >
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">صحة</h3>
+                        <a href="<?php the_permalink() ?>">
+                            <div class="news-container">
+                                <div class="float" >
+                                    <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                    <h3 class="float__title">صحة</h3>
+                                </div>
+                                <div ><span class="carousel-text"> <?php the_title()?> </span> </div>
                             </div>
-                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
-                        </div>
+                        </a>   
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
                 </section>
@@ -151,13 +157,15 @@
                     )); ?>
 
                     <?php if ($sportsFeaturedNews->have_posts()) : while ($sportsFeaturedNews->have_posts()) : $sportsFeaturedNews->the_post(); ?>
-                        <div class="news-container">
-                            <div class="float" >
-                                <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
-                                <h3 class="float__title">رياضة</h3>
+                    <a href="<?php the_permalink() ?>">
+                            <div class="news-container">
+                                <div class="float" >
+                                    <img src="<?php the_post_thumbnail_url(); ?>" width="300" height="200">
+                                    <h3 class="float__title">رياضة</h3>
+                                </div>
+                                <div ><span class="carousel-text"> <?php the_title()?> </span> </div>
                             </div>
-                                <a  href="<?php the_permalink() ?>"><div class="carousel-text"> <?php the_title()?> </div> </a>
-                        </div>
+                        </a>   
                     <?php endwhile;
                     endif; wp_reset_postdata();?>
                 </section>
