@@ -6,6 +6,7 @@ footer {
   padding: 1.2rem 6.25rem;
   padding-bottom: 0;
   background: $gray3;
+  font-size: $font-med;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -113,6 +114,7 @@ footer p {
 
   p {
     margin: 0 auto;
+    font-size: $font-sm;
   }
 }
 

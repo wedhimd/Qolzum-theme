@@ -1185,6 +1185,7 @@ footer {
   padding: 1.2rem 6.25rem;
   padding-bottom: 0;
   background: #333333;
+  font-size: 1.125rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1293,6 +1294,7 @@ footer p {
 }
 .copyrightText p {
   margin: 0 auto;
+  font-size: 0.875rem;
 }
 
 @media screen and (max-width: 991px) {
