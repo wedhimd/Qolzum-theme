@@ -433,6 +433,42 @@
                             </div>
                         </div> <!-- Miscellaneous news end -->
 
+                        <!-- latest opinions start -->
+                        <div class="block-container mt-5">
+                            <h3 class="block-title">
+                                <span>مقالات</span>
+                            </h3>
+                            <div class="opinion">
+                                <div class="opinion__boxes">
+                                    <div class="box">
+                                        <?php  $opinions = new WP_Query(array(
+                                        // Define our WP Query Parameters
+                                        'post_type' => 'post',
+                                        'post_status' => 'publish',
+                                        'category_name' => 'opinions',
+                                        "posts_per_page" => 4,
+                                        )); ?>
+                                        <?php
+                                            // Start our WP Query
+                                            // $author_avatar = get_avatar();
+                                            // $defult_avatar = get_theme_file_uri("/assets/images/logo.png");
+                                            if ($opinions->have_posts()) : while ($opinions->have_posts()) : $opinions->the_post(); 
+                                        ?>
+                                        <div class="box__content">
+                                            <!-- <img src="" alt=""> -->
+                                            <div><?php echo get_avatar(get_the_author_meta( 'ID' ))?></div>
+                                            <h5><?php the_author() ?> </h2>
+                                            <h4><?php the_title() ?> </h4>
+                                            <p> <?php  echo wp_trim_words(get_the_content(), 18);?></p>
+                                            <a class="box__btn" href="<?php the_permalink() ?> ">أكمل القراءة</a>
+                                        </div>
+                                        <?php  endwhile; endif; wp_reset_postdata();?>
+                                    </div>
+                                </div>
+                            </div>                              
+                        </div> <!--latest opinions end-->
+
+
                     </div> <!-- Main content column end -->
 
                     <!-- sidebar content column start -->
