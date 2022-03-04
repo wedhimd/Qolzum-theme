@@ -4,8 +4,10 @@
 <div class="widget-content">
     <ul class="latest-news">
     <?php 
+        $month = date('m');
         $popularpost = new WP_Query( array( 
-            'posts_per_page' => 4, 
+            'posts_per_page' => 2,
+            'monthnum' => $month,
             'meta_key' => 'wpb_post_views_count', 
             'orderby' => 'meta_value_num', 
             'order' => 'DESC'  ) );
