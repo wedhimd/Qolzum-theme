@@ -185,7 +185,7 @@
                             <h3 class="block-title">
                                 <span>أخبار  </span>
                             </h3>
-                            <?php  $localNews = new WP_Query(array(
+                            <?php  $News = new WP_Query(array(
                                     // Define our WP Query Parameters
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
@@ -194,7 +194,7 @@
                             <div class="cards">
                                 <?php
                                     // Start our WP Query
-                                    if ($localNews->have_posts()) : while ($localNews->have_posts()) : $localNews->the_post(); 
+                                    if ($News->have_posts()) : while ($News->have_posts()) : $News->the_post(); 
                                 ?>
                             
                                 <a href="<?php the_permalink() ?>" class="card">
@@ -220,7 +220,7 @@
                             <h3 class="block-title">
                                 <span>صحافة </span>
                             </h3>
-                            <?php  $localNews = new WP_Query(array(
+                            <?php  $Press = new WP_Query(array(
                                     // Define our WP Query Parameters
                                     'post_type' => 'post',
                                     'post_status' => 'publish',
@@ -230,7 +230,7 @@
                             <div class="cards">
                                 <?php
                                     // Start our WP Query
-                                    if ($localNews->have_posts()) : while ($localNews->have_posts()) : $localNews->the_post(); 
+                                    if ($Press->have_posts()) : while ($Press->have_posts()) : $Press->the_post(); 
                                 ?>
                             
                                 <a href="<?php the_permalink() ?>" class="card">

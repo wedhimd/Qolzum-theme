@@ -1345,7 +1345,7 @@ footer p {
   min-height: calc(300vh - 320px);
 }
 .page .card {
-  flex: 1 0 14rem;
+  flex: 1 0 18.75rem;
 }
 .page .contact-us {
   margin-bottom: 1rem;
