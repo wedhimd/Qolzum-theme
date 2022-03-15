@@ -1371,6 +1371,24 @@ footer p {
   margin: 0;
   justify-content: flex-end;
 }
+.page .privacy {
+  margin-bottom: 1rem;
+}
+.page .privacy h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.page .privacy h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.page .privacy h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.page .privacy li {
+  list-style-type: square;
+}
 .page__main-section {
   display: flex;
   flex-direction: column;
