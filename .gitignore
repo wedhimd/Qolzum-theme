@@ -12,6 +12,7 @@ plugins/hello.php
 # ignore specific themes
 
 page-privacy-policy.php
+package-lock.json
 # ignore node dependency directories
 node_modules/
 
