@@ -28,11 +28,11 @@
             </div>
 
             <div class="social-icons">
-                <i class="fa fa-search search-trigger js-search-trigger" aria-hidden="true"></i>
-                <a href="https://www.facebook.com/QolzumNews"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://twitter.com/QolzumNews"><i class="fab fa-twitter"></i></a>
-                <i class="fab fa-instagram"></i>
-                <i class="fas fa-rss"></i>
+                <a href="#"><img class="search-trigger js-search-trigger" src="<?php echo get_theme_file_uri("/assets/images/search.svg") ?>"></a>
+                <a href="https://www.facebook.com/QolzumNews"><img src="<?php echo get_theme_file_uri("/assets/images/facebook.svg") ?>"></a>
+                <a href="https://twitter.com/QolzumNews"><img src="<?php echo get_theme_file_uri("/assets/images/twitter.svg") ?>"></a>
+                <a href="#"><img src="<?php echo get_theme_file_uri("/assets/images/instagram.svg") ?>"></a>
+                <a href="#"><img src="<?php echo get_theme_file_uri("/assets/images/rss.svg") ?>"></a>
             </div>
         </div>
         <section class="header">

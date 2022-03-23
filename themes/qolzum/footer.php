@@ -24,10 +24,10 @@
         <div class="sec contact">
             <h2>تابعنا على</h2>
             <ul class="footer-social-icons">
-                <li><a href="https://www.facebook.com/QolzumNews" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
-                <li><a href="https://twitter.com/QolzumNews" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fas fa-rss" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/QolzumNews" target="_blank"><img src="<?php echo get_theme_file_uri("/assets/images/facebook.svg") ?>"></a></li>
+                <li><a href="https://twitter.com/QolzumNews" target="_blank"><img src="<?php echo get_theme_file_uri("/assets/images/twitter.svg") ?>"></a></li>
+                <li><a href="#"><img src="<?php echo get_theme_file_uri("/assets/images/instagram.svg") ?>"></a></li>
+                <li><a href="#"><img src="<?php echo get_theme_file_uri("/assets/images/rss.svg") ?>"></a></li>
             </ul>
         </div>
 
