@@ -18,16 +18,10 @@ function load_stylesheets()
     wp_enqueue_style("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
 
     // loading font awsome css CDN
-    wp_enqueue_style("font-awsome", "https://use.fontawesome.com/releases/v5.7.1/css/all.css");
+    // wp_enqueue_style("font-awsome", "https://use.fontawesome.com/releases/v5.7.1/css/all.css");
 
     // loading google fonts CDN
     wp_enqueue_style("google-fonts", "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
-
-
-    // load bootstrap.bundle.min.css 5.0.1 LOCAL
-    wp_register_script("bootstrap-bundle-min-css", get_template_directory_uri() . "/assets/css/bootstrap-5.0.1/bootstarp.min.css", "", "5.0.1", false);
-    wp_enqueue_style("bootstrap-bundle-min-css");
-
 
     // loading custom css
     wp_register_style("theme-css", get_template_directory_uri() . "/style.css", array(), false, "all");
