@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/wedhimd/Qolzum-theme#readme",
   "dependencies": {
-    "@wordpress/scripts": "^19.2.2",
+    "@wordpress/scripts": "^25.4.0",
     "axios": "^0.21.4",
     "normalize.css": "^8.0.1"
   }
